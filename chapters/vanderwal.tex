@@ -372,42 +372,39 @@ Object marking thus always involves an Agree relation, with the spell-out of the
 Although it is not immediately relevant to the present discussion, I briefly discuss the difference between so-called doubling and non-doubling object marking here. The analysis presented thus far accounts for languages that have non-doubling object marking, that is, the pronominal or anaphoric kind of OM, with a complementary distribution between OM and DP. However, in other languages object marking ‘doubles’ the object DP, and both the OM and the DP are overtly realised (i.e. ‘agreement’). The DPs that are object-marked in such languages are typically high in animacy, definiteness and givenness. As explained in more detail in \citet{Van_der_Wal2015}, I assume that animate/definite/given DPs have a Person feature (following Richards2008/Richards2015), %%not given in the references 
 which in these languages projects a separate PersonP layer (following Höhn 2017). %%also not in the references. 
 Where in a non-doubling language v agrees with the DP, in a doubling language v agrees with the features in the Person layer, if present. Since these form a subset of the Probe, this Agree relation spells out as an object marker, while the DP also spells out, leading to doubling. I refer \citet{Van_der_Wal2015} for further details.
-\begin{comment}
-\begin{figure}[h!]
+ 
 \begin{exe}
 \ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
 		},
 	} 
 	\xlist
-	\ex	
+	\exbox{	
 \begin{forest}
 	[, nice empty nodes
 	[v \\{\lbrack}u$\phi$: \ul  {} {\rbrack}, name=objectmarker]
 	[VP [ ]
-	[
+	[~
 	[V ]  				
 	[PersP
 	[{\lbrack}i$\phi${\rbrack}, name=Goal]  
 	[DP [{\lbrack}i$\phi${\rbrack}, roof]]
 	] ] ] ] 	
 	\draw[->, thick] (objectmarker) to [out=south west,in=south west] node[near start,left]{\textit{Agree}} (Goal);	
-\end{forest}
-	\ex	
+\end{forest}}
+	\exbox{	
 \begin{forest}
 		[, nice empty nodes
 	[v \\{\lbrack}u$\phi$: \ul  {} {\rbrack}, name=objectmarker]
 	[VP [ ]
-	[
+	[~
 	[V ]  				
 	[DP [{\lbrack}i$\phi${\rbrack}, roof, name=Goal]]
 	] ] ] 	
 	\draw[->, thick] (objectmarker) to [out=south west,in=south west] node[near start,left]{\textit{Agree}} (Goal);	
-%%same error as in the example above
-\end{forest}
+%same error as in the example above
+\end{forest}}
 	\endxlist
-\end{exe}
-\end{figure}
-\end{comment}
+\end{exe} 
 
 The second aspect needed in this anaysis is head movement in the lower part of the clause, but not all the way to T. There is good morphological evidence for this head movement in the Bantu languages, since verbal derivation is visible as suffixes on the verb. This verbal morphology provides clear clues as to its underlying syntax. Following \citet{Myers1990}, \citet{Julien2002}, \citet{Kinyalolo2003}, and \citet{Buell2005}, and drawing on the explanation in \citet{Van_der_Wal, 2009}, I assume that the verb starts out as a root in V and incorporates the derivational and inflectional \textit{suf}fixes by head movement in the lower part of the clause. It then terminates in a position lower than T. The inflectional \textit{pre}fixes on the verb (apart from the object marker) represent functional heads spelled out in their base positions. The (derived) verb stem and prefixes form one word by phonological merger.
 
@@ -421,10 +418,9 @@ To illustrate this derivation, consider first the Makhuwa example in \REF{ex:vdw
 	\glt `the man was shown the blouse.'
 \end{exe}}	
 
-\begin{comment}
-\begin{figure}[h!]
+ 
 \begin{exe}
-\ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
 	},
 } 
 \begin{forest}
@@ -446,10 +442,8 @@ To illustrate this derivation, consider first the Makhuwa example in \REF{ex:vdw
 	[t\textsubscript{i}]
 	[epuluutsa
 	] ] ] ]	] ] ] ] ]			
-\end{forest}
-\end{exe}
-\end{figure}
-\end{comment}
+\end{forest}}
+\end{exe} 
 
 \newpage \footnotetext{The node AgrSP is represented here merely for expository reasons – the subject marker is treated as a reflex of $\phi$ features on T.}
 \newpage There is no reason to assume that a moved head will first incorporate morphemes to its right (the extensions and final inflectional suffix) and then to its left (the agreement and TAM markers). Therefore, the fact that inflectional morphemes for subject marking, negation, and tense surface as prefixes suggests that these are not incorporated into the verb in the same way as the derivational suffixes, and thus that the verb has not head-moved further in the inflectional domain.
@@ -464,10 +458,9 @@ The prefixes do form one phonological unit with the verb stem, but are posited a
 		\glt `you didn’t know.'
 \end{exe}}
 
-\begin{comment}
-\begin{figure}[h!]
+ 
 \begin{exe}
-\ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
 		},
 	} 
 \begin{forest}
@@ -481,10 +474,8 @@ The prefixes do form one phonological unit with the verb stem, but are posited a
 		[-tsuwela\textsubscript{i}]
 		[vP [t\textsubscript{i}, roof]
 		] ] ] ]	]			
-\end{forest}
-\end{exe}
-\end{figure}
-\end{comment}
+\end{forest}}
+\end{exe} 
 
 
 \protectedex{
@@ -503,29 +494,27 @@ With these basics in place, we can proceed to multiple object marking and a feat
 \section{ Multiple object markers as additional low $\phi$ probes}
 
 In the current analysis, object marking is due to v agreeing with a defective Goal. The presence of the object marker is thus dependent on having a $\phi$ probe on v. Taking as a starting point that the distribution of $\phi$ features on functional heads is parameterised, the presence of multiple object markers is –for most languages; see section 6– hypothesised to reflect the presence of $\phi$ features on multiple functional heads. The most straightforward analysis is to postulate $\phi$ features on the actual heads that introduce the ‘extra’ arguments, i.e. the applicative and causative heads, as represented in \REF{ex:vdw:20}.{} \footnote{I assume \citegen{Pylkkänen2008} structure of double object constructions, involving an Applicative head. The analysis presented here should in principle be applicable to high and low Applicatives, as well as Causatives (see also \citealt{Van_der_Wal2017}). In the tree structures, ‘BEN’ (for benefactive) represents any argument introduced by Appl, which may also have a Recipient, Malefactive or other role.}
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% 	\ex
-% 	\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	} 
-% \begin{forest}	
-% 		[, nice empty nodes
-% 		[v \\{\lbrack}u$\varphi${\rbrack}, name=varphi]
-% 		[ApplP 
-% 		[BEN, name=BEN]
-% 		[
-% 		[Appl\\{\lbrack}u$\varphi${\rbrack}, name=varphi2] 
-% 		[VP 
-% 		[V]
-% 		[TH, name=TH]
-% 		] ] ] ]	
-% 		\draw[->, thick] (varphi) to [out=south west,in=south] (BEN);	
-% 		\draw[->, thick] (varphi2) to [out=south west,in=south] (TH);		
-% \end{forest}
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+	\exbox{
+	\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	} 
+\begin{forest}	
+		[, nice empty nodes
+		[v \\{\lbrack}u$\varphi${\rbrack}, name=varphi]
+		[ApplP 
+		[BEN, name=BEN]
+		[~
+		[Appl\\{\lbrack}u$\varphi${\rbrack}, name=varphi2] 
+		[VP 
+		[V]
+		[TH, name=TH]
+		] ] ] ]	
+		\draw[->, thick] (varphi) to [out=south west,in=south] (BEN);	
+		\draw[->, thick] (varphi2) to [out=south west,in=south] (TH);		
+\end{forest}}
+\end{exe} 
 
 \newpage If a language has $\phi$ features not just on v but also on Appl, under a default downward probing, the prediction is that Appl agrees with the Theme/lower argument, and that the shared features are spelled out on the Probe (Appl) if the features of the Goal are a subset of the features of the Probe. The head movement of V through the lower part of the clause picks up the $\phi$ features of Appl and v, resulting in multiple sets of $\phi$ features on the derived head, and hence the potential for multiple object markers.\footnote{As mentioned, the lower functional heads themselves incorporate as suffixes in the course of the verb’s head movement, and the sets of $\phi$ features are located on this complex head, spelling out as prefixes to this head if the Goal is defective.} 
 
@@ -697,105 +686,105 @@ To summarise, in the proposed analysis object marking involves an Agree relation
 \section{Multiple object markers as additional higher $\phi$ probes}
 
 Sambaa object marking came out as exceptional in allowing multiple object markers but being asymmetric. The hierarchical strictness in Sambaa multiple object marking suggests that the u$\phi$ features responsible for object marking are located \textit{above} the highest object, with the Minimal Link Condition determining that the highest object be agreed with first. The difference between Sambaa and asymmetric object marking in languages with only one object marker would thus be the presence of an extra set of $\phi$ features on v \citep{Adams2010}. If Sambaa indeed has two $\phi$ probes on v, then the first Probe finds the closest Goal (Benefactive) and agrees with it, after which the second Probe finds the lower Goal (Theme), forming a second Agree relation for $\phi$ features. Little v thus has two sets of valued $\phi$ features that can be spelled out as object markers.
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	} 
-% \begin{forest}	
-% 	[, nice empty nodes
-% 	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
-% 	[ApplP 
-% 	[BEN, name=BEN]
-% 	[
-% 	[Appl] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ]	
-% 	\draw[->, thick] (varphi) to [out=south west,in=south] (TH);	
-% 	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
-% \end{forest}
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	} 
+\begin{forest}	
+	[, nice empty nodes
+	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
+	[ApplP 
+	[BEN, name=BEN]
+	[~
+	[Appl] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ]	
+	\draw[->, thick] (varphi) to [out=south west,in=south] (TH);	
+	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
+\end{forest}}
+\end{exe} 
 
 However, remember that the current model assumes that spell-out of the object marker is dependent on the featural make-up of the Goal relative to the Probe \citep{Roberts2010, Iorio2014, Van_der_Wal2015}: there is always an Agree relation, but only defective Goals will spell out as an object marker. This means that the two sets of $\phi$ features could be spelled out independently of each other, which is the case in symmetric multiple object marking languages, but not asymmetric Sambaa. This could be repaired by specifying a phonological condition that the second Probe can only be spelled out if the first is. This, however, is an ad-hoc solution that should only be adopted as a last resort. 
 
 The question is thus why the second Probe can only reach the Theme if the first Probe agrees with a defective Goal. I propose that this follows from the nature of defective Goals: once the first Probe has agreed with a defective Recipient, the relation cannot be distinguished from a chain, and the bottom of a chain (i.e. a trace) is invisible for further agreement \citep{Chomsky2000, Chomsky2001}. This allows the second Probe to ‘skip’ the invisible higher Benefactive argument and agree with the Theme, as represented in \REF{ex:vdw:30}.\footnote{Remember that the $\phi$ probes in this analysis are underspecified and therefore do not differ from each other.} 
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	}
-% \begin{forest}	
-% 	[, nice empty nodes
-% 	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
-% 	[ApplP 
-% 	[BEN-$\phi$P, name=BEN]
-% 	[
-% 	[Appl] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ]	
-% 	\draw[->, thick] (varphi) to [out=south west,in=south] (TH);	
-% 	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
-% \end{forest} 	
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+\begin{forest}	
+	[, nice empty nodes
+	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
+	[ApplP 
+	[BEN-$\phi$P, name=BEN]
+	[~
+	[Appl] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ]	
+	\draw[->, thick] (varphi) to [out=south west,in=south] (TH);	
+	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
+\end{forest}} 	
+\end{exe} 
 
 If, on the other hand, the first Probe agrees with a non-defective DP Benefactive, the DP will still be visible to the second Probe. The second Probe will thus also agree with the higher Recipient and cannot reach the lower Theme, as in \REF{ex:vdw:31}. The (double set of the same) $\phi$ features on v will not be spelled out, because the Goal is not defective, resulting in no object marking.
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	}
-% \begin{forest}	
-% 	[, nice empty nodes
-% 	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
-% 	[ApplP 
-% 	[BEN-DP, name=BEN]
-% 	[
-% 	[Appl] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ]	
-% 	\draw[->, thick] (varphi) to [out=south west,in=south] node[strike out,draw,-]{} (TH);	
-% 	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
-% \end{forest} 	
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+\begin{forest}	
+	[, nice empty nodes
+	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}u$\varphi${\rbrack}, name=varphi2] ]
+	[ApplP 
+	[BEN-DP, name=BEN]
+	[~
+	[Appl] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ]	
+	\draw[->, thick] (varphi) to [out=south west,in=south] node[strike out,draw,-]{} (TH);	
+	\draw[->, thick] (varphi2) to [out=south west,in=south] (BEN);
+\end{forest} }	
+\end{exe} 
 
 We may now wonder how the Theme is licensed if v does not agree with it in \REF{ex:vdw:31}, and also how the second $\phi$ probe cannot reach past the Benefactive if that is already licensed by the first Probe. The question behind both points is whether the extra u$\phi$ set is also a Case licenser.\footnote{Assuming that Bantu languages need Case licensing, which is debated; see \citet{Diercks2012}, \citet{Van_der_Wal2015} and Sheehan\& Van der Wal (to appear). However, the debatable status mostly concerns nominative Case.} I argue that it is not, and that instead Appl is still a licenser. This is the same as in the case of symmetric languages, and asymmetric languages with only one object marker. That is, v and Appl are always licensers if they introduce an argument (contra \citealt{Woolford1995}), and the distribution of $\phi$ probes is logically independent of this. We have already seen this in the derivation for languages with only one object marker, where Appl licenses an object but only v has a $\phi$ probe.\footnote{Similarly, \citet{Bhatt2005} proposes for Hindi that both T and v are Case assigners, but only T has a $\phi$ probe.} This is represented in \REF{ex:vdw:32}, where dashed lines indicate licensing and the solid line is $\phi$ agreement.
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	}
-% \begin{forest}	
-% 	[, nice empty nodes
-% 	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}Case{\rbrack}, name=Case] ]
-% 	[ApplP 
-% 	[BEN, name=BEN]
-% 	[
-% 	[Appl\\ {\lbrack}Case{\rbrack}, name=Case2] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ]	
-% 	\draw[->, thick] (varphi) to [out=south west,in=south] (BEN);	
-% 	\draw[->, thick, dotted] (Case) to [out=south west,in=south] (BEN);
-% 	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (TH);
-% \end{forest}
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+\exbox{ \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+\begin{forest}	
+	[, nice empty nodes
+	[v \\[{\lbrack}u$\varphi${\rbrack}, name=varphi] [{\lbrack}Case{\rbrack}, name=Case] ]
+	[ApplP 
+	[BEN, name=BEN]
+	[~
+	[Appl\\ {\lbrack}Case{\rbrack}, name=Case2] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ]	
+	\draw[->, thick] (varphi) to [out=south west,in=south] (BEN);	
+	\draw[->, thick, dotted] (Case) to [out=south west,in=south] (BEN);
+	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (TH);
+\end{forest}}
+\end{exe} 
 
-Recent theoretical proposals have highlighted mismatches between (morphological) case and $\phi$ agreement and shown them to be separate, as \citet{Bhatt2005}, \citet{Baker2008a},  \citet{Baker2008b}, \citet{Baker2012}, \citet{Baker2015}, \citet{Bobaljik2008}, \citet{Barany2015}, \citet{Stegovec2015}
+Recent theoretical proposals have highlighted mismatches between (morphological) case and $\phi$ agreement and shown them to be separate, as 
+\citet{Bhatt2005}, 
+\citet{Baker2008a},  
+\citet{Baker2008b}, 
+\citet{Baker2012}, 
+\citet{Baker2015}, 
+\citet{Bobaljik2008}, 
+\citet{Barany2015}, 
+\citet{Stegovec2015}
 argue (contra \citealt{Chomsky2000}, \citealt{Chomsky2001} who views case and agreement as two sides of the same coin). Therefore, case and agreement “cannot be two realizations of the same abstract Agree relation” \citep[272 on Amharic]{Baker2012}. Baker takes this to be an argument in favour of morphological case not being determined by an Agree relation at all (instead following from a Dependent Case algorithm, \citealt{Marantz1991}, \citealt{Baker2015}), but it also points towards the independence of abstract Case and $\phi$ features \citep{Keine2010, Bárány2015}. If u$\phi$ and Case are logically separate, then we can understand the unique situation of Sambaa. In all the other combinations of object marking parameters in 3, Case and u$\phi$ operate together, and Case can be present by itself, but Sambaa (asymmetric multiple OM) presents the exceptional situation of a $\phi$ probe independent of a Case feature, as shown in Table 4.\footnote{The symmetric single object marking type is discussed in Section 7.}
 \begin{table}
 \label{Table 4}
@@ -826,61 +815,59 @@ The rarity of the split between Case and $\phi$ can potentially be understood fr
 
 \section{Two ways of being symmetric?}
 
-A final question that arises if we look again at Table 3 concerns the category of languages that are symmetric despite only allowing one object marker. Symmetry in these languages can theoretically be modeled in at least two ways. The first assumes that these languages work exactly like languages that have multiple object markers, but there is a PF condition preventing all but one set of $\phi$ features from being spelled out (cf. \citealt{Adams2010} for Zulu). The second proposes a flexible licensing by lower functional heads, allowing the one set of $\phi$ features on v to probe past the higher argument \citep{Haddican_Holmberg,2012,2015,Van_der_Wal2017a, HolmbergEtAlto appear}. 
+A final question that arises if we look again at Table 3 concerns the category of languages that are symmetric despite only allowing one object marker. Symmetry in these languages can theoretically be modeled in at least two ways. The first assumes that these languages work exactly like languages that have multiple object markers, but there is a PF condition preventing all but one set of $\phi$ features from being spelled out (cf. \citealt{Adams2010} for Zulu). The second proposes a flexible licensing by lower functional heads, allowing the one set of $\phi$ features on v to probe past the higher argument \citep{Haddican_Holmberg2012,Haddican_Holmberg2015,Van_der_Wal2017a,HolmbergEtAltoappear}. 
 
 The first model is problematic for passives because an asymmetry appears, even in otherwise symmetric languages, when passivisation and object marking are combined (see Holmberg, Sheehan \& Van der Wal to appear and references therein). The the sensitivity to animacy and topicality is another aspect that does not follow from a PF condition on multiple object markers (cf. \citealt{Zeller2012}). The second model looks promising, also in deriving other typological properties of double object constructions.\footnote{Specifically, flexibility of licensing can account for an asymmetry in the passive of otherwise symmetrical languages (Holmberg, Sheehan and Van der Wal to appear), and in explaining the RANDOM correlation (the Relation between Asymmetry and Non-Doubling Object Marking, \citealt{Van_der_Wal2017b}).} A full discussion of the analysis goes beyond the scope and space-limit of the current paper (see the mentioned references for details), but the essence is that heads such as Appl (which has no u$\phi$) can license downwards (Theme, \REF{ex:vdw:33}) or upwards (Benefactive, \REF{ex:vdw:34}), depending on the relative animacy and topicality of the two objects. This leaves the other argument, be that the Benefactive or the Theme, for licensing by and $\phi$ agreeing with v (in an active clause) or T (in a passive clause). The single set of u$\phi$ features on v can thus agree with either argument, depending on which argument is first licensed by Appl.\footnote{Note that u$\phi$ on v in symmetrical single-OM languages combines with Case, which is why the argument licensed by Appl is not a Goal for v.} This accounts for the symmetry found in single object marking languages.
 
 \citep{Van_der_Wal2017a}
-% \begin{comment}
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \label{\textit{v agrees with TH (and can object-mark it)}}
-% \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	} 
-% \begin{forest}	
-% 	[vP, nice empty nodes
-% 	[ ]
-% 	[
-% 	[v {\lbrack}u$\phi${\rbrack}, name=varphi]
-% 	[ApplP 
-% 	[BEN, name=BEN]
-% 	[
-% 	[Appl, name=Case2] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ] ]
-% 	\draw[->, thick, dotted] (varphi) to [out=south west,in=south] (TH);
-% 	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (BEN);
-% \end{forest}
-% \end{exe}
-% \end{figure}
-% 
-% \begin{figure}[h!]
-% \begin{exe}
-% \ex \label{\textit{v agrees with BEN (and can object-mark it)}}
-% \forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
-% 		},
-% 	}
-% 	\begin{forest}	
-% 	[vP, nice empty nodes
-% 	[ ]
-% 	[
-% 	[v {\lbrack}u$\phi${\rbrack}, name=varphi]
-% 	[ApplP 
-% 	[BEN, name=BEN]
-% 	[
-% 	[Appl, name=Case2] 
-% 	[VP 
-% 	[V]
-% 	[TH, name=TH]
-% 	] ] ] ] ]
-% 	\draw[->, thick, dotted] (varphi) to [out=south west,in=south] (BEN);
-% 	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (TH);
-% \end{forest} 
-% \end{exe}
-% \end{figure}\end{comment}
+ 
+\begin{exe}
+\exbox{ \label{}
+\textit{v agrees with TH (and can object-mark it)}\\
+\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	} 
+\begin{forest}	
+	[vP, nice empty nodes
+	[~ ]
+	[~
+	[v {\lbrack}u$\phi${\rbrack}, name=varphi]
+	[ApplP 
+	[BEN, name=BEN]
+	[~
+	[Appl, name=Case2] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ] ]
+	\draw[->, thick, dotted] (varphi) to [out=south west,in=south] (TH);
+	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (BEN);
+\end{forest}}
+\end{exe} 
+
+\begin{exe}
+\exbox{ \label{}
+\textit{v agrees with BEN (and can object-mark it)}\\
+\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+	\begin{forest}	
+	[vP, nice empty nodes
+	[~ ]
+	[~
+	[v {\lbrack}u$\phi${\rbrack}, name=varphi]
+	[ApplP 
+	[BEN, name=BEN]
+	[~
+	[Appl, name=Case2] 
+	[VP 
+	[V]
+	[TH, name=TH]
+	] ] ] ] ]
+	\draw[->, thick, dotted] (varphi) to [out=south west,in=south] (BEN);
+	\draw[->, thick, dotted] (Case2) to [out=south west,in=south] (TH);
+\end{forest}}
+\end{exe} 
 
 
 This implies that languages can have two ways to show symmetric object marking: either an extra set of $\phi$ features on Appl (multiple object marking), or flexible licensing by Appl (single object marking). Note that the presence of an extra $\phi$ probe in the former type does not exclude the presence of flexible licensing, though: Appl may have a $\phi$ probe and also flexible licensing. In fact, this be essential in the derivation of symmetric passivisation, since the presence of extra $\phi$ probes explains how the Theme may be object-marked but not how it can become the subject of a passive. This too I have to leave for future research.
