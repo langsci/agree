@@ -1,0 +1,11 @@
+% \newcommand{\ul}{\underline{\hspace{12pt}}}
+
+\newcommand{\sub}[1]{\ensuremath{_{\textnormal{\scriptsize #1}}}} %subscript
+
+\newcommand{\trace}[1]{\ensuremath{\langle}#1\ensuremath{\rangle}} %trace with angled brackets
+
+\newcommand{\sqboxEmpty}[1]{	% square boxes for the agreement
+	\begin{tikzpicture}%[baseline={(a.base)}]
+	\draw[line width=0.6pt,#1] (0.5\pgflinewidth,0.5\pgflinewidth) rectangle (1.2ex-0.5\pgflinewidth,1.2ex-0.5\pgflinewidth);
+	\end{tikzpicture}%
+}
