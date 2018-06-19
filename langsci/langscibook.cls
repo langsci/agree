@@ -717,7 +717,7 @@
 	  SlantedFont    = LinLibertine_R_B.otf,
 	  SlantedFeatures = {FakeSlant=0.25},
 	  BoldSlantedFeatures = {FakeSlant=0.25},
-	  SmallCapsFeatures = {FakeSlant=0},
+	  SmallCapsFeatures = {FakeSlant=0,Numbers=OldStyle},
 	  ]{LinLibertine_R_B.otf}		
 \else % use standard fonts
     \setsansfont[
@@ -742,7 +742,7 @@
 	  SlantedFont    = LinLibertine_R.otf,
 	  SlantedFeatures = {FakeSlant=0.25},
 	  BoldSlantedFeatures = {FakeSlant=0.25},
-	  SmallCapsFeatures = {FakeSlant=0},
+	  SmallCapsFeatures = {FakeSlant=0,Numbers=OldStyle},
 	  ]{LinLibertine_R.otf}		
 
 \fi

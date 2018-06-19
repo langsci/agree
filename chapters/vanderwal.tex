@@ -1,10 +1,10 @@
  \documentclass[output=paper
 ,modfonts
 ,nonflat]{langsci/langscibook} 
-\bibliography{localbibliography} 
-\input{localpackages.tex}
-\input{localhyphenation.tex}
-\input{localcommands.tex} 
+% \bibliography{localbibliography} 
+% \input{localpackages.tex}
+% \input{localhyphenation.tex}
+% \input{localcommands.tex} 
 
 \title{The AWSOM correlation in comparative Bantu object marking}
 \author{%
@@ -221,9 +221,8 @@ Languages with multiple object markers are overwhelmingly symmetric.
 Despite this strong correlation, \citet{Riedel2009} is correct to claim that Sambaa is an exception: Sambaa appears as the only language allowing multiple object markers but being asymmetric (and doubling). A first question to answer before any explanation is sought, then, is whether Sambaa is a true counterexample to the AWSOM. As can be seen in examples (9)-(11) the answer is ‘yes’: any kind of Theme in Sambaa can only be object-marked in a ditransitive if the Benefactive/Recipient is object-marked first (comparable to Greek clitic doubling where the Theme can only be reached once the Benefactive is clitic-doubled, see \citealt{Anagnostopoulou2003, Anagnostopoulou2014}).
 It is grammatical to object-mark only the Recipient (9b), or both the Recipient and the Theme (9c), but object marking just the Theme is ungrammatical (9d,e).
 
-\settowidth\jamwidth{(*OM only for Th)}
 \protectedex{
-\begin{exe}
+\begin{exe} \settowidth\jamwidth{(*OM only for Th)}
 \ex Sambaa(G23) \citep[106]{Riedel2009} \\
 	\xlist
 	\ex 
@@ -253,37 +252,36 @@ Since Sambaa prefers object marking for arguments high on the hierarchies of ani
 \ea \settowidth\jamwidth{(*OM order R-Th)}
 		\gll *Wa-za-wa-\textbf{zi}-ghul-iya.\\
 		\textsc{2sm-pst.dj-2om-10om}-buy-\textsc{appl}	\\\jambox{(*OM order R-Th)}
-	\z 
-\ea
+\z 
+\ea \settowidth\jamwidth{(*order R-Th)}
 		\gll Wa-za-zi{}-\textbf{wa}-ghul-iya.\\
 		\textsc{2sm-pst.dj-10om-2om}-buy-\textsc{appl}\\
-		\glt `They bought them (10, farms) for them (2, slaves).'\\\jambox{(order Th-R)}
-		* `They bought them (2, slaves) for them (10, farms).'\\\jambox{(*order R-Th)}
-	\z
+		\glt `They bought them (10, farms) for them (2, slaves).'\jambox{(order Th-R)}\\
+		 * `They bought them (2, slaves) for them (10, farms).'\jambox{(*order R-Th)}
 \z} %%are supposed to be 2 examples and not a/b but that crashes the computation
 
 \protectedex{
-\begin{exe}
-\ex (own data) \\ \\
+\begin{exe} \settowidth\jamwidth{(*OM for Th)}
+\ex (own data) \\ 
 	\gll N-za-\textbf{jí}-ghúl-íyá nyumbá.\\
 		\textsc{1sg.sm-pst.dj-5om}-buy-\textsc{appl} 9.house\\
-	\glt * `I bought it for the house (a/the dog, class 5).'   (*OM for Th)\\
-	instead: `I bought a house for it (the dog).'  (OM for R)
+	\glt * `I bought it for the house (a/the dog, class 5).'\jambox{(*OM for Th)}\\
+	 instead: `I bought a house for it (the dog).'  \jambox{(OM for R)}
 \end{exe}}
 
 \protectedex{
-\begin{exe}
+\begin{exe} \settowidth\jamwidth{(*OM for inanimate Th)}
 \ex
 	\xlist
 	\ex
 		\gll Wá-zá-\textbf{zi}-ghul-iya \textbf{khói z-áwe} wátuunghwa.\\
 		\textsc{2sm-pst.dj-10om}-buy-\textsc{appl} 10.farm 10-\textsc{poss}.2 2.slaves\\
-		\glt `They bought slaves for their farms.'      (OM for inanimate R)
+		\glt `They bought slaves for their farms.'      \jambox{(OM for inanimate R)}
 	\ex 
 		\gll Wá-zá-wa-ghul-iya \textbf{khói z-áwe} watúúnghwa.\\
 		\textsc{2sm-pst.dj-2om}-buy-\textsc{appl} 10.farm 10-\textsc{poss}.2 2.slaves\\
-		\glt `They bought farms for the slaves.'      (OM for human R)\\
-		* `They bought slaves for their farms.'  (*OM for inanimate Th)
+		\glt `They bought farms for the slaves.'      \jambox{(OM for human R)}\\
+		* `They bought slaves for their farms.'  \jambox{(*OM for inanimate Th)}
 	\endxlist
 \end{exe}}
 Having established that the AWSOM correlation in (8) is real, and that Sambaa escapes it, the research questions are:
@@ -318,7 +316,7 @@ Concretely for object marking, this can be seen as follows. Little v has uninter
 		},}
 	\xlist
 	\exbox{
-		\begin{forest}	for tree={align=center}, for tree=pretty nice empty nodes
+		\begin{forest}	for tree={align=center,pretty nice empty nodes},
 			[
 			[v\\{\lbrack}u$\phi$: \ul{}{\rbrack}, name=objectmarker]
 			[VP[ ]
@@ -326,7 +324,7 @@ Concretely for object marking, this can be seen as follows. Little v has uninter
 			[V]  
 			[$\phi$P\\{\lbrack}i$\phi$: class 8 {\rbrack}, name=Goal]
 			] ] ]				
-			\draw[->, thick] (objectmarker) to [out=south west,in=south] node[near start,left]{\textit{Agree}} (Goal);			%%%NOTE: this arrow doesn't attach to $\phi$P, but the feature structure underneath
+			\draw[->, thick] (objectmarker) to [out=south west,in=south] node[near start,left]{\textit{Agree}} (Goal); %%%NOTE: this arrow doesn't attach to $\phi$P, but the feature structure underneath
 			\node at (6,-4) {$\rightarrow$ \textit{defective $\phi$P-Goal}};
 	\end{forest}}
 	\exbox{
@@ -615,7 +613,8 @@ In other Bantu languages with multiple object markers, however, the ordering doe
 		\textsc{aug}-1-teacher \textsc{1sm}-\textsc{pst}-show-\textsc{asp} 1.Muhire  \textsc{aug}-9-cow \\
 		\glt `The teacher showed Muhire the cow.' 
 	\ex 
-			 Umwáarimú yaayimwéeretse. \\
+			 Umwáarimú yaayimwéeretse.
+\\
 		\gll u-mu-aarimu a-a-a-yi-\textbf{mu}-eerek-ye \\
 		\textsc{aug}-1-teacher \textsc{1sm-pst-dj-9om}-\textsc{1om}-show-\textsc{asp} \\
 		\glt `The teacher showed it to him.'
@@ -651,17 +650,22 @@ In contrast, there is no strict ordering for multiple object markers referring t
 \ex	Kinyarwanda (JD62) \citep[212]{Zeller_Ngoboka2015} \\
 	\xlist
 	\ex	
-			 Yahaaye ingurube ibijuumba. \\
+			 Yahaaye ingurube ibijuumba.
+\\
 		\gll a-a-ha-ye i-n-gurube i-bi-juumba \\
 		\textsc{1sm-pst}-give-\textsc{asp} \textsc{aug}-9-pig \textsc{aug}-8-sweet\_potatoes \\
 		\glt `He has given the pig sweet potatoes.' 
 	\ex 
-			 Yabiyíhaaye. \\
-		\gll a-a-a-bi-\textbf{yi}-ha-ye \\
-		\textsc{1sm-pst-dj-8om-9om}-give-\textsc{asp} \\
+			 Yabiyíhaaye.
+\\
+		\gll a-a-a-bi-\textbf{yi}-ha-ye
+\\
+		\textsc{1sm-pst-dj-8om-9om}-give-\textsc{asp}
+\\
 		\glt `He has given them to it.' 
 	\ex 
-			 Yayibíhaye. \\
+			 Yayibíhaye.
+\\
 		\gll a-a-a-\textbf{yi}-bi-ha-ye \\
 		\textsc{1sm-pst-dj-9om-8om}-give-\textsc{asp} \\
 		\glt `He has given them to it.' 
