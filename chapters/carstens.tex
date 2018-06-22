@@ -526,15 +526,14 @@ As noted in section 1.4, I assume that concord is a subcase of feature valuation
 
 Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one probe-goal relations like (28a,b) ( = a partial derivation for (3a), which I reproduce in (28c)).\footnote{This account assumes that only intrinsic phi-features may value unvalued phi-features. In contrast, \citet{Danon2011} assumes (simplifying slightly) that once valued, uPhi on a probe P may value that of a higher probe P+1; hence clause-level agreement on a head like T may include gender features because D bears gender concord. But \citet{Carstens2011} observes that with few cross-linguistic exceptions, heads sensitive to person do not agree in gender unless N and D amalgamate morphologically, as in Bantu and Semitic languages. \citet{Carstens2011} takes this to indicate that there is no Agree-with-agreement. D’s [person] intervenes between T and \textit{n}/N, blocking access by clause-level heads to the lower [gender] unless there is N-to-D raising. Romance participles can agree in because they are systematically insensitive to person and therefore Agree (Prti\textsubscript{uPhi}, \textit{n}) may reach across it. See \citealt{Carstens_Diercks2013b} and \citealt{Wasike2007} for other evidence from Lubukusu.} 
 
-\begin{figure}[!h]
 \begin{exe}
 		\ex 
 		\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
 			},
 		}
 	\xlist
-	\begin{multicols}{2}
-		\exbox{ 
+        \begin{multicols}\raggedcolumns
+                \ex
 			\begin{forest} for tree={align=center}
 				[$\delta$, nice empty nodes 
 				[AP \textsubscript{\ul{}uPhi}]	
@@ -543,49 +542,48 @@ Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one
 				[\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
 				] ]  	
 				\node at (2,0){$\rightarrow$};	
-		\end{forest}}
-	\exbox{
-		\begin{forest} for tree={align=center}
-		[$\delta$, nice empty nodes 
-		[AP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]	
-		[$\beta$
-		[KP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]
-		[\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
-		] ]  	
-\end{forest}}
+                        \end{forest}
+                \columnbreak
+                \ex
+                        \begin{forest} for tree={align=center}
+                        [$\delta$, nice empty nodes 
+                        [AP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]	
+                        [$\beta$
+                        [KP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]
+                        [\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
+                        ] ]  	
+                    \end{forest}
+                \columnbreak
+                \ex
+                  \gll chi-tunzi    ch-abwino   ch-a Lucy\\
+                       7-picture   7-nice           7-of 1Lucy\\
+                  \glt `Lucy's nice picture' 
 \end{multicols}
-	\exbox{
-	\gll c.  \hspace{0.2cm}chi-tunzi    ch-abwino   ch-a Lucy\\
-	{} \hspace{0.2cm}7-picture   7-nice           7-of 1Lucy\\
-	\glt \hspace{0.5cm} `Lucy's nice picture' 
-}
 	\endxlist
 \end{exe}
-\end{figure}
 \noindent Following \citet{Bejar_Rezac2009}, \citet{Carstens2016}, \citet{Toosarvandani_Van_Urk2014}, uPhi valuation by something c-commnding a probe is possible where downward Agree fails. This accounts for the inclusion of number features in concord on K, though Num is merged higher than \textit{n}P.
 
 I illustrate step-by-step below how gender concord works to yield labeling in \textit{n}P, beginning in (29a) at a point where the possessum noun and \textit{n} are present but their projections unlabeled. In (29b), the possessor is merged, creating a new node $\gamma$ (I pre-label the associative \textit{–a} and its possessor complement as K(P) and DP respectively, for expository convenience). Concord provides KP with Class 7 features matching those of \textit{n}P, as shown in (29c). These features suffice to label $\gamma$;  the remaining nodes are labeled by their unambiguous heads (see (29d); successful labeling is indicated by the notation X $\rightarrow$ Y).
 
-\begin{figure}[!h]
 \begin{exe}
 		\ex 
 		\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
 			},
 		}
 		\xlist
-		\begin{multicols}{2}
-			\exbox{ 
-				\begin{forest} for tree={align=center}
-					[$\beta$, nice empty nodes 
+		\begin{multicols}{2}\raggedcolumns
+                \ex 
+                        \begin{forest} for tree={align=center}
+					[$\beta$ 
 					[\textsubscript{\textit{n}7}]	
 					[$\alpha$
 					[\textit{chitunzi}\\7picture]
-					[]
+					[, nice empty nodes]
 					] ] 	
-			\end{forest}}
-		\exbox{ 
+			\end{forest}\vfill\null\columbreak
+                        \ex
 			\begin{forest} for tree={align=center}
-			[$\gamma$, nice empty nodes 
+			[$\gamma$ 
 			[KP \textsubscript{\ul{}u$\phi$}
 			[K \textsubscript{\ul{}u$\phi$}	\\ -\textit{a}\\of]
 			[...DP\\ \textit{Lucy}\\1Lucy] ]
@@ -593,14 +591,16 @@ I illustrate step-by-step below how gender concord works to yield labeling in \t
 			[\textsubscript{\textit{n}7}]
 			[$\alpha$
 			[\textit{chitunzi}\\7picture]
-			[]
+			[,nice empty nodes]
 			] ] ] 
-		\end{forest}}
-	\end{multicols}
-	\begin{multicols}{2}
-	\exbox{ 
-		\begin{forest} for tree={align=center}
-			[...$\gamma$, nice empty nodes 
+                        \end{forest}
+                \end{multicols}
+                \endxlist
+                \xlista\setcounter{xnumiii}{2}
+		\begin{multicols}{2}\raggedcolumns                
+                \ex
+                        \begin{forest} for tree={align=center}
+			[...$\gamma$ 
 			[KP \textsubscript{\underline{7}\sout{u$\phi$}}
 			[K \textsubscript{\underline{7}\sout{u$\phi$}}\\ \textit{\underline{ch}a}\\7of]
 			[...DP\\ \textit{Lucy}\\1Lucy] ]
@@ -608,25 +608,25 @@ I illustrate step-by-step below how gender concord works to yield labeling in \t
 			[\textsubscript{\textit{n}7}]
 			[$\alpha$
 			[\textit{chitunzi}\\7picture]
-			[]
+			[, nice empty nodes]
 			] ] ]  		
-	\end{forest}}
-\exbox{ 
-	\begin{forest} for tree={align=center}
-		[$\gamma$, nice empty nodes 
-		[KP \textsubscript{\underline{7}\sout{u$\phi$}}
-		[K \textsubscript{\underline{7}\sout{u$\phi$}}\\ \textit{\underline{ch}a}\\7of]
-		[...DP\\ \textit{Lucy}\\1Lucy] ]
-		[$\beta$
-		[\textsubscript{\textit{n}7}]
-		[$\alpha$
-		[\textit{chitunzi}\\7picture]
-		[]
-		] ] ] 
-		\node at (3,0){$\rightarrow$ $\phi$P (Cl7P)};
-		\node at (3,-2.4){$\rightarrow$ nP\textsubscript{7}};
-		\node at (3,-3.7){$\rightarrow$ NP\textsubscript{7}}; 		
-\end{forest}}
+                        \end{forest}
+                \ex 
+                        \begin{forest} for tree={align=center}
+                            [$\gamma$ 
+                            [KP \textsubscript{\underline{7}\sout{u$\phi$}}
+                            [K \textsubscript{\underline{7}\sout{u$\phi$}}\\ \textit{\underline{ch}a}\\7of]
+                            [...DP\\ \textit{Lucy}\\1Lucy] ]
+                            [$\beta$
+                            [\textsubscript{\textit{n}7}]
+                            [$\alpha$
+                            [\textit{chitunzi}\\7picture]
+                            [, nice empty nodes]
+                            ] ] ] 
+                            \node at (3,0){$\rightarrow$ $\phi$P (Cl7P)};
+                            \node at (3,-2.4){$\rightarrow$ nP\textsubscript{7}};
+                            \node at (3,-3.7){$\rightarrow$ NP\textsubscript{7}}; 		
+                        \end{forest}
 \end{multicols}
 \endxlist
 \end{exe}
