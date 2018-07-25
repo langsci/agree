@@ -1,10 +1,10 @@
 \documentclass[output=paper
 ,modfonts
 ,nonflat]{langsci/langscibook} 
-\bibliography{localbibliography} 
-\input{localpackages.tex}
-\input{localhyphenation.tex}
-\input{localcommands.tex} 
+% \bibliography{localbibliography} 
+% \input{localpackages.tex}
+% \input{localhyphenation.tex}
+% \input{localcommands.tex} 
 
 \title{Concord and labeling}
 \author{%
@@ -174,8 +174,8 @@ At one end of the spectrum are the Bantu languages. As noted in section 1, lexic
 		\gll  *\underline{chi}\underline{-tunzi}    \textbf{\underline{ch}-a} Lucy     ch-abwino\\
 		7-picture   7-nice      7-my\\
 		\ex \label{ex:7f}
-		\gll\mbox{[\textsubscript{DP} N+n+Num+D [\textsubscript{NumP} changa <Num> [\textsubscript{nP} AP [\textsubscript{nP}  <changa> <N+\textit{n}>...]]]]}\\
-		\hspace{3.9cm}7-my \\
+		\gll[\textsubscript{DP} N+n+Num+D [\textsubscript{NumP} changa <Num> [\textsubscript{nP} AP [\textsubscript{nP}  <changa> <N+\textit{n}>...]]]]\\
+		{} {} {} 7-my \\
 		\endxlist
 \end{exe}
 %%f in the wrong line
@@ -398,7 +398,7 @@ I flesh out below the syntax I assume for a possessive construction in a Bantu l
 		\end{forest}}
 	\end{exe}
 \end{figure}
-\newpage \noindent As proposed in \citet{Abney1987}, possessors appear higher in DP of Type 2 languages. They raise out of nP to Spec of a functional category as shown for Turkish in (19) where, following Abney, I represent the landing site for Turkish possessors as Spec, DP.          
+\noindent As proposed in \citet{Abney1987}, possessors appear higher in DP of Type 2 languages. They raise out of nP to Spec of a functional category as shown for Turkish in (19) where, following Abney, I represent the landing site for Turkish possessors as Spec, DP.          
 
 \begin{figure}[!h]
 	\begin{exe}
@@ -423,7 +423,7 @@ I flesh out below the syntax I assume for a possessive construction in a Bantu l
 		\end{forest}}
 	\end{exe}
 \end{figure}
-\newpage \noindent In section 3.3 I will suggest that Romance languages may be covert Type 1 languages, yielding the groupings in (20), where speculative members are parenthesized.
+\noindent In section 3.3 I will suggest that Romance languages may be covert Type 1 languages, yielding the groupings in (20), where speculative members are parenthesized.
 
 \begin{exe}
 	\ex
@@ -520,7 +520,7 @@ The proposals for gender and labeling are summarized in (26) and (27). Positive 
 \subsection{Mechanics of concord and concordial labeling}
 As noted in section 1.4, I assume that concord is a subcase of feature valuation via the Agree relation of \citealt{Chomsky2000, Chomsky2001}. Recall my proposal that the grammatical gender of nouns is a formal, uninterpretable feature, satisfying Chomsky's Activity Condition. Unlike a DP's uCase, nominal gender never deactivates because Agree does not determine its value (\citealt{Carstens2010, Carstens2011}, adapting \citealt{Nevins2005}' view of deactivation). For this reason, concord is iterable. 
 
-Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one probe-goal relations like (28a,b) ( = a partial derivation for (3a), which I reproduce in (28c)).\footnote{This account assumes that only intrinsic phi-features may value unvalued phi-features. In contrast, \citet{Danon2011} assumes (simplifying slightly) that once valued, uPhi on a probe P may value that of a higher probe P+1; hence clause-level agreement on a head like T may include gender features because D bears gender concord. But \citet{Carstens2011} observes that with few cross-linguistic exceptions, heads sensitive to person do not agree in gender unless N and D amalgamate morphologically, as in Bantu and Semitic languages. \citet{Carstens2011} takes this to indicate that there is no Agree-with-agreement. D’s [person] intervenes between T and \textit{n}/N, blocking access by clause-level heads to the lower [gender] unless there is N-to-D raising. Romance participles can agree in because they are systematically insensitive to person and therefore Agree (Prti\textsubscript{uPhi}, \textit{n}) may reach across it. See \citealt{Carstens_Diercks2013b} and \citealt{Wasike2007} for other evidence from Lubukusu.} 
+Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one probe-goal relations like (28a,b) ( = a partial derivation for (3a), which I reproduce in (28c)).\footnote{This account assumes that only intrinsic phi-features may value unvalued phi-features. In contrast, \citet{Danon2011} assumes (simplifying slightly) that once valued, uPhi on a probe P may value that of a higher probe P+1; hence clause-level agreement on a head like T may include gender features because D bears gender concord. But \citet{Carstens2011} observes that with few cross-linguistic exceptions, heads sensitive to person do not agree in gender unless N and D amalgamate morphologically, as in Bantu and Semitic languages. \citet{Carstens2011} takes this to indicate that there is no Agree-with-agreement. D’s [person] intervenes between T and \textit{n}/N, blocking access by clause-level heads to the lower [gender] unless there is N-to-D raising. Romance participles can agree in because they are systematically insensitive to person and therefore Agree (Prti\textsubscript{uPhi}, \textit{n}) may reach across it. See \citealt{Carstens_Diercks2013b} and \citealt{Wasike2007} for other evidence from Lubukusu.}\pagebreak
 
 \begin{exe}
 	\ex 
@@ -544,16 +544,16 @@ Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one
 			[$\beta$
 			[KP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]
 			[\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
-			] ]  	
-		\end{forest}
-		\columnbreak
-		\ex
+			] ]
+		\end{forest}\end{multicols}\endxlist
+		\xlist
+		\exi{c.}
 		\gll chi-tunzi    ch-abwino   ch-a Lucy\\
 		7-picture   7-nice           7-of 1Lucy\\
 		\glt `Lucy's nice picture' 
-	\end{multicols}
 	\endxlist
 \end{exe}
+
 \noindent Following \citet{Bejar_Rezac2009}, \citet{Carstens2016}, \citet{Toosarvandani_Van_Urk2014}, uPhi valuation by something c-commnding a probe is possible where downward Agree fails. This accounts for the inclusion of number features in concord on K, though Num is merged higher than \textit{n}P.
 
 I illustrate step-by-step below how gender concord works to yield labeling in \textit{n}P, beginning in (29a) at a point where the possessum noun and \textit{n} are present but their projections unlabeled. In (29b), the possessor is merged, creating a new node $\gamma$ (I pre-label the associative \textit{–a} and its possessor complement as K(P) and DP respectively, for expository convenience). Concord provides KP with Class 7 features matching those of \textit{n}P, as shown in (29c). These features suffice to label $\gamma$;  the remaining nodes are labeled by their unambiguous heads (see (29d); successful labeling is indicated by the notation X $\rightarrow$ Y).
