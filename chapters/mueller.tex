@@ -1,0 +1,1683 @@
+\documentclass[output=paper
+,modfonts
+,nonflat]{langsci/langscibook} 
+%\bibliography{localbibliography}
+%\documentclass[]{article}
+%\input{localhyphenation.tex}
+%\input{localpackages.tex}
+%\input{localcommands.tex} 
+
+
+\title{Long Distance Agreement and Locality: A Reprojection Approach}
+
+\author{Kristin B\"orjesson\affiliation{Universit{\"a}t Leipzig}\and Gereon M\"uller\affiliation{Universit\"at Leipzig}} 
+
+\abstract{Based on the assumption that all cases of long distance
+agreement  should be analyzed as involving only local agreement,
+and based on the observation that all existing approaches to long-distance agreement in
+terms of local agreement face substantial empirical and/or conceptual
+problems, the present paper sets out to develop a radically new
+approach to long-distance agreement. We suggest that long-distance agreement can and should be analyzed as a
+strictly local operation taking place early in the derivation, and
+giving rise to a counter-bleeding effect (i.e., apparent non-locality)
+later in the derivation as a consequence of regular syntactic
+structure building. More specifically, we argue that long-distance agreement involves (a)
+(what will become) a matrix verb V$\_$1 which enters the syntactic
+derivation as part of a complex predicate V$\_$1-V$\_$2 that is merged with
+the embedded internal argument, agreeing with it locally early in the
+derivation; and (b) subsequent reprojection movement of V$\_$1 out of
+V$\_$2's clause, which eventually produces a biclausal structure (and
+thereby leads to a counter-bleeding effect with agreement). Empirical
+evidence for the new approach mainly comes from Nakh-Daghestanian
+languages, among them Hinuq, Khwarshi, and Tsakhur.
+}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction}
+
+Long-distance agreement is a phenomenon where agreement seems to take
+place in a non-local configuration, that is, across a clause boundary.
+More specifically, in cases of long-distance agreement, the verb in
+the matrix sentence agrees with respect to $\phi$-features with an
+argument of the verb in an embedded sentence. A language that show
+this phenomenon is Hindi-Urdu (see \cite{Mahajan:90},
+\cite{Butt:95,Butt:08}, \cite{Bhatt:05}, and \cite{Chandra:05}, among
+others). A relevant pair of examples is given in \Next. In Hindi, a DP
+qualifies as an agreement controller if it is not overtly case-marked (if
+both an external and an internal argument fail to be overtly
+case-marked, agreement is with the subject). Long-distance agreement
+is optional here: Either there is agreement of both the matrix verb
+and the embedded verb with the embedded absolutive object DP (as in
+\Next[b]), or the verbs show default agreement (as in \Next[a]).
+
+\Lsciexi.  \label{1}
+ \ag.  Raam-ne [$\alpha$ rotii khaanaa~] chaahaa \\ 
+      Ram.{\sc masc}.-{\sc erg} {} bread.{\sc fem} eat.{\sc inf}.{\sc
+        masc} want.{\sc perf.pst.masc} \\ 
+       `Ram wanted to eat bread.'
+\bg.  Raam-ne [$\alpha$ rotii khaanii~] caahii \\ 
+      Ram.{\sc masc}-{\sc erg} {} bread.{\sc fem} eat.{\sc inf}.{\sc fem} want.{\sc perf.pst.fem} \\ 
+      `Ram wanted to eat bread.'
+
+Long-distance agreement is also widespread in Nakh-Daghestanian
+languages. A relevant pair of examples from Tsez is given in \Next
+(see \cite{Polinsky&Potsdam:01}). Agreement with respect to gender
+(III, in the case hand) is controlled by
+absolutive DPs in Tsez. It always shows up on the embedded verb (if
+that verb can host overt agreement morphology in principle), and may
+then optionally also show up on the matrix verb (as in \Next[b]);
+alternatively, there is no long-distance agreement, and the matrix
+verb exhibits default (IV) agreement marking (as in \Next[a]).\footnote{As
+  noted by \cite{Bhatt:05}, some varieties of Hindi behave similarly
+  in that they also exhibit an asymmetry between agreement with matrix
+  as opposed to embedded verbs (such that embedded verbs can agree
+  while matrix verbs do not have to), whereas other varieties of Hindi show a
+  strict one-to-one correspondence (such that embedded verb agreement
+  implies matrix verb agreement), as presupposed in the main text above.}
+
+\Lsciexi.  \label{2}
+\ag. Eni-r [$\alpha$ u\v{z}\={a} magalu b-\={a}c'-ru-\l i~] r-iy-xo \\
+     mother-{\sc dat} {} boy-{\sc erg} bread.{\sc iii.abs} {\sc iii}-eat-{\sc pstprt-nmlz} {\sc iv}-know-{\sc prs} \\
+ `The mother knows that the boy ate the bread.'
+\bg.  Eni-r [$\alpha$ u\v{z}\={a} \label{2-b}magalu b-\={a}c'-ru-\l i~] b-iy-xo \\
+     mother-{\sc dat} {} boy-{\sc erg} bread.{\sc iii.abs} {\sc iii}-eat-{\sc pstprt-nmlz} {\sc iii}-know-{\sc prs} \\
+      `The mother knows that the boy ate the bread.'
+
+Another example for long-distance agreement in Nakh-Daghestanian
+languages comes from Hinuq; see \Next[ab] (from
+\cite{Forker:11}). Again, gender agreement is controlled by an
+absolutive DP, and gender-based long-distance agreement is optional.
+
+\Lsciexi. \label{3}
+\ag.  Sa\textbarglotstop ida-z r-eq'i-yo [$\alpha$ Madina-y \textgamma i ga:-s-\textbeltl i~]\textsubscript{V} \\
+      Saida-{\sc dat} {V}-know.{\sc prs} {} Madina-{\sc erg} milk(IV).{\sc abs} drink-{\sc res-abst} \\ 
+ `Saida knows that Madina drank milk.'
+\bg.  Sa\textbarglotstop ida-z y-eq'i-yo [$\alpha$ \label{3-b}Madina-y \textgamma i ga:-s-\textbeltl i~]\textsubscript{V} \\
+       Saida-{\sc dat} {IV}-know.{\sc prs} {} Madina-{\sc erg} milk({IV}).{\sc abs} drink-{\sc res-abst} \\
+      `Saida knows that Madina drank milk.'
+
+Other languages exhibiting long-distance agreement are Itelmen (see
+\cite{Bobaljik&Wurmbrand:05}; a relevant pair of examples is given in
+\Next), Innu-aim\^{u}n (see \cite{Branigan&MacKenzie:02}, with
+relevant examples in \NNext), Passamaquoddy (see \cite{Bruening:01}),
+Chukchee (see \cite{Boskovic:07}) and Blackfoot (see \cite{Bliss:09}).
+
+\Lsciexi. \label{4}
+\ag.  Na netxa-in [$\alpha$ kma je\textipa{B}na-s~] \\
+     he forget-{{\scshape 3sg.subj(intrans)}} {} me meet-{\sc inf} \\
+      `He forgot to meet me.'
+\bg.  Na \textipa{@}ntxa-\textipa{B}um=nm [$\alpha$ kma je\textipa{B}na-s~] \\
+     he forget-{{\scshape 1sg.obj=3.cl}} {} {me} meet-{\sc inf} \\
+      `He forgot to meet me.'
+
+\Lsciexi. \label{5}
+     \ag.  Ni-tshissenit-en [$\alpha$ P\^{u}n k\^{a}-m\^{u}pisht-\^{a}shk~] \\
+     1-know-{{\scshape ti}} {} Paul {\sc prt}-visited-2/{\sc inv} \\
+ `I know that Paul visited you.'
+\bg.   Ni-tshissenim-{\^a}u [$\alpha$ P\^{u}n k\^{a}-m\^{u}pisht-\^{a}shk~] \\
+     1-know-{3} {} {Paul} {\sc prt}-visited-2/{\sc inv} \\
+      `I know that Paul visited you.'
+
+While long-distance agreement is optional in all these languages,
+there are also some languages where long-distance agreement is
+obligatory in certain environments; this holds, e.g., for Icelandic,
+Kutchi Gujarati and Chamorro.  In this paper, we will concentrate on
+those languages in which long-distance agreement seems
+optional. Still, as with many other cases of syntactic optionality, it
+turns out that in all these cases, the choice of long-distance
+agreement in a sentence goes along with an interpretation of the
+controller of long-distance agreement as having a particular
+information structural status, i.e., an interpretation that the other
+member of the sentence pair -- that with (only) local agreement --
+lacks. 
+
+The central challenge posed by long-distance agreement for syntactic
+theory is, of course, the apparent non-locality of the operation. More
+specifically, the embedded DP that controls the agreement would seem
+to be separated by a clause-like constituent ($\alpha$ in the examples
+above) from the matrix verb, and therefore be too far away to permit
+establishing a local relation.  This is potentially problematic
+because most current syntactic theories do indeed postulate that
+syntactic operations (like agreement) are highly local (e.g., this
+holds for the Minimalist Program, HPSG, Categorial Grammar, and Optimality
+Theory); in line with this, in all these theories, apparently
+non-local dependencies like long-distance movement, long-distance
+reflexivization, long-distance case assignment, sequence of tense, and
+switch reference have successfully been reanalyzed as involving only
+fairly local operations (see \cite*{Alexiadouetal:12} for an
+overview).
+
+Against the background of the Minimalist Program, the question raised
+by long-distance agreement is how it can be ensured that the basic
+locality requirement imposed by the Phase Impenetrability Condition
+(PIC; \cite{Chomsky:00,Chomsky:01,Chomsky:08,Chomsky:13}) in \Next is
+respected by the operation. 
+
+\Lsciexi. {\itshape Phase Impenetrability Condition} \label{pic1}(PIC):\\
+  In phase $\alpha$ with head H, the domain of H is not accessible to
+  operations outside $\alpha$; only H and its edge are accessible to such
+  operations.
+
+
+If $\alpha$ in \ref{1}--\ref{5} qualifies as a phase in the sense of
+\Last, the very existence of long-distance agreement seems to be at
+variance with the PIC.\footnote{\label{fn1}As a matter of fact, simple cases of T
+  agreeing with a nominative object DP in VP in a language like
+  Icelandic are already problematic from the point of view of the PIC
+  in \ref{pic1}. For this reason, \cite{Chomsky:01} also envisages a
+  second, somewhat more liberal version of the PIC, where a phase
+  domain becomes opaque only when the next phase is reached. However, even
+  this less restrictive version of the PIC would not suffice to
+  straightforwardly derive the possibility of long-distance
+  agreement. Furthermore, one might argue that the head actually
+  responsible for this agreement into VP is not T but v. We will
+  abstract away from this issue in what follows, and presuppose the
+  PIC in \ref{pic1} for the remainder of the paper.}
+
+In what follows, we will argue that the PIC-induced locality problem
+with long-distance agreement is real, and has not been
+convincingly solved yet in any of the approaches to long-distance
+agreement that have been developed so far. In view of this state of
+affairs, we will propose a radically new approach in terms of complex
+predicate formation plus reprojection where long-distance agreement
+can be analyzed as a strictly local operation: The new analysis  involves (i) a verb
+V$\_$1 which enters the syntactic derivation as part of a complex
+predicate V$\_$1-V$\_$2 that is merged with the embedded internal argument,
+agreeing with it locally early in the derivation; and (ii) subsequent
+reprojection movement of V$\_$1 out of V$\_$2's clause, which eventually
+produces a biclausal structure (and thereby leads to a
+counter-bleeding effect with agreement). 
+
+The article is structured as follows. In section 2, we will sketch the
+different types of existing approaches to the phenomenon of
+long-distance agreement. Given the PIC-based premise of strictly local
+application of all syntactic operations, we will point out individual
+problems the different approaches face as well as introduce some new
+data that turns out to be problematic for almost all of them. We will
+then go on to introduce the new approach in terms of reprojection in
+section 3. In section 4, which concludes the article, we will
+summarize the main features of the new approach and provide an outlook
+into how it might also be put to use in other contexts involving
+extraction from DPs where there is evidence for an extremely local
+relation of two heads that show up in two separate domains in
+syntactic output structures.
+  
+
+\section{Existing Analyses}
+
+At least for our present purposes, four different kinds of analysis
+of long-distance agreement can be distinguished. We will refer to
+these as (i) non-local analyses (where long-distance agreeement can
+apply in a non-local fashion),  (ii) small structure analyses (where
+there is no phase boundary), (iii) cyclic Agree analyses (where the
+information relevant for agreement is locally passed on through the
+tree, originating with the controller and ultimately reaching the
+matrix verb), and (iv) feeding analyses (where movement
+of the controller makes 
+local agreement possible). We will discuss these four analysis types in
+turn.\footnote{We will not consider a fifth type of analysis, where
+  the matrix verb locally agrees with a covert pronoun, which in turn
+  is coindexed (and therefore shares $\phi$-features) with an
+  embedded DP. As shown in \cite{Polinsky&Potsdam:01} and
+  \cite{Bhatt&Keine:16:lon}, such `proxy agreement' is not a viable
+  alternative in general. (Also, it is worth noting that such an
+  analysis solves one locality problem (seemingly non-local agreement)
+by shifting it to another, well-known locality problem (seemingly
+non-local binding chains).)}
+
+\subsection{Type (i): Non-Local Analyses}
+
+Non-local analyses either assume that the locality constraint on Agree
+is weaker than the original PIC (see \cite{Chomsky:01} and footnote
+\ref{fn1}), or that Agree is not, in fact, subject to such a strict
+locality constraint in the first place (see \cite{Sells:06} \cite{Boskovic:07},
+\cite{Keine:16}).
+
+For example, Bo\v{s}kovi{\'c}'s (2007) analysis relies on a revised
+Agree operation, one which is not subject to either the  Activity
+  Condition (\ref{AC} in the original Agree definition in
+\ref{Agree}) or the PIC. 
+
+\Lsciex. \label{Agree}{\it Agree} \\ $\alpha$ may Agree with $\beta$ iff
+(a)--(d) hold.
+\a.  $\alpha$ carries at least one unvalued and uninterpretable
+      feature and $\beta$ carries a matching interpretable and valued
+      feature 
+\b.  $\alpha$ c-commands $\beta$
+    \b. \label{AgreeClosest}$\beta$ is the closest goal to $\alpha$
+\b. \label{AC}$\beta$ bears an unvalued uninterpretable feature.
+
+Thus, the matrix verb can look all the way
+down to the embedded absolutive DP to check its
+$\phi$-feature. \citet{Boskovic:07} assumes that finite complement
+clauses can in principle be CPs or TPs. Thus, in complement clauses in
+which there is no evidence for a CP layer, one might as well asume
+that those clauses actually lack it.
+The idea, then, is that CPs block long-distance agreement in Tsez while TPs allow it. This
+is because, Bo\v{s}kovi{\'c} (2007) claims, CPs, in contrast to TPs
+may carry $\phi$-features that need to get checked. In case of Tsez
+CPs (and those of the languages that lack long-distance agreement altogheter), he assumes
+that they do carry such (default-valued) $\phi$-features, which makes it possible for
+the matrix verb to locally agree with the CP as such, leading to local
+agreement. Long-distance agreement in cases that involve CPs is impossible due to the
+condition on Agree to involve that potential goal closest to the probe
+(see \ref{AgreeClosest}).
+
+Whatever the merits of this proposal, it is clear that it is
+incompatible with the strict PIC in \ref{pic1}: 
+ Since the potential long-distance agreement controller  in
+transitive sentences is the internal argument bearing absolutive case, which is base-generated
+in VP, the PIC will predict that long-distance agreement should not be
+possible, independently of whether the embedded vP phase has both a TP
+and a CP projection on top of it, or just a TP projection. 
+
+\subsection{Type (ii): Small Structure Analyses}
+
+In small structure analyses, it is argued that the configuration of matrix verb
+and long-distance agree\-ment-trigger is local after all. The structure
+of the complement clause is assumed to be smaller than might be
+thought from the surface data (e.g., a VP in \cite{Boeckx:04}; an
+InflP in \cite{Bhatt:05}).
+
+Like \citegen{Boskovic:07} approach, \citegen{Bhatt:05} analysis is
+    based on a revised Agree operation -- in this case, it is one which also is not
+ subject to the {\it Activity Condition}, but which does respect the PIC.
+To account for apparent long-distance agreement in Hindi, \citet{Bhatt:05} assumes
+   that complement clauses to  matrix verbs that allow long-distance agreement are in fact
+   only InflPs/VPs, which lack an external argument (i.e., they have
+   no PRO) and are thus not phases. In contrast, long-distance
+   agreement out of finite clauses is not possible in Hindi because
+   finite complement clauses are CPs; the same prediction arises
+   for infinitival structures that contain a PRO subject. 
+In line with this, as far as the optionality of long-distance agreement in Hindi is
+concerned, 
+\citet{Bhatt:05} explains it by
+   assuming that matrix verbs that allow long-distance agreement have an option of selecting
+   either a restructuring infinitive or a non-restructuring infinitive, where the latter involves a syntatically projected PRO subject.
+    This PRO intervenes between the matrix verb and the embedded
+    object and, thus, blocks long-distance agreement (in the same way,
+    a problem with the PIC would arise in this context). 
+
+\citegen{Bhatt:05} analysis may work well for a language like Hindi,
+but it does not carry over to long-distance agreement in languages of
+the Nakh-Daghestanian type, where the external argument is clearly
+present (bearing ergative) in the embedded clause; see, e.g.,
+\ref{2-b} from Tsez and \ref{3-b} from Hinuq. Given the strict version
+of the PIC in \ref{pic1}, it is clear that the presence of an external
+argument DP uncontroversially implies the presence of a vP phase, and
+this should make agreement of a matrix V with an internal argument DP
+included in the complement domain of v impossible, independently of
+whether vP qualifies as $\alpha$ (in the above sense) or not (i.e.,
+independently of whether there is additional structure on top of vP in
+the complement of the matrix V.\footnote{As a matter of fact, to
+  account for evidence of the Nakh-Daghestanian type, 
+\citet[791]{Bhatt:05} ultimately concludes that a feeding account of
+along the lines of \cite{Polinsky&Potsdam:01}  is independently called
+for; see below.}
+
+\subsection{Type (iii): Cyclic Agree Analyses}
+
+In cyclic Agree analyses, it is assumed that what looks like long-distance
+agreement actually is to be decomposed into a series of shorter
+agreement steps, all of of which obey strict locality. On this view,
+first the embedded verb agrees with the embedded agreement controller
+DP; second, the matrix verb agrees with the embedded verb; third, by
+transitivity, this implies that the matrix verb will eventually agree
+with the embedded DP, albeit indirectly. This kind of analysis has
+been pursued by \cite{Butt:95}, \cite{Legate:05:pha}, \cite{Keine:08},
+\cite{Preminger:09}, and \cite{Lahne:12}, among others. As an
+illustration, consider the specific approach developed in
+\cite{Legate:05:pha}.
+
+The basic premise of this approach is that at no stage of the
+derivation is there an Agree relation between the matrix verb and the
+embedded DP.  Rather, the agreement controller DP's $\phi$-features
+first valuate an $[u\phi]$ probe feature of a phase head, which by
+definition (cf. the PIC in (\ref{pic1})) is also part of the higher
+phase.  The matrix verb then probes the embedded phase head's
+$\phi$-features.  Thus, the embedded phase head acts as a hinge
+between the matrix and embedded domains.  This accounts for the
+observation that long-distance agreement presupposes the existence of
+local agreement in the embedded clause. 
+
+The cyclic Agree approach solves the locality problem with
+long-distance agreement in a very simple manner that directly
+corresponds to the analogous (and by now well-established) treatment
+of long-distance movement in terms of successions of smaller movement
+steps.\footnote{As a matter of fact, an alternative local analysis of
+  long-distance agreement that mimicks {\sc slash} feature percolation
+  as it has been proposed for movement dependencies (see
+  \cite{Gazdar:81}) might in principle also be an option. This would
+  then express a similarity of the two operations in long-distance
+  contexts (viz., movement and agreement) even more
+  straightforwardly. However, to the best of our knowledge, such an
+  analysis has not yet been proposed. That notwithstanding, it would
+  be subject to the same empirical problem mentioned in the main text
+  below.}  However, there are both conceptual and empirical problems
+raised by cyclic Agree approaches to long-distance agreement. On the
+one hand, cyclic Agree is conceptually problematic from a minimalist
+perspective, given standard assumptions about probe features, goal
+features, and the Agree operation: It looks as though one and the same
+set of $\phi$-features (on the phase head in the middle) must act as a
+probe in one case, and as a goal in another (see \cite{Bhatt:05}). On
+the other hand, there is an empirical problem (see
+\cite{Polinsky&Potsdam:01}, \cite{Bhatt&Keine:16:lon}) that is due to the
+fact that cyclic Agree approaches rely on transitivity. The problem is
+that if two verbs V$\_$1 and V$\_$2 can in principle participate in local
+agreement in some long-distance agreement constructions, and V$\_$2 and
+DP$\_${abs} can participate in local agreement, then long-distance
+agreement involving V$\_$1 and DP$\_${abs} must also be possible. However,
+this is not always the  case: For instance,  in Tsez, long-distance
+agreement, unlike local agremeent, requires DP$\_${abs} to
+be a topic (see \cite{Polinsky&Potsdam:01}). This is shown by the
+examples in \Next, where (i) local agreement of the embedded predicate and
+the absolutive DP as the agreement controller is possible throughout,
+(ii) the matrix and embedded predicates can participate in
+long-distance agremeent in principle, but (iii) long-distance
+agreement in this configuration is blocked nevertheless because the
+absolutive DP is not interpreted as a topic: It is interpreted as a
+focus in \Next[a], and it shows up as an -- inherently
+non-topicalizable -- reflexive pronoun in \Next[c]. In both cases, the
+matrix verb can only carry out agreement with the embedded clause
+($\alpha$) itself; cf. \Next[bd]. 
+
+\Lsciexi. 
+\ag. *Eni-r [$\_${$\alpha$}$\_${\rm IV} t$'$ek-kin y-igu y\={a}\l -ru-\l i~] y-iy-xo\\
+mother-{\sc dat} {} bookII.{\sc abs}-{\sc foc} II-good be-{\sc
+  pstprt-nmlz} II-know-{\sc pres}\\
+`The mother knows that the {\sc book} \rm is good.'
+\bg. Eni-r [$\_${$\alpha$}$\_${\rm IV} t$'$ek-kin y-igu y\={a}\l -ru-\l i~] r-iy-xo\\
+mother-{\sc dat} {} bookII.{\sc abs}-{\sc foc} II-good be-{\sc
+  pstprt-nmlz} IV-know-{\sc pres}\\
+`The mother knows that the {\sc book} \rm is good.'
+\bg. *Eni-r [$\_${$\alpha$}$\_${\rm IV} u\v{z}-\={a} {nes\={a} \v{z}e}
+  \v{z}\={a}k$'$-ru-\l i~] {\O}-iy-xo \\
+mother-{\sc dat} {} boy-{\sc erg} {\sc refl}.I.{\sc abs} beat-{\sc
+  pstprt-nmlz} I-know-{\sc pres}\\
+`The mother knows that the boy beat himself up.'
+\bg. Eni-r [$\_${$\alpha$}$\_${\rm IV} u\v{z}-\={a} {nes\={a} \v{z}e}
+  \v{z}\={a}k$'$-ru-\l i~] r-iy-xo \\
+mother-{\sc dat} {} boy-{\sc erg} {\sc refl}.I.{\sc abs} beat-{\sc
+  pstprt-nmlz} IV-know-{\sc pres}\\
+`The mother knows that the boy beat himself up.'
+
+\subsection{Type (iv): Feeding Analyses}
+
+\subsubsection{Movement Feeds Agreement}
+
+Fourth and finally, \cite{Polinsky&Potsdam:01} have argued that a
+local approach to long-distance agreement in Tsez is both technically
+feasible and empirically supported according to which long-distance
+agreement involves feeding of local agreement by movement. The basic
+assumption is that the agreement controller (an absolutive DP in Tsez)
+moves to a position in which it can locally agree with the matrix
+verb. However, there are two complications to this simple
+picture. First, Polinsky \& Potsdam present strong arguments against
+the assumption that displacement of the agreement controller DP ends
+up in the matrix clause itself. For one thing, all established
+movement operations in Tsez are strictly clause-bound, so the 
+operation that feeds long-distance agreement would be the only type of
+movement that could leave a clause. For another,
+\cite{Polinsky&Potsdam:01} observe that long-distance
+agreement in Tsez never co-occurs with scope reversal; in other words,
+a DP that participates in long-distance agreement with a matrix verb
+can never take scope over quantifed items in the matrix clause.
+This latter property is illustrated in \Next: Independently of whether
+long-distance agreement takes place (see \Next[b]) or not (see
+\Next[a]), the embedded absolutive DP (with a universal quantifier in
+\Next) cannot take scope over a  matrix subject (with an existential
+quantifier in the case at hand). 
+
+\Lsciex.   \label{scope32}
+\ag. Sis u\v{c}iteler [$\_${$\alpha$} \v{s}ibaw u\v{z}i \o -ik'ixosi-\textbeltl i] r-iy-xo \\
+     one teacher {} every boy{\sc i}.{\sc abs} {\sc i}-go-{\sc nmlz} {\sc iv}-know-{\sc prs}  \\
+     `Some teacher is such that he knows that every boy is going.'\\
+     \char42`Every boy is such that some teacher knows that he is going.'
+\bg. Sis u\v{c}iteler [$\_${$\alpha$} \v{s}ibaw u\v{z}i \o -ik'ixosi-\textbeltl i] \o -iy-xo \\
+     one teacher {} every boy{\sc i}.{\sc abs} {\sc i}-go-{\sc nmlz} {\sc i}-know-{\sc prs}  \\
+      `Some teacher is such that he knows that every boy is going.'\\
+      \char42`Every boy is such that some teacher knows that he is going.'
+
+From
+these considerations it follows that the postulated movement operation
+cannot actually end up in the matrix clause in cases of long-distance
+agreement. The second complication involves the overt/covert
+distinction of movement operations. Since the absolutive DP that participates in
+  long-distance agreement does not have to be overtly
+  displaced and typically shows up in its in situ position (or, more generally, given
+  that Tsez exhibits variable word order: it shows up in its unmarked position),
+  it is clear that the movement operation that feeds long-distance
+  agreement must be a covert one. 
+
+Against this background, \citegen{Polinsky&Potsdam:01} proposal is
+the following: There is  covert, information structure-driven
+  movement of the long-distance agreement-controller into a higher domain (phase) of the
+  same clause, and the position thus reached provides a  local enough
+  configuration with the matrix verb to make  Agree with it possible.
+More specifically, \citegen{Polinsky&Potsdam:01} analysis works as
+follows. 
+
+A crucial basic assumption is that the size of embedded clauses in
+Tsez is variable. \Next gives the maximal syntactic structure for a
+clause in Tsez. This structure is only fully  built up when needed;
+i.e., clauses are CPs if they exhibit material that belongs in this
+layer (e.g., a C head) but not otherwise; a TopP is projected if the
+clause contains a topic; and so forth. 
+
+\Lsciexi. {\it Clause \label{Tsezstructure}structure for Tsez}:\\
+%\begin{tabular}{ccccccccc} 
+%& \node{0}{CP}\\[4mm]
+%\node{1}{~\phantom{asdf }} & & \node{2}{C$'$}\\[4mm]
+%&\node{3}{C} && \node{4}{TopP}\\[4mm]
+%&&\node{5}{~\phantom{asdf }} & & \node{6}{Top$'$}\\[4mm]
+%&&&\node{7}{Top} & & \node{8}{TP}\\[4mm]
+%&&&&&\node{9}{DP$\_${erg} DP$\_${abs} V}\\
+%\end{tabular}
+%\nodeconnect{0}{1}\nodeconnect{0}{2}\nodeconnect{2}{3}\nodeconnect{2}{4}\nodeconnect{4}{5}
+%\nodeconnect{4}{6}\nodeconnect{6}{7}\nodeconnect{6}{8}\nodetriangle{8}{9}
+
+On this  basis,  \cite{Polinsky&Potsdam:01} assume that, generally, long-distance agreement-allowing matrix
+  verbs can select a TP as complement. 
+However,  to derive long-distance agreement in Tsez, it is postulated
+that a   topic-marked long-distance agreement-controlling element is covertly moved to the
+  specifier of TopP in the left periphery of the complement clause. 
+ This movement brings the triggering element into a sufficiently
+  local relation to the matrix verb to allow the latter to check its
+  uninterpretable $\phi$-features against those of the covertly
+  topicalised element, resulting in long-distance agreement.
+ Long-distance agreement is, thus, taken to be a reflex of the topic-status of the
+  triggering element. 
+
+ A CP is predicted to block long-distance agreement, as is a bare TP,
+ given that a DP$\_${abs} agreement controller does not occupy SpecT (at
+ this point the analysis is not fully PIC-compatible). The relation
+ that \cite{Polinsky&Potsdam:01} assume to underlie long-distance
+ agreement is  Head Government (not Agree, as in \ref{Agree}),
+ which, following \cite{Rizzi:90}, is understood as in \Next.
+
+\Lsciex. {\it Head Government}:\\
+X head-governs Y iff (a)--(d) hold:
+\a. \label{list1}X $\in$ $\{$A, N, P, V, H[+{\rm tense}]$\}$.
+\b. X m-commands Y.
+\b. No barrier intervenes.
+\b. Relativized Minimality is respected. 
+
+It is then postulated that it can be derived from \Last that ``a head
+governs its specifier, its complement, an element adjoined to its
+complement, and the specifier of its complement''
+\citep[627]{Polinsky&Potsdam:01}, but not, say, the specifier of
+the complement of the head's complement. However, as a matter of fact,
+  it is not quite clear why this should be the case. Consider \Next.
+
+\Lsciexi. [XP X [ZP \label{vcp}Z [WP YP [W$'$ ...~]]]]
+
+Does X head-govern YP in \Last? First, suppose that X is one of the
+possible items mentioned in \ref{list1}. Second, X clearly m-commands
+YP. Third, Relativized Minimality is respected in \Last because there
+is no intervening phrase that could induce a Relativized Minimality
+effect for X and YP (there is no phrase that c-commands YP and is
+c-commanded by X -- ZP and WP both dominate YP). That leaves the
+presence of a barrier as the only possible source of a failure of
+head government of YP by X. Whether ZP or WP is a barrier in \Last
+depends on the exact definition of this concept (which Polinsky and
+Potsdam do not provide). The first thing to note is that both ZP and
+WP are complements, i.e., sisters of X$^0$ categories. This will
+suffice to exempt them from barrier status in most of the available
+conceptions of barriers (see, e.g., \cite{Cinque:90}). In contrast,
+according to the more complex, two-stage definition of barrier in
+\cite{Chomsky:86}, ZP might in fact emerge as a barrier in \Last if WP
+can be classified as a blocking category that passes on its status as
+a ``virtual barrier'' to the phrase immediately above it. So it seems
+that only under this complex approach, based on blocking categories
+vs. real barriers, can it be derived that X does not head-govern YP in
+\Last. 
+
+Based on the assumption that all agreement relations are subject to
+\LLast (or at least the general consequences that \LLast is supposed
+to have), a number of restrictions that Polinsky and Potsdam observe for
+long-distance agreement in Tsez follow. First, a CP can never be
+projected in long-distance agreement contexts because ``it would block
+government of SpecTop by the verb''
+\citep[638]{Polinsky&Potsdam:01}. Note  that this presupposes that
+ZP (= CP) would indeed qualify as a barrier in \Last that makes
+head government of YP (= DP$\_${abs} in SpecTop) by matrix V (= X)
+impossible. (As we have just seen, this consequence is far from
+straightforward.) However, with this qualification, it can be derived
+that long-distance agreement is impossible (i) in the presence of a
+wh-phrase in a clause (which inherently activates the CP layer,
+whether or not wh-movement takes place overtly), and (ii) in the
+presence of the element {\it \textcrlambda in}, which is assumed to be
+a designated C element.\footnote{\label{whabs}As noted by
+  \citet[fn. 20]{Polinsky&Potsdam:01}, long-distance agreement in the
+  presence of a 
+  wh-phrase would ceteris paribus be expected to be possible if the
+  wh-phrase is itself the absolutive argument and occupies SpecC.}
+ A third prediction is that long-distance
+agreement with DP$\_${abs} is impossible if some other XP functions as
+the topic in a clause.\footnote{Again, though, details of the account
+  are somewhat unclear. One might think that this effect is due to
+  intervention, i.e., the Relativized Minimality part of the
+  definition of Head Government. However,  if there can only be one topic per clause in
+  Tsez, and that is not DP$\_${abs}, then DP$\_${abs} can never reach the
+  position (viz., SpecTop) it needs to reach to enable long-distance
+  agreement, and a resort to intervention is not necessary. If, on the other hand, there can be more than one topic
+  per clause, then it is not obvious why DP$\_${abs} should not qualify
+  as the structurally highest one of them, thereby circumventing an
+  intervention effect.}
+
+These qualifications notwithstanding, \citegen{Polinsky&Potsdam:01}
+analysis would seem to derive licit and illicit cases of long-distance
+agreement in a very simple and elegant way that furthermore respects
+locality considerations. Still, as shown in the following subsection,
+there are conceptual and empirical problems with this approach.
+
+
+\subsubsection{Problems with the Feeding Approach}
+
+\paragraph{The Nature of Covert Topic Movement}
+
+First, as noted by \cite{Boskovic:07}, the crucial postulation of a
+covert topicalisation operation for Tsez is far from innocuous. There
+is virtually no independent evidence that such an operation
+exists. Also, there is a real danger of an ordering paradox: It is not
+really clear how {\it covert} movement at LF can trigger {\it overt}
+agreement -- if the movement takes place at LF, it comes too
+late.\footnote{This problem  can in principle be solved by assuming
+  that covert movement is actually movement taking place in the
+  narrow syntax, with the only difference to overt movement being that
+  the lowest copy of a complex chain is subject to phonological
+  realization (rather than the highest member, as with overt movement).
+However, even if one were to adopt such an approach based on the copy
+theory of movement, the intended effect does not seem to arise
+anywhere else. As far as we can tell, other instances of covert
+movement that have been suggested in the literature (e.g., for certain
+cases of wh-in situ) never feed Agree operations. Thus, compare (i-a),
+where overt wh-movement gives rise to new options for reflexivization
+(assumed here to be an instance of Agree, see \cite{Reuland:11} for
+discussion), with (i-b), where covert wh-movement fails to produce the
+same effect (see \cite{Barss:86}). 
+
+\Lsciexi.
+ \a. John$\_$1 wonders [CP [DP which book about himself$\_$1~] Bill bought~]
+\b. *John$\_$1 wonders [CP why Bill bought [DP a book about himself$\_$1~]]
+
+In the same way, covert wh-movement (unlike overt wh-movement) never seems to feed case
+assignment or agreement in the world's languages. -- 
+All  that said, \citet[626]{Polinsky&Potsdam:01} would seem to 
+exclude a reinterpretation of covert movement as overt movement plus
+pronunciation of the lower copy when they explicitly state that the
+``syntactic agreement configuration between the probe and the
+absolutive trigger is created at LF''.}
+
+
+\paragraph{Complementizers}
+
+There are two comp\-lement\-izer-like items in Tsez viz. {\it {\l}i},
+which permits long-distance agreement (and shows up in all Tsez
+examples exhibiting long-distance agreement disussed above), and {\it
+  \textcrlambda in}, which blocks long-distance agreement. As noted,
+\cite{Polinsky&Potsdam:01} assume that {\it \textcrlambda in} is
+indeed a regular C item, and assuming that the presence of a CP makes
+head government impossible, it is correctly predicted that there is no
+long-distance agreement across {\it \textcrlambda in}.
+However,  for the same reason, it must be assumed that {\it {\l}i} is
+not a C element. The problem here is that this is exactly what
+it looks like, given that, like {\it \textcrlambda in}, it is the
+outermost head in the word containing V. What is more, it does not yet suffice to
+assume that  {\it {\l}i} not is not a C element -- {\it {\l}i} must  be
+assumed not to be structurally represented {\it at all}. The reason is
+that if {\it {\l}i} were the head of a phrase (outside of TopP), it would block
+long-distance agreement in the same way as {\it \textcrlambda in}. 
+It remains unclear whether there is any independent evidence for such
+a radically different treatment (projecting complementizer
+vs. structure-less morphological marker) of the two items. (In the
+analysis to be developed in section 3 below, we will presuppose that
+both  {\it \textcrlambda in} and {\it {\l}i} are regular C items.)
+
+We take these first two problems to be potentially worrisome but
+certainly not decisive. Arguably, things are different with the next
+two issues raised by Polinsky \& Potsdam's analysis, concerning a
+semantic problem based on the assumed covert DP movement, and an
+incompatibility of the analysis with what look like clear cases of
+long-distance agreement across a CP boundary.
+
+
+\paragraph{Topic Interpretation Within the Embedded Clause}
+
+\cite{Polinsky&Potsdam:01} assume that the landing site of the
+abstract movement is in the left periphery of the embedded
+clause. Accordingly, the long-distance agreement-controlling DP is
+interpreted as the topic of the embedded clause. A problem with this
+analysis is that information structure phenomena -- and root phenomena
+in general -- are usually confined to clauses that have some
+illocutionary force; see \cite{Hooper&Thompson:73},
+    \cite{Ebertetal08}, \cite{Krifkainprep}, and \cite{Maticetal14}. Most long-distance agreement-allowing
+matrix verbs, however, are factives, which semantically take sentence
+radicals (see \cite{Stenius67}), i.e.~propositions, as complements (see \cite{Krifka04})
+ and also syntactically involve smaller
+structures (see \cite{deCubaUrogdi10}). Thus, complements of
+factives do not involve any illocutionary operator in their
+syntax/semantics -- only the matrix clause does. Under a structured
+proposition approach  (see \cite{Krifka92}) to information structural
+phenomena, this leads to a semantic representation in which the topic
+can only be understood as the topic of the whole sentence. That is,
+the predicted structure for \ref{2-b}  (repeated in
+\Next below) is as in \NNext.
+
+\exg.  Eni-r [$\alpha$ u\v{z}\={a} \label{2d-b}magalu b-\={a}c'-ru-\l i~] b-iy-xo \\
+     mother-{\sc dat} {} boy-{\sc erg} bread.{\sc iii.abs} {\sc iii}-eat-{\sc pstprt-nmlz} {\sc iii}-know-{\sc prs} \\
+      `The mother knows that the boy ate the bread.'
+
+\Lsciex. {\sc Assert}($<$$\_$T $\lambda$P.{\bf mother}($\lambda$z.{\bf boy}($\lambda$x.P($\lambda$y.eat(x, y))) ($\lambda$p.know(z, p))), {\bf bread}$>$)
+
+The felicity conditions of the {\sc Assert}-operator for topic-comment
+structures make reference to the first part of the structured
+proposition as a whole. Thus, it is unclear whether the embedded topic interpretation
+advocated by \cite{Polinsky&Potsdam:01}  is actually available;
+i.e.,  whether \LLast\ {\it is} actually understood as paraphrased in \ref{embeddedtopicint}, or not rather as in \ref{matrixtopicint}.
+   
+\Lsciexi. Readings for topics in long-distance agreement
+	\a. \label{embeddedtopicint}The mother knows that, as for the bread, the boy ate it.
+	\b. \label{matrixtopicint}As for the bread, the mother knows that the boy ate it.
+
+More specifically, complex sentences with factive matrix verbs
+presuppose the truth of the proposition denoted by the respective
+complement clause. In terms of information structure, factive
+presuppositions belong to the ``background'' of an utterance and they
+are ``taken for granted''. Thus, they are not ``at-issue'' or ``under
+discussion''. This characterisation is inconsistent with
+\citegen{Polinsky&Potsdam:01} assumption that a DP embedded under a factive verb
+can act as topic of the embedded clause.
+
+\paragraph{Long-Distance Agreement Across a CP Boundary}
+
+A severe empirical problem for the analysis developed in
+\cite{Polinsky&Potsdam:01} (but also for analyses of the small
+structure type) is that there is evidence from other Nakh-Daghestanian
+languages that strongly suggests that long-distance agreement is in
+principle possible across a CP boundary, and without movement to SpecC
+(recall footnote \ref{whabs}). 
+
+Thus, Khwarshi (see
+\cite{Khalilova09}) and Hinuq (see \cite{Forker:11}), two
+Nakh-Daghe\-stanian languages closely related to Tsez,
+ also exhibit long-distance agreement. Similarly to Tsez, this
+also goes along with a prominent information structural status of the
+triggering DP. In contrast to Tsez, however, in these languages, the
+triggering NP can have either topic or focus status.
+For instance, in the Khwarshi examples in \Next, the 
+absolutive DP is interpreted as the topic of the embedded clause, and
+long-distance agreement is possible.
+However, long-distance agreement is also possible in answers to
+information questions, as in \NNext, suggesting that the
+long-distance agreement-controlling DP$\_${abs} may also function as the focus of the embedded clause.
+
+\Lsciexi.
+\ag.  I\v{s}et'u-l l-iq'-\v{s}e goli u\v{z}a bataxu y-acc-u \\
+ mother.{\sc obl-lat} IV-knows-{\sc prs} {\sc cop} boy.{\sc erg}
+ bread(V) V-eat-{\sc pst.ptcp} \\
+ `Mother knows that the boy ate bread.'
+\bg.  I\v{s}et'u-l \label{16-b}y-iq'-\v{s}e goli u\v{z}a bataxu y-acc-u \\
+  mother.{\sc obl-lat} V-knows-{\sc prs} {\sc cop} boy.{\sc erg}
+  bread(V) V-eat-{\sc pst.ptcp} \\
+ `As for the bread, mother knows that  the boy ate it.'
+
+\Lsciexi. 
+\a. (Which cow does the boy know came?)
+\bg. U\v{z}a-l l/b-iq'-\v{s}e \label{17-b}k\textsuperscript{\textipa{Q}}aba zihe b-ot'uq'q'-u \\
+boy.{\sc obl-lat} IV/III-know-{\sc prs} black cow(III) III-come-{\sc pst.ptcp} \\
+ `The boy knows that the black cow has come.'
+
+Similar facts obtain in Hinuq.  
+
+Importantly, long-distance agreement in Khwarshi and Hinuq is also less
+restricted in another respect:
+There are cases in which a {\em wh}-element occurs in
+     an interrogative  complement clause, and long-distance agreement is nevertheless
+     available. This is shown for Khwarshi in \Next (see \cite{Khalilova09}). 
+
+\exig.  U\v{z}a-l l/b-iq'-\v{s}e [CP$\_${\rm (IV)} \l \label{cp1}u$\_${\rm [foc]} zihe b-iti-xx-u~] \\
+boy.{\sc obl-lat} {\sc iv/iii}-know-{\sc prs} {} who.{\sc erg} cow({\sc iii}) {\sc iii}-divide-{\sc caus-pst.ptcp} \\
+ `The boy knows who has stolen the cow.'
+
+Here a wh-phrase bearing ergative case shows up in the embedded
+interrogative clause. Given standard assumptions about the
+semantics of questions (see, e.g., \cite{Stechow:96:aga}),
+the interrogative interpretation of a clause is inherently, and
+invariably, tied to the presence of a C element. Therefore, \Last
+proves that long-distance agreement across a CP boundary is possible
+in Khwarshi independently of whether the ergative wh-phrase can be
+assumed to be located in SpecC in the syntax, and of whether or not
+there is an overt C item present. 
+
+Next, \Next and \NNext illustrate the possibility of long-distance
+agreement across a CP boundary in Hinuq (see \cite{Forker:11}). In
+\Next, the embedded interrogative clause contains a subject
+wh-phrase that does not block long-distance agreement with the
+(non-wh) absolutive DP. 
+
+ \exig. [CP \textbeltl u rek'$^{w}$e go\textbeltl \label{cp2}i\v{s}~] di\v{z} \o -eq'i-yo gom \\
+  {} who man.{\sc i} be.{\sc cvb} I.{\sc dat} {\sc i}-know-{\sc prs}
+  be.{\sc neg} \\ 
+ `I do not know who he was.'
+
+In contrast, \Next shows that long-distance agreement is also possible with
+an absolutive DP that is a wh-element itself; but there is no reason
+to assume that DP$\_${abs} is not in its base position here. 
+
+ \exig.  \label{cp3}Debez r/\o -eq'i-ye [CP(V) k'a\v{c}a\textgamma -za-y \textbeltl u \o -uher-i\v{s}-\textbeltl i~]~? \\
+  you.{\sc sg.dat} {\sc v/i}-know-{\sc q} {} bandit-{\sc obl.pl-erg}
+  who {\sc i}-kill-{\sc res-abst} \\ 
+ `Do you know whom the bandits killed?'
+
+Note that \LLast and \Last contain clause-final elements that
+would seem to correspond to {\it {\l}i} rather than  {\it
+  \textcrlambda in} in Tsez. However, notwithstanding the problems
+raised by \citegen{Polinsky&Potsdam:01} analysis of {\it {\l}i}
+mentioned above, and notwithstanding the arguments that Forker
+presents for a uniform CP analysis of these contexts in Hinuq after
+all, it is clear that the status of {\it {\l}i} has no bearing on the
+question of whether there is a CP present in \ref{cp2} and \ref{cp3}
+(and \ref{cp1}, for that matter): There must be a CP boundary here
+because of the combination of interrogative semantics and a full
+clausal structure, including assignment of ergative (which by itself
+is not yet decisive, given that there are good arguments for assuming
+that the ergative is assigned within vP in Nakh-Daghestanian
+languages; see \cite{Gagliardietal:14}, \cite{Polinsky:16:arc}). 
+
+Thus, there is strong evidence from Khwarshi and Hinuq for the general
+availability of long-distance agreement across what must qualify as a
+CP.
+
+What is more, unlike Tsez, the non-Tsezic Nakh-Dahgestanian language
+Tsakhur  also permits what can be called
+``super-long-distance agreement'', i.e., long-distance agreement 
+across two clause boundaries; see \cite{Kibrik:99}.
+
+	\exig. \label{tsa1}I\v{c}\={\textsci}-s w=u\={k}\={\textsci}k\textbari
+        n-na [CP ji\v{c}o-j-s [CP gaba  h\={a}\textglotstop-as~] XaIr-qi=w=x-es~] \\
+		girl-\textsc{dat} {3}=want.\textsc{pf-{aa}} {}
+                sister-\textsc{obl-dat} {} {carpet.3} 3.do-\textsc{pot} learn-{3}=become-\textsc{pot} \\
+`The girl wants her sister to learn to make a carpet'.  
+
+Similar phenomena have also been reported by \cite{Forker:11} for
+Hinuq; see \Next.
+
+\exig. \label{tsa2}Iyo-z b-eq$'$i-yo [CP Pat$'$imat-ez [CP tort
+    b-ac$'$-a~] b-eti-\v{s}-\l i~]]\\
+mother-{\sc dat} III-know-{\sc prs} {} Patimat-{\sc dat} {} cake(III)
+III-eat-{\sc inf} III-want-{\sc res}-{\sc abst}\\
+`The mother knows that Patimat wanted to eat the cake.''
+
+If there are two CP boundaries present, there is no way for the feeding approach
+to account for the option of long-distance agreement since the covert
+movement postulated in this approach always has to be
+clause-bound.
+
+\subsection{Interim Conclusion}
+
+We take it that the conclusion that can be drawn on this basis is that
+all four existing approaches face significant problems with
+long-distance agreement from the point of view of a grammar that
+incorporates a strict locality principle like the PIC. Thus, there is
+every reason to pursue a  new approach; and given the general
+availability of long-distance agreement across a CP, this approach
+must be such that it preserves strict locality even if there can be no
+denying the fact that the matrix verb and the embedded agreement
+controller DP can be far away from one another in structural terms in
+syntactic surface representations. 
+
+As a basic premise, we will assume that the only way to locally model
+non-local dependencies is via {\it movement} (see
+\cite{Hornstein:01,Hornstein:09} for this general point, and
+\cite{Mueller:14:buf} for some specific proposals in a priori
+recalcitrant domains). Given the PIC, a matrix V and an embedded
+(agreement-controlling) DP have to enter a local relation at some
+point of the derivation. As we have seen, there is evidence against
+the assumption that DP moves to the matrix V domain (or to a position
+of the embedded domain that is accessible from it); this excludes feeding
+analyses. The only remaining possibility then is that it is actually
+V that moves to the matrix domain: If the mountain won't come to the
+prophet, the prophet will go to the mountain.
+
+For concreteness, we would like to propose that locality in
+long-distance agreement is not established {\it late} in the
+derivation (as \citegen{Polinsky&Potsdam:01} approach, where
+movement feeds long-distance agreement), but, in fact, {\it
+  early}. This approach thus involves counter-bleeding (rather than
+feeding): Agreement with the embedded internal argument DP takes place
+at a stage in the derivation when DP and the two verbs involved are
+all clause-mates. It is only due to subsequent reprojection movement
+of what will eventually become the matrix verb 
+ that on the surface it looks as if agreement takes place
+long-distance; reprojection movement of V thus comes too late to bleed
+(i.e., it counter-bleeds) Agree.
+
+
+\section{A New Analysis}
+
+\subsection{Head Movement as Reprojection}
+
+Let us begin by sketching the outlines of a general approach to head
+movement in terms of reprojection, a concept that has been widely
+pursued for various empirical domains over the last decades (see
+\cite{Pesetsky:85}, \cite{Stechow&Sternefeld:88},
+\cite{Sternefeld:89}, \cite{Holmberg:91}, \cite{Ackemaetal:93},
+\cite{Kiss:95}, \cite{Koeneman:00}, \cite{Haider:00:bra},
+\cite{Bhatt:02}, \cite{Hornstein&Uriagereka:02},
+\cite{Fanselow:03,Fanselow:09:boo}, \cite{Bury:03}, \cite{Suranyi:05},
+\cite{Donati:06}, \cite{Bayer&Brandner:08},
+\cite{Georgi&Mueller:10:rep}, \cite{Mueller:11:loc}, and
+\citetalias{SMueller:15}, among others).\footnote{\cite{Pesetsky:85}
+  suggests that reprojection after head movement at LF serves to
+  circumvent bracketing paradoxes. As far as we can tell, this
+  qualifies as the first instance of a reprojection approach to head
+  movement in the literature.} The basic idea behind head movement as
+reprojection is that an X$^0$ head is moved out of a projection that dominates it 
+and takes this projection as its own complement by merging with it,
+  projecting anew in the derived position. This solves the notorious
+  c-command and Extension Condition (cf. \cite{Chomsky:95}) problems with head movement as
+  adjunction to an X$^0$ category: In a head-movement-as-adjunction structure like \Next,
+the moved head Y fails to extend the tree (since XP must, be
+definition, have been in place before movement of Y), and Y does not
+c-command its trace (because the next branching node containing Y is
+the higher X segment, which does not dominate Y's trace).
+
+\Lsciexi. [XP [X Y$\_$1 X~] [WP ... t$\_$1 ...~]]
+
+These problems disappear under a reprojection approach:  Head movement has now extended the
+  tree, and the moved item is able to c-commands its
+  trace. Furthermore, this approach does not 
+  necessitate (i) a relocation of head movement to PF (see
+  \cite{Chomsky:00}), (ii) a
+  reinterpretation as XP movement (see \cite{Koopman&Szabolcsi:00}, \cite{Mahajan:01},
+  and \cite{Nilsen:03:diss}, among many others), or (iii) the
+  postulation of a complex
+  operation integrating both regular syntactic movement and
+  syntactically irregular morphological merger (see
+  \cite{Matushansky:06}). 
+
+There are basically three different reprojection scenarios. A first
+possibility is that a head moves out of its own projection, merges
+with the XP of which it was the head prior to the movement, and
+projects anew. Such local reflexive reprojection is shown in \Next. 
+
+\Lsciexi. {\it Local reflexive reprojection}:\\
+%\begin{tabular}{ccccccc}
+% & \node{0}{XP}&&&&\\[4mm]
+%\node{1}{X$\_$1} && \node{2}{XP} \\[4mm]
+%& \node{3}{WP} && \node{4}{X$'$}\\[4mm]
+%&&\node{5}{t$\_$1} && \node{6}{ZP}\\[4mm]
+%\nodeconnect{0}{1}\nodeconnect{0}{2}\nodeconnect{2}{3}\nodeconnect{2}{4}
+%\nodeconnect{4}{5}\nodeconnect{4}{6}
+%\anodecurve[b]{5}[b]{1}{2cm}
+%\end{tabular}
+
+A second possibility is that a reprojection movement is still highly
+local (in the sense that the moved head attaches to the minimal phrase
+that dominated it before the movement step was carried out), but not
+reflexive. In this scenario, the moved head excorporates from a complex
+head structure that was formed by an earlier (possibly pre-syntactic) 
+operation combining two primitive X$^0$ categories (in accordance with
+c-command and Extension Condition requirements), or that is stored as
+such in the lexicon; after the movement, the moved head projects its own
+XP in the derived position.\footnote{Thus, strictly speaking, this is
+  not actually an instance of {\it re}-projection: X in \ref{aux12}
+  projects for the first time in the derived position.} Local non-reflexive
+reprojection is illustrated in \Next. 
+
+\Lsciex. {\it Local \label{aux12}non-reflexive reprojection}:\\
+%\begin{tabular}{ccccccc}
+% & \node{0}{XP}&&&&\\[4mm]
+%\node{1}{X$\_$1} && \node{2}{YP} \\[4mm]
+%& \node{3}{WP} && \node{4}{Y$'$}\\[4mm]
+%&&\node{5}{Y-t$\_$1} && \node{6}{ZP}\\[4mm]
+%\nodeconnect{0}{1}\nodeconnect{0}{2}\nodeconnect{2}{3}\nodeconnect{2}{4}
+%\nodeconnect{4}{5}\nodeconnect{4}{6}
+%\anodecurve[br]{5}[b]{1}{2cm}
+%\end{tabular}
+
+Finally, reprojection can be non-local (by definition, it is then also
+non-reflexive). In \Next, the moved head skips over two maximal
+projections and reprojects in the derived position. 
+
+\Lsciex. {\it Non-local \label{25}non-reflexive reprojection}:\\
+%\begin{tabular}{ccccccc}
+% & \node{0}{XP}&&&&\\[4mm]
+%\node{1}{X$\_$1} && \node{2}{YP} \\[4mm]
+%& \node{3}{WP} && \node{4}{Y$'$}\\[4mm]
+%&&\node{5}{Y} && \node{6}{XP}\\[4mm]
+%&&&\node{7}{ZP} && \node{8}{X$'$} \\[4mm]
+%&&&&\node{9}{t$\_$1} && \node{10}{UP}\\
+%\nodeconnect{0}{1}\nodeconnect{0}{2}\nodeconnect{2}{3}\nodeconnect{2}{4}
+%\nodeconnect{4}{5}\nodeconnect{4}{6}
+%\nodeconnect{6}{7}\nodeconnect{6}{8}
+%\nodeconnect{8}{9}\nodeconnect{8}{10}
+%\anodecurve[b]{9}[b]{1}{2cm}
+%\end{tabular}
+
+Assuming these three scenarious to be available in the world's
+languages, it can be concluded that head movement can involve
+excorporation (see \cite{Roberts:91,Roberts:97:res}), and that head
+movement does not obey the Head Movement Constraint (see
+\cite{Roberts:09:hea,Roberts:10} vs. \cite{Travis:84} for arguments to
+this effect). Given that the data that originally motivated
+stipulation of the excorporation and Head Movement Constraint
+restrictions can be derived otherwise, this would seem to permit a
+simpler, more attractive theoretical approach, and to correspond to
+the null hypothesis. Furthermore, one should expect that head movement
+as reprojection obeys the same constraints that hold of all movement
+operations; this includes the PIC (see \ref{pic1}). Thus, for the
+operation to be legitimate, it can be concluded that YP is not a phase
+in \Last; and that, more generally, head movement as reprojection can
+cross phases by carrying out intermediate movement steps to phase
+edges, in accordance with the PIC.
+
+As for the concrete mechanics of reprojection movement, we will make
+the following assumptions. First,  all syntactic operations are
+feature-driven: On the one hand, there are designated   structure-building features (edge features, subcategorization
+features) that trigger (external or internal) Merge; we will refer to
+these as [{\small $\bullet$}F{\small $\bullet$}] features. On the
+other hand, there are   probe features trigger Agree. To simplify
+exposition and simultaneously avoid commitment to one of the existing options in
+various domains (e.g., valuation vs. checking, interpretability
+vs. uninterpretability), we will refer to probes as 
+ [$*$F$*$] features throughout.
+All these features triggering syntactic Merge and Agree operations are
+ordered on lexical items; and they are discharged (i.e., rendered
+syntactically inactive) one after the other
+after having induced the respective operations that they encode. 
+Finally (although this assumption will not actually be crucial), we
+postulate that all phrases are phases. As a consequence, movement must take place via all
+  intermediate phrase edges  that intervene between a base position and
+  the ultimate landing site of some moved item (except for the minimal
+  specifier domain if the item is already part of the phase edge, as
+  is the case with reprojection movement of heads). Given this
+  assumption, YP in \ref{25} must be a phase, and X$\_$1 must therefore
+  carry out an intermediate step to SpecY on its way to its ultimate
+  position.\footnote{One might think that allowing heads to move to
+    specifier positions might give rise to various over-generation
+    problems. However, it is worth bearing in mind that specifier
+    positions can only ever be used as {\it intermediate} escape
+    hatches (required by the PIC) by head movement under present
+    assumptions; thus, the situation is completely analogous to, say,
+    wh-movement via an intermediate Specv position in English -- the
+    wh-phrase can use this position as an intermediate escape hatch,
+    but can never ultimately show up in it (for essentially the same
+    reason, viz., that the trigger can only saturated in the final
+    landing site).}
+
+Suppose further that Featural Cyclicity holds, as in
+\Next.\footnote{This constraint can plausibly be derived as a theorem
+  under various conceptions of cyclic spell-out of complements of
+  phase heads.}
+
+\Lsciex. {\it Featural \label{fc}Cyclicity}:\\
+A non-root XP cannot contain a feature $\Gamma$ in the non-edge domain
+of X that is supposed to trigger an operation
+([{\small $\bullet$}F{\small $\bullet$}] or [$*$F$*$]).
+
+In the normal course of events, the head X of some XP has discharged
+all the Merge-inducing features ([{\small $\bullet$}F{\small $\bullet$}])
+ and Agree-inducing features ([$*$F$*$]) it contains before XP is merged with some
+ other category. However, suppose that the head X has not been able to
+ discharge a [{\small $\bullet$}F{\small $\bullet$}] or [$*$F$*$]
+ (plus, possibly, other features that are lower on the list of
+ operation-inducing features of the head, and that can only be accessed
+ if the topmost feature has been discharged). In such a situation, one
+ of two Last Resort operations may take place: Either the [{\small
+     $\bullet$}F{\small $\bullet$}] or [$*$F$*$] feature is deleted (see 
+\cite{Bejar&Rezac:09},
+  \cite{Preminger:14}, and  \cite{Georgi:14} for proposals along these
+  lines); or the item containing the incriminating feature is moved to the edge domain of
+  the current phrase, so as not to violate Featural Cyclicity
+  in \Last. The two Last Resort options for [{\small
+      $\bullet$}F{\small $\bullet$}] and [$*$F$*$] features are stated
+  in \Next. 
+
+\Lsciex. {\it Last Resort}:\\
+If a feature $\Gamma$ on X that triggers an operation cannot be discharged
+in XP, there are two basic options:
+\a. $\Gamma$ is deleted.
+\b. $\Gamma$ is moved to the edge of XP, pied-piping the minimal
+category containing it. 
+
+Thus, a head X with a non-discharged $\Gamma$ ([{\small
+    $\bullet$}F{\small $\bullet$}] or [$*$F$*$]) feature undergoes
+intermediate movement to phrase edges for as long as it takes to reach
+a position in which $\Gamma$ can eventually be discharged.  Following
+\cite{Fanselow:03,Fanselow:09:boo}, \cite{Suranyi:05},
+\cite{Matushansky:06}, and \cite{Georgi&Mueller:10:rep}, these kinds
+of features can then be viewed as triggers for reprojection
+movement.\footnote{\cite{Fanselow:03,Fanselow:09:boo} and
+  \cite{Georgi&Mueller:10:rep} refer to these kinds of features as
+       {\it M\"unchhausen} features, based on the literary character
+       Baron M\"unchhausen who escapes from a swamp (where he is
+       trapped on the back of his horse) by pulling himself up by his
+       hair.} Note that it can in principle be both probe features on
+some head X that trigger (intermediate or final) reprojection movement
+(e.g., if there is no matching goal for a probe in the structure, or
+if the goal is not c-commanded by the probe feature on X), and
+structure-building features (e.g., if there is no accessible matching
+category, or if two heads simulteneously need to discharge their
+[{\small $\bullet$}F{\small $\bullet$}] feature but only one can do
+this at any given stage of the derivation). However, in the
+reprojection approach to long-distance agreement to be developed in
+the next section, it is the need to discharge a structure-building
+feature that triggers the movement of (what thereby becomes) the
+matrix verb.
+
+
+\subsection{Long-Distance Agreement by Reprojection}
+
+\subsubsection{Complex Predicates}
+
+Long-distance agreement typically encompasses verbs that in many
+languages are restructuring verbs.  In fact, for another
+Nakh-Daghestanian language, Godoberi, \cite{Haspelmath99} shows with a
+series of tests that apparent long-distance agreement in the language
+actually involves only a monoclausal structure with a complex
+predicate.  However, \citet{Forker:11} and \citet{Khalilova09} show
+with similar tests that this is not the case for Hinuq or Khwarshi,
+both of which involve truly biclausal structures, with an embedded CP.
+
+In view of this state of affairs, we would like to suggest that
+despite this biclausal character, long-distance agreement in Hinuq and
+Khwarshi (and Tsez, and perhaps more generally) does indeed involve
+some form of restructuring, albeit in the form of a special type of
+complex predicate formation. In standard lexical approaches to complex
+predicate formation (see, e.g., \cite{Haider:93,Haider:10},
+\cite{Kiss:95}, \cite{Stiebels:96}, and \citetalias{SMueller:02} on
+German, or \cite{Butt:95} on Hindi/Urdu), all lexical
+subcategorization information of the verbs that participate in the
+operation is unified by functional composition.  This results in one
+featural array for the complex predicate and monoclausality
+throughout. Against the background of the present approach, this would
+imply a unique list of structure-building and probe features
+associated with the complex predicate, with the features discharged
+one after the other. In contrast, we adopt a version of pre-syntactic
+complex predicate formation where two predicates (two verbs, in the
+case at hand) are combined into a complex category in a way that, crucially,
+leaves the verbs' individual lexical information intact -- i.e., there
+are still two separate lists of features triggering syntactic
+operations.\footnote{For present purposes, it is immaterial whether
+  this pre-syntactic component is conceived of as the lexicon, or as a
+  pre-syntactic morphology domain; for concreteness, we will generally assume
+  the former here.}
+
+\subsubsection{Derivations}
+
+Let us now look at how long-distance agreement in Nakh-Dahestanian
+languages (and possibly elsewhere) can be derived on the basis of an
+approach in terms of reprojection and pre-syntactic complex predicate
+formation. Throughout, we will assume a CP status of the embedded
+clause, with both  {\it \textcrlambda in}-type and {\it {\l}i}-type
+markers qualifying as C heads. The definition of Agree that we will
+adopt is similar but not identical to the one in \ref{Agree} above; it
+is given in \Next.\footnote{Since the PIC holds for all syntactic
+  operations, the fact that Agree is also subject to this constraint
+  does not have to be mentioned explicitly. As noted above, we will
+  not address the question here of how exactly other cases of Agree that
+  would at first sight seem to violate the PIC can be accounted for;
+  but note that this issue is even more prominent (though not
+  categorially different) in an approach where all phrases are
+  phases. 
+
+The requirement in \ref{agua2} permits both upward and downward Agree; see
+\cite{Zeijlstra:12} and \cite{Bjorkman&Zeijlstra:14} vs. \cite{Preminger:13:tha}.
+(The local Agree operation initiated by (what will become) the matrix verb in
+long-distance agreement will involve upward Agree.) \ref{agua3}
+ensures minimality, with closeness definable in terms of minimal path
+length. There is no defective intervention here: Discharged
+features on intervening  heads and checked features on intervening phrases can be ignored. Finally,
+\ref{agua4} encodes the Activity Condition: An active feature is one
+that has not participated in Agree.}
+
+\Lsciex. {\it Agree}:\\
+$\alpha$ can Agree with $\beta$ if (a)--(d) hold.
+\a. $\alpha$ carries a probe feature [$*$F$*$], and $\beta$ carries a
+maching goal feature [F].
+\b. $\alpha$ \label{agua2}c-commands $\beta$, or $\beta$ c-commands $\alpha$.
+\b. There is \label{agua3}no $\delta$ that is closer to $\beta$ than $\alpha$ and
+also carries [$*$F$*$], and there is no $\gamma$ that is closer to
+$\alpha$ than $\beta$ and carries an active [F].
+\b. $\beta$ bears an \label{agua4}active feature. 
+
+The syntactic derivation of a sentence such as \ref{cp3} in Hinuq,
+where the matrix verb undergoes long-distance agreement with the
+embedded absolutive wh-phrase, starts with the complex predicate in
+\Next; \ref{cp3} is repeated here as \NNext (with the default
+agreement option ignored).\footnote{\label{vari2}One may ask why it is
+  that V$\_$2 (which will eventually become the embedded verb) projects
+  in this structure, rather than V$\_$1 (which will end up as the matrix
+  verb).  As a matter of fact, there does not seem to be a good reason
+  why the alternative representation where V$\_$1 projects -- {\it
+    [$\_${V$\_$1}[$\_${V$\_$1}know]-[$\_${V$\_$2}kill]]} -- should be excluded as such:
+  With two bare X$^0$ heads forming a complex structure, labelling can
+  be expected to be free. However, as will become clear when we look
+  at the derivation for \ref{cp3d}, choosing an initial representation
+  {\it [$\_${V$\_$1}[$\_${V$\_$1}know]-[$\_${V$\_$2}kill]]} of the complex predicate
+  (rather than {\it [$\_${V$\_$2}[$\_${V$\_$1}know]-[$\_${V$\_$2}kill]]}) can never lead
+  to a well-formed derivation: V$\_$2 ultimately needs to combine with a
+  DP, but after (extended) projection of V$\_$1 has been completed, only
+  a CP is available for V$\_$2, and this makes it impossible to discharge
+  the [{\small $\bullet$}D{\small $\bullet$}] feature of V$\_$2. In the
+  same way, V$\_$1 needs to combine with a CP (due to [{\small
+      $\bullet$}C{\small $\bullet$}] on its feature list), but such a
+  CP is not available at the beginning of the derivation.}
+
+\Lsciexi. [V$\_$2 [V$\_$1 know] [V$\_$2 kill]]
+
+ \exig.  \label{cp3d}Debez \o -eq'i-ye [CP(V) k'a\v{c}a\textgamma -za-y \textbeltl u \o -uher-i\v{s}-\textbeltl i~]~? \\
+  you.{\sc sg.dat} {\sc i}-know-{\sc q} {} bandit-{\sc obl.pl-erg}
+  who {\sc i}-kill-{\sc res-abst} \\ 
+ `Do you know whom the bandits killed?'
+
+In the first step, {\it [$\_${V$\_$2}[$\_${V$\_$1}know]-[$\_${V$\_$2}kill]]} is merged
+with  the internal argument DP, triggered by  [{\small
+    $\bullet$}D{\small $\bullet$}] on V$\_$2. The resulting
+representation is shown in \ref{Baum}.
+
+\Lsciexi. {\it Long-distance agreement \label{Baum}by reprojection, first stage}:
+%\begin{tabular}{ccccccccccccccc}
+%&&&&&&& && \node{16}{VP}\\[4mm]
+%&&&&&&&&\node{17}{V$\_$2} && \node{18}{DP$\_${abs}}\\[4mm]
+%&&&&&&&\node{19}{V$\_${1,[\bullet \rm C\bullet]}} && \node{19a}{V$\_$2} &\node{20}{[$\phi$]} \\
+%&&&&&&&\node{21}{[*$\phi$*]} && \node{22}{[*$\phi$*]} & \node{23}{[inf-st]}\\
+%&&&&&&&\node{24}{[*inf-st*]} && \\
+%\end{tabular}
+%\nodeconnect{16}{17}\nodeconnect{16}{18}
+%\nodeconnect{17}{19}\nodeconnect{17}{19a}\nodeconnect{18}{20}
+
+
+Each of the verbs involved has its own $\phi$-probe
+(see \cite{Bejar&Rezac:09}), which is checked through Agree with the
+$\phi$-feature on the internal argument DP. Since V$\_$2 is the head of
+the complex predicate, its $\phi$-probe intervenes between V$\_$1's
+$\phi$-probe and the internal DP.  Thus, V$\_$2's $\phi$-probe has to be
+discharged first; afterwards, V$\_$1 can discharge its  $\phi$-probe via
+Agree with DP. This
+derives the generalization that long-distance agreement (i.e., under
+present assumptions, extremely local agreement of V$\_$1 and the absolutive DP)
+is possible only if embedded agreement (i.e., agreement of V$\_$2 and the
+absolutive DP) has taken place.\footnote{Given that only absolutive
+  DPs can act as agreement controllers in the languages currently
+  under consideration, the question arises whether this information is
+  already locally available in the structure in \ref{Baum}. There are
+  two possibilities, both of which strike us as viable. First, the
+  absolutive (vs. lexically case-marked) nature of an internal DP
+  argument might indeed already be visible at this stage (e.g.,
+  because V$\_$2 does not have a lexical case feature). Second, if
+  absolutive is not identifiable yet at this stage, agreement could
+  simply take place in the hope that it will later emerge (e.g., be
+  assigned by a functional head like t) -- if it does not, the
+  derivation will eventually crash.}
+
+In addition to the dependence of long-distance agreement on local
+agreement, a second generalization about long-distance can be derived
+at this point: There must be an obligatory information-structural
+reflex on the DP participating in long-distance agreement (with an
+interpretation as topic in Tsez, as topic or focus in Hinuq and
+Khwarshi, etc.); this is simply signalled by [inf-st] in \Last (i.e.,
+[inf-st] stands for [topic], [topic, focus], or other
+information-structural features). Here is why: 
+Given  \citegen{Chomsky:01} {\it Activity Condition}, after $\phi$-Agree
+  with V$\_$2, DP$\_${abs} in \ref{Baum} can only undergo $\phi$-Agree
+  with V$\_$1 if it still has {\it a different}, {\it active} feature
+  that V$\_$1 is looking for; and [inf-st] fulfills this role.
+ This explains the presence of [*inf-st*] on V$\_$1 that needs to undergo
+ Agree with [inf-st] on  DP$\_${int}. As a consequence of this second
+ Agree operation involving V$\_$1 and DP$\_${int}, V$\_$1 is equipped with the
+ information that DP$\_${int} is a topic. 
+
+ In the further course of the derivation, V$\_$2 first discharges all its
+ structure-building features (if it has any such featuress
+ left). Subsequently, v merges with VP; after that it merges 
+ with an external argument DP; and then it assigns ergative case to it. At
+ this point, V$\_$1 has not yet had a chance to discharge its [{\small
+    $\bullet$}C{\small $\bullet$}] feature.\footnote{This
+   feature is either lower on the list of operation-triggering
+   features of V$\_$1 than the probe features for agreement with
+   DP$\_${int}, or there are actually two separate stacks involved here
+   (as indicated in \ref{Baum}):
+   one for structure-building features, and one for probe
+   features. This second option might be preferable on conceptual and empirical
+   grounds; see \cite{Mueller:04:arg,Mueller:09:eao} for discussion.}
+  Therefore, before
+ the vP is completed, V$\_$1 needs to move to v's specifier position, so
+ as to comply with Featural Cyclicity (cf. \ref{fc}). The resulting
+ representation is shown in \Next.
+
+\Lsciex. {\it Long-distance agreement \label{Baum2}by reprojection, second
+stage}:\\
+%\begin{tabular}{ccccccccccccccc}
+%&&&&&& \node{10}{vP}\\[4mm]
+%&&&&&\node{11}{V$\_${1,[\bullet \rm C\bullet]}} && \node{12}{v$'$}\\[4mm]
+%&&&&&&\node{13}{DP$\_${erg}} && \node{14}{v$'$}\\[4mm]
+%&&&&&&&\node{15}{v} && \node{16}{VP}\\[4mm]
+%&&&&&&&&\node{17}{V$\_$2} && \node{18}{DP$\_${abs}}\\[4mm]
+%&&&&&&&\node{19}{t$\_${V$\_$1}} && \node{19a}{V$\_$2} &\node{20}{[$\phi$]} \\
+%&&&&&&&\node{21}{[*$\phi$*]} && \node{22}{[*$\phi$*]} & \node{23}{[inf-st]}\\
+%&&&&&&&\node{24}{[*inf-st*]} && \\
+%\end{tabular}
+%\nodeconnect{10}{11}\nodeconnect{10}{12}
+%\nodeconnect{12}{13}\nodeconnect{12}{14}\nodeconnect{14}{15}\nodeconnect{14}{16}\nodeconnect{16}{17}\nodeconnect{16}{18}
+%\nodeconnect{17}{19}\nodeconnect{17}{19a}\nodeconnect{18}{20}
+%\anodecurve[l]{19}[b]{11}{2cm}
+
+In further steps, the TP and CP structures of (what will become) the
+embedded clause are generated by Merge and Agree operations, while V$\_$1 moves up
+   the developing syntactic structure, via intervening phase
+   edges. Finally, when the CP is completed, and V$\_$1 has moved to C's
+   edge domain because it still has not been able to discharge its
+   structure-building feature [{\small
+    $\bullet$}C{\small $\bullet$}], V$\_$1 is in a position from which it
+  can undergo reprojection movement, take the CP generated so far as
+  its complement (thereby discharging [{\small
+    $\bullet$}C{\small $\bullet$}]), and create a matrix
+  VP.\footnote{In addition to subcategorization, V$\_$1 carries out an
+    Agree operation with C that reflects the embedding of an
+    interrogative ([+wh]) clause.} This is
+  shown in \Next.\footnote{The mechanics here are similar to 
+   \citegen{Martinovic:15} analysis of the left periphery of Wolof
+   in terms of head splitting and reprojection.}   
+
+\Lsciexi. {\it Long-distance agreement \label{Baum3}by reprojection, third stage}:
+%\begin{tabular}{ccccccccccccccc}
+%& \node{0}{VP}\\[4mm]
+%\node{1}{V$\_$1} && \node{2}{CP}\\[4mm]
+%& \node{3}{~~} && \node{4}{C$'$}\\[4mm]
+%&& \node{5}{C} && \node{6}{TP}\\[4mm]
+%&&&\node{7}{~~} && \node{8}{T$'$}\\[4mm]
+%&&&&\node{9}{T} && \node{10}{vP}\\[4mm]
+%&&&&&\node{11}{~~} && \node{12}{v$'$}\\[4mm]
+%&&&&&&\node{13}{DP$\_${erg}} && \node{14}{v$'$}\\[4mm]
+%&&&&&&&\node{15}{v} && \node{16}{VP}\\[4mm]
+%&&&&&&&&\node{17}{V$\_$2} && \node{18}{DP$\_${abs}}\\[4mm]
+%&&&&&&&\node{19}{t$\_${V$\_$1}} && \node{19a}{V$\_$2} &\node{20}{[$\phi$]} \\
+%&&&&&&&\node{21}{[*$\phi$*]} && \node{22}{[*$\phi$*]} & \node{23}{[inf-st]}\\
+%&&&&&&&\node{24}{[*inf-st*]} && \\
+%\end{tabular}
+%\nodeconnect{0}{1}\nodeconnect{0}{2}\nodeconnect{2}{3}\nodeconnect{2}{4}\nodeconnect{4}{5}\nodeconnect{4}{6}
+%\nodeconnect{6}{7}\nodeconnect{6}{8}\nodeconnect{8}{9}\nodeconnect{8}{10}\nodeconnect{10}{11}\nodeconnect{10}{12}
+%\nodeconnect{12}{13}\nodeconnect{12}{14}\nodeconnect{14}{15}\nodeconnect{14}{16}\nodeconnect{16}{17}\nodeconnect{16}{18}
+%\nodeconnect{17}{19}\nodeconnect{17}{19a}\nodeconnect{18}{20}
+%\anodecurve[l]{19}[b]{11}{2cm}
+%\anodecurve[l]{11}[b]{7}{1cm}
+%\anodecurve[l]{7}[b]{3}{1cm}
+%\anodecurve[l]{3}[b]{1}{.5cm}
+
+The resulting representation is opaque in \citegen{Kiparsky:73:abs}
+sense as it involves a counter-bleeding interaction of operations
+(also cf.  \cite{Chomsky:51}, \citet[25--26]{Chomsky:75:the}):
+Reprojection movement of V$\_$1 would bleed Agree with DP$\_${abs}
+(which requires strict locality, due to the PIC) but fails to do so
+because it applies too late: When V$\_$1 has left the local domain in
+which agreement  with DP$\_${abs} can legitimately be carried out, this
+agreement has already taken place. 
+
+From this point onwards, everything happens exactly as one would
+expect it to (with matrix vP, TP, and CP generated by Merge and Agree
+operations), and there is basically no difference anymore to
+derivations in which there is no complex predicate formation to begin
+with.  Of course, given that pre-syntactic (lexical) complex predicate
+formation is an optional process, this second kind of derivation can
+be assumed to underlie minimally different sentences in which
+long-distance agreement does not occur. Thus, the two strategies
+differ substantially as far as earlier stages are concerned, but they
+end up with exactly the same structures once the matrix domain has
+been reached. There is one qualification, though. 
+ As a consequence of reprojection movement of V$\_$1, [inf-st] of
+ DP$\_${int} is
+  transported into the matrix clause.\footnote{Note that this implies
+    that {\it discharged} features, while syntactically inert, are not
+    actually deleted. This assumption
+    must independently be made for
+    discharged probe features more generally that give rise to
+    morphological realization; see \cite{Adger:03}.} 
+The information that the embedded DP$\_${\rm [inf-st]}
+  is interpreted as a topic is therefore shifted to the matrix
+  sentence, and consequently, a DP that is affected by long-distance
+  agreement is interpreted as the topic of the entire complex sentence.
+ The analysis is thus consistent with usual assumptions concerning the impossibility
+  of information-struc\-tural elements in clauses without
+  illocutionary force (like non-assertive, presuppositional
+  declarative clauses). Whereas information-structural features of an
+  embedded DP can thus be interpreted in the matrix clause, there is
+  no way how an embedded DP could take relative scope in the matrix clause as
+  well (cf. the sentences in \ref{scope32}): Relative scope is
+  determined by the position of a item, not by features, and there is no stage of
+  the derivation where the embedded DP$\_${abs} would show up in the
+  matrix clause. 
+
+\subsubsection{Further Consequences}
+
+The example of long-distance agreement that we have considered here on
+the basis of the sample derivation in \ref{Baum}, \ref{Baum2} and
+\ref{Baum3}, involves a DP$\_${abs} controller that is also a
+wh-phrase. However, it should be clear that the approach generalizes
+to all the other cases of long-distance agreement mentioned
+above. For instance, an account in terms of reprojection of the part
+of a complex predicate straightforwardly derives long-distance
+agreement as in \ref{2} in Tsez and in \ref{3} in Hinuq (where it can
+now be assumed that $\alpha$ stands for a full CP). Similarly,
+examples like \ref{16-b} in Khwarshi (with a DP$\_${abs} controller
+acting as a topic, i.e., [inf-st] representing [topic]) and \ref{17-b}
+in Hinuq (with a DP$\_${abs} controller acting as a focus, i.e., [inf-st]
+representing [focus]) are directly accounted for under the present
+analysis. \ref{cp1} (from Khwarshi) and \ref{cp2} (from Hinuq) have
+subject wh-phrases (one marked by ergative, one not) that do not block
+long-distance agreement with the absolutive DP. Again, this is
+expected under present assumptions: Independently of whether the
+wh-phrase here occupies SpecC in overt syntax or not, reprojection
+movement of the verb to the matrix domain is possible (given the
+general option of multiple specifiers, particularly for intermediate
+movement steps). 
+
+Next, instances of of super-long-distance agreement where the
+agreeing verb and the agreement controller DP are separated by two
+intervening CP boundaries, like \ref{tsa1} in Tsakhur or \ref{tsa2} in
+Hinuq, can also be addressed under the reprojection approach: Here a complex
+predicate is formed pre-syntactically where V$\_$1 (which will become the
+highest verb) and V$\_$2 (which will become the intermediate verb) are
+first combined, with V$\_$2 projecting (in a successful derivation;
+cf. footnote \ref{vari2}), and then the complex V$\_$2 category is
+combined with V$\_$3 (which will become the most deeply embedded verb),
+with V$\_$3 projecting, as shown in \Next.
+
+\Lsciexi. [V$\_$3 [V$\_$2 V$\_$1 V$\_$2~] V$\_$3~]
+
+Here V$\_$3, V$\_$2, and V$\_$1 first carry out Agree operations with V$\_$3's
+internal argument (DP$\_${abs}), and then a CP is generated on top of
+VP$\_$3, with the complex V$\_$2 moving successive-cyclically to
+intermediate phase edge positions, until it finally merges with the
+CP. Then, the second, intermediate, CP is generated, with V$\_$1
+excorporating from the complex {\it [$\_${V$\_$2} V$\_$1 V$\_$2~]} category and
+moving via the intermediate CP's phases edges until, finally, the
+intermediate CP has been completed and V$\_$1 can take this CP as its
+internal argument, via reprojection. The Tsakhur example in \ref{tsa1}
+and the Hinuq example in \ref{tsa2} 
+fully correspond to this scenario, with V$\_$1, V$\_$2, and V$\_$3 all
+participating in agreement with DP$\_${abs}. However, examples
+involving super-long-distance agreement like the one in 
+\ref{tsa3} (from Hinuq) can also be found. 
+
+\exig. Di\v{z} \label{tsa3}y-eq$'$i-yo [CP \textglotstop umar-i [CP Madina
+    y-aq$'$-e-s=t\l en~] ese-s-\l i~]\\
+I.{\sc dat} II-know-{\sc prs} {} Umar-{\sc erg} {} Madina(II)
+II-come-{\sc pst}={\sc quot} tell-{\sc res}-{\sc abst}\\
+`I know that Omar said that Madina came.'
+
+In \Last, the intermediate verb V$\_$2 does in fact not exhibit overt
+agreement marking even though both the matrix verb V$\_$1 and the most
+deeply embedded verb V$\_$3 do. Still, \Last does not call into question
+the present approach: It can plausibly be assumed that $\phi$-feature
+agreement is indeed present on V$\_$2, but fails to be registered overtly
+(there are many verbs that fail to exhibit visible agreement marking
+despite showing up in the proper syntactic context in
+Nakh-Daghestanian languages, and the reason for this is presumably
+simply a morphological one). Thus, all in all, super-long-distance
+agreement can be derived.\footnote{It should be mentioned that there
+  are two further complications, though. First, recall that the
+  present account of the obligatory information-structural reflex of
+  long-distance agreement in terms of the Activity Condition would,
+  strictly speaking, require two different additional features (next
+  to the $\phi$-probes) on V$\_$1 and V$\_$2, and not just one, as in the
+  cases discussed so far. It is not a priori clear what
+  this extra feature might be. However, it has been argued that
+  information-structural features like topic and focus do not qualify
+  as primitives, but are rather composed of more primitive binary
+  features (so as to capture natural classes of information-structural
+  categories), like [$\pm$new], [$\pm$prom] (with, say, topic emerging
+  as [--new,+prom]); see \cite{Choi:99}, based on
+  \cite{Vallduvi:92}). If so, V$\_$2 and V$\_$1 can be equipped with
+  separate pieces of [inf-st] information.
+
+Second, \cite{Forker:11} also maintains that it is not completely
+impossible in Hinuq to have super-long-distance agreement involving
+V$\_$1, V$\_$3, and DP$\_${abs} in the most deeply embedded clause, not merely
+in the absence of agreement on V$\_$2 (as in \ref{tsa3}), but in the presence of a {\it
+  different} agreement on V$\_$2.  If such sentences (which  Forker assigns
+an intermediate status, signalled by ``?'') can be substantiated as
+grammatically well formed, additional assumptions that complement the
+present analysis will be called for.}
+
+A further property of long-distance agreement that needs to be
+accounted for concerns \citegen{Polinsky&Potsdam:01} observation
+that the C element {\it \textcrlambda in} blocks the operation in Tsez
+(cf. section 2.4 above). Given that there is good evidence that
+long-distance agreement across CP is possible in principle in
+Nakh-Daghestanian languages, and given that we have analyzed the
+transparent morpheme {\it {\l}i} as a C item, too, a recourse to a
+general blocking nature of C is not available in the present
+approach. Also, it is not possible to claim that a reprojecting V$\_$1
+cannot merge with a CP headed by {\it \textcrlambda in}: First, the
+[{\small $\bullet$}C{\small $\bullet$}] feature responsible for
+reprojection movement is not sensitive to a difference between C
+heads, and an additional selection relation (mediated by Agree) would
+have to be stipulated; second (and more importantly), [{\small
+    $\bullet$}C{\small $\bullet$}] on a reprojecting V is exactly the
+same feature as [{\small $\bullet$}C{\small $\bullet$}] on a V that
+fails to undergo complex predicate formation, and successfully takes
+CP complements headed by {\it \textcrlambda in} in environments
+without long-distance agreement. In view of this, we would like to
+suggest that the blocking effect of a C head {\it \textcrlambda in} is
+due to the fact that it does not permit a specifier. Thus, the problem
+with long-distance agreement in these contexts can be traced back to
+the unavailability of intermediate movement of a V$\_$1 that is initially
+part of a complex predicate, to SpecC: As a consequence, the final
+reprojection step of V$\_$1 will have to fatally violate the PIC (V$\_$1
+can only reach SpecT, which is not accessible anymore once CP has been
+completed).
+
+Finally, we would like to point out that the present approach in terms
+of reprojection makes a very simple prediction: Reprojection movement
+of a verb by definition creates a head-complement structure; there is
+no way how a specifier or adjunct could be involved (since this would
+require a non-X$^0$ category to move). Therefore, long-distance
+agreement is expected never to occur into subject clauses or adjunct
+clauses.  This prediction is borne out: Long-distance agreement always
+involves complement clauses.
+
+
+\section{Conclusion}
+
+We have argued that from the point of view of a model of syntax where
+all operations apply in strictly local domains (as defined by the
+Phase Impenetrability Condition (PIC)), and in the face of empirical
+evidence showing that long-distance agreement can involve a matrix
+verb and an agreement-controlling DP separated by a CP, none of the
+existing approaches to long-distance agreement (non-local analyses,
+small structure analyses, cyclic Agree analyses, and analyses where
+movement to the edge feeds agreement) work satisfactorily. In view of
+this, we have developed a new approach in terms of pre-syntactic
+complex predicate formation and reprojection: The derivation starts
+out with a complex verb {\it V$\_$1-V$\_$2} headed by V$\_$2, so that agreement
+of V$\_$1 with DP can apply early in the derivation (not late, as in
+other approaches), in an extremely local domain, and subsequent
+reprojection movement of V$\_$1 turns the latter into a matrix verb, thereby
+masking the locality of agreement and creating opacity (viz.,
+counter-bleeding) in syntax.  
+
+This approach may at first sight look quite radical. However, it is
+worth bearing in mind that it suggests itself without further ado once
+two widely employed operations are adopted and combined, viz., (i)
+pre-syntactic complex predicate formation, and (ii) head movement as
+reprojection. The properties that these two operations must have for
+the analysis to work all qualify as independently motivated, and they
+often correspond to standard assumptions in the field (in analyses
+that adopt the operations). As a matter of fact, the only innovative
+assumption that we have come up with is that pre-syntactic complex
+predicate formation does not (or does not have to) result in a single
+list of structure-building and agreement-inducing features (via a
+process of functional composition), but can maintain the integrity and
+independence of the two individual lists of structure-building and
+agreement-inducing features.
+
+Nevertheless, ideally there should be independent evidence for the
+type of interaction of complex predicate formation and reprojection
+movement that is at the heart of the present analysis of long-distance
+agreement. To end this paper, we would like to briefly sketch an
+approach to an entirely different phenomenon that works in the same
+way, viz., extraction from DPs in German. 
+
+As for the empirical evidence, extraction is impossible from subject
+DPs and indirect object (dative-marked) DPs. This is shown (with
+wh-movement as the extraction operation) in \Next[a] and \Next[b],
+respectively.
+
+\Lsciexi.
+\ag. *[PP \"Uber wen~]$\_$1 \label{35a}hat [DP ein Buch t$\_$1~] den Karl beeindruckt~?\\
+{} about whom has {} a book-{\sc nom} {} the Karl-{\sc acc} impressed\\
+`For which person is it the case that a book about that person
+impressed Karl?'
+\bg. *[PP \"Uber wen~] hat \label{35b}sie [DP einem Buch t$\_$1~] keine Chance
+gegeben~?\\
+{} about whom has she-{\sc nom} {} a book$\_${dat} {} no chance-{\sc acc} given\\
+`For which person is it the case that she gave a book about that
+person no chance?'
+
+With extraction from direct object (accusative-marked) DPs, things are
+somewhat more variable: With some combinations of V and N, extraction
+is possible (see \Next[a]), with other combinations, it is not (see
+\Next[b]). 
+
+\Lsciexi.
+\ag. [PP \"Uber wen~]$\_$1 \label{36a}hat Karl [DP ein Buch t$\_$1~] gelesen~?\\
+{} about whom has Karl-{\sc nom} {} a book-{\sc acc} {} read\\
+`Who did Karl read a book about?'
+\bg. *[PP \"Uber wen~]$\_$1 \label{36b}hat Karl [DP ein Buch t$\_$1~] geklaut~?\\
+{} about whom has Karl-{\sc nom} {} a book-{\sc acc} {} stolen\\
+`For which person is it the case that Karl stole a book about that person?'
+
+Thus, both structural and lexical factors play a role: On the one
+hand, extraction from DP can be well formed in German if DP is a complement
+(as with direct objects in \Last[ab]), but not if it is a specifier (as in
+with subjects and indirect objects in \LLast[ab], which can be assumed
+to occupy Specv and SpecAppl positions, respectively). On the other
+hand, extraction from DP also requires V and N to form a tight unit,
+or a ``natural predicate''. This latter status is arguably determined
+both by semantic considerations and by extralinguistic factors
+(frequency, entrenchment), and it may to some extent vary from speaker
+to speaker. Still, it must be modelled in the grammar in some way. In
+\cite{Mueller:91:abs} and \cite{Mueller&Sternefeld:95}, it is proposed
+that the relevant concept is that of abstract incorporation (in
+\citegen{Baker:88} sense, conceived of as incorporation at LF that
+is signalled already by co-indexation of heads in overt syntax): V
+({\it read}) and N ({\it book}) in \Last[a] undergo abstract
+incorporation and thus form a natural predicate, whereas V ({\it
+  steal}) and N ({\it book}) do not (for most speakers). Given that
+the theory of locality constraints on movement is sensitive to this
+difference (as well as to the structural difference between
+complements and specifiers), the data in \LLast and \Last can then all
+be accounted for. Similar approaches in terms of abstract
+incorporation have subsequently been developed by
+\cite{Davies&Dubinsky:03} and \cite{Schmellentin:06}. However, there
+are problems with this kind of approach. In particular, on this view
+abstract incorporation of N into V must either be able to apply
+non-locally, across an intervening DP projection (plus, possibly,
+other functional projections in the DP that may intervene between D
+and N); or the analysis must abandon the DP-over-NP hypothesis. To be
+sure, there are ways out for the abstract incorporation
+approach.\footnote{For instance, in \cite{Mueller:11:loc}, abstract incorporation is
+  viewed as a regular syntactic Agree operation, with no actual
+  movement involved.} Still, it can be noted that an approach based on
+complex predicate formation plus reprojection can account for the data
+in a very simple way. 
+
+Thus, suppose that some combinations of V and N can undergo
+pre-syntactic (lexical) complex predicate formation whereas others
+cannot do so. This means that complex heads like the one in \Next can
+be primitive inputs of Merge operations in the syntax.\footnote{As
+  before, the head that will ultimately come to occupy a higher
+  (c-commanding) position must be the one that fails to project in a
+  well-formed derivation; cf. footnote \ref{vari2}.}
+
+\Lsciexi. [N$\_$2 V$\_$1 N$\_$2~]
+
+In the ensuing derivation, N$\_$2 first discharges its structure-building
+and probe features (thereby undergoing Merge with a PP); see \Next[a].
+Then
+DP is added on top of NP (and possibly also other functional projections
+before that), with V$\_$1 undergoing intermediate, Last Resort-driven
+movement to SpecD; see \Next[a]. After that, V$\_$1 undergoes the
+final  movement step to take DP as its complement and thereby
+discharge its [{\small $\bullet$}D{\small $\bullet$}] feature; see
+\Next[b]. From this point onwards, everything proceeds exactly as in
+a derivation where there is no complex predicate formation as in
+\Next; such a derivation produces the VP in \NNext. 
+
+\Lsciexi.
+\a. [NP [N$\_$2 V$\_$1 N$\_$2~] PP~]
+\b. [DP V$\_$1 [D$'$ D [NP [N$\_$2 t$\_$1 N$\_$2~] PP~]]]
+\b. [VP V$\_$1 [DP t$'$\_$1$ [D$'$ D [NP [N$\_$2 t$\_$1 N$\_$2~] PP~]]]]
+
+\Lsciexi. [VP V$\_$1 [DP D [NP N$\_$2 PP~]]]
+
+Importantly, both the NP and the PP in \LLast[c] (based on complex
+predicate formation of V and N) have been in an extremely local
+(object-like) relation with V whereas the NP and PP in \Last (based
+on regular, separate projection of V and N) have never been in a local
+relation with V. Without going into the details of how exactly this
+will best be implemented in a given theory of locality restrictions on movement, it
+seems plausible to assume that it is the extremely local relation of V
+and NP/PP at an earlier derivational step that makes extraction of PP
+from DP possible in  \ref{36a}, and it is the absence of such a relation that blocks
+the movement in \ref{36b}. As before, reprojection movement of V
+by definition cannot take place from specifier, which then accounts
+for the illformedness of \ref{35a} and \ref{35b}.
+
+\section*{Abbreviations}
+\begin{multicols}{2}
+\begin{tabbing}
+\textsc{intrans}\hspace{5mm} \= information structure\kill
+\textsc{abs} \> absolutive\\ 
+\textsc{abst} \> abstract suffix\\ 
+\textsc{acc} \> accusative\\
+\textsc{caus} \> causative\\ 
+\textsc{cl} \> clitic\\ 
+\textsc{cop} \> copula\\ 
+\textsc{cvb} \> narrative converb\\ 
+\textsc{dat} \> dative\\ 
+\textsc{erg} \> ergative\\ 
+\textsc{fem} \> feminine\\ 
+\textsc{foc} \> focus\\ 
+\textsc{inf} \> infinitive\\ 
+\textsc{inf-st} \> information structure\\ 
+\textsc{intrans} \> intransitive\\ 
+\textsc{lat} \> lative\\ 
+\textsc{masc} \> masculine\\ 
+\textsc{nom} \> nominative\\ 
+\textsc{nmlz} \> nominalizer\\ 
+\textsc{obj} \> object\\ 
+\textsc{obl} \> oblique\\
+\textsc{perf} \> perfective\\
+\textsc{pl} \> plural\\ 
+\textsc{pr(e)s} \> present\\ 
+\textsc{pst} \> past\\ 
+\textsc{pstprt} \> past participle\\
+\textsc{ptcp} \> participle\\ 
+\textsc{q} \> question particle\\ 
+\textsc{quot} \> quotative enclitic\\
+\textsc{res} \> resultative participle\\ 
+\textsc{sg} \> singular\\ 
+\textsc{subj} \> subject\\ 
+\textsc{ti} \> transitive inanimate
+\end{tabbing} 
+\end{multicols}
+
+\section*{Acknowledgments}
+For comments and discussion, we are grateful to Josef Bayer, Elena
+Pyatigorskaya, Tonjes Veenstra, Martina Martinovi\'c, Johannes Mursell
+(and the other editors of the present volume), and audiences at the
+{\it GGS} meeting at Universit{\"a}t Konstanz (2014), the workshop on
+{\it Agreement} at the University of York (2014), and the workshop
+{\it Heads, Phrases, Ts and Nodes} at Humboldt Universit{\"a}t Berlin (2017).
+
+{\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]}
+\end{document}
