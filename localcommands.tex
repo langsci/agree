@@ -11,3 +11,8 @@
 }
 
 \let\circled\fbox
+
+\newcommand{\Next}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}+1}#1}
+\newcommand{\NNext}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}+2}#1}
+\newcommand{\Last}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}}#1}
+\newcommand{\LLast}[1][]{\ref{\refprefix\the\numexpr\value{xnumi}-1}#1}
