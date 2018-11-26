@@ -1,11 +1,3 @@
-\documentclass[output=paper
-,modfonts
-,nonflat]{langsci/langscibook} 
-% \bibliography{localbibliography} 
-% \input{localpackages.tex}
-% \input{localhyphenation.tex}
-% \input{localcommands.tex} 
-
 \title{Agree Probes Down: Anaphoric Feature Valuation and Phase Reference
 } 
 
@@ -26,24 +18,22 @@
 \begin{document}
 \maketitle
 
-
 %\setcounter{tocdepth}{3}
 %\tableofcontents
 
 \section{Introduction} \label{Introduction}
 
-The Minimalist Program (MP) (\citealt{Chomsky:2000} et seq.) posits the notion of Agree: a local feature valuation relation that is constrained by a c-command relation between a Probe bearing an unvalued feature [uF] and a structurally lower Goal bearing an interpretable variant of this feature [iF]. Agree has come to be the principal mechanism for various kinds of feature-matching relationships in syntactic theory, and as such the subject of intensive research and interesting debates. Recent literature provides (at least) three different theoretical approaches to the Agree operation:
+The Minimalist Program (MP) (\citealt{Chomsky:2000a} et seq.) posits the notion of Agree: a local feature valuation relation that is constrained by a c-command relation between a Probe bearing an unvalued feature [uF] and a structurally lower Goal bearing an interpretable variant of this feature [iF]. Agree has come to be the principal mechanism for various kinds of feature-matching relationships in syntactic theory, and as such the subject of intensive research and interesting debates. Recent literature provides (at least) three different theoretical approaches to the Agree operation:
 
 \ea
 Theoretical Approaches to Agree \label{TheoryApproaches}
 \begin{xlist}
-\ex Agree is the result of a structurally higher Probe probing down \citep{Chomsky:2000, Chomsky:2001a, Preminger:2013, Polinsky:2015} 
+\ex Agree is the result of a structurally higher Probe probing down (\citealt{Chomsky:2000a}, \citealt{Chomsky:2001}, \citealt{Preminger:2013}, \citealt{Polinsky:2015}) 
 \ex Agree is the result of a structurally lower Probe probing up \citep{Zeijlstra:2012, Wurmbrand:2011, Bjorkman:toappearb} 
-\ex Agree can probe up or down (cf. \citealt{Bejar:2009}\footnote{\citet{Bejar:2009} do not propose that a Probe can probe upwards, but they argue that unvalued features of a Probe can be reintroduced higher up in the tree and Probe down from there again. This gives the surface appearance of Upward Probing, but is in effect downward probing. We will argue for something similar.}, \citealt{Baker:2008}, \citealt{Putnam:2011}, \citealt{Carstens:2016})
+\ex Agree can probe up or down (\citealt{Bejar:2009}\footnote{\citet{Bejar:2009} do not propose that a Probe can probe upwards, but they argue that unvalued features of a Probe can be reintroduced higher up in the tree and Probe down from there again. This gives the surface appearance of Upward Probing, but is in effect downward probing. We will argue for something similar.}, \citealt{Baker:2008}, \citealt{Putnam:2011}, \citealt{Carstens:2016})
 \end{xlist}
 \z
-
-On the surface there is a strong case for the existence of both upward and downward probing in the grammar of complementizer agreement (CA). One set of data motivating the downward-probing operation comes from the familiar West Germanic instances of CA where C agrees with the embedded subject.
+\noindent On the surface there is a strong case for the existence of both upward and downward probing in the grammar of complementizer agreement (CA). One set of data motivating the downward-probing operation comes from the familiar West Germanic instances of CA where C agrees with the embedded subject.
 
 \ea \label{ProbeDownSchematic}
 Probing Down: [\textsubscript{XP} Probe\textsubscript{[uF]} [\textsubscript{YP} Goal\textsubscript{[iF]} ]]
@@ -55,8 +45,8 @@ Probing Down: [\textsubscript{XP} Probe\textsubscript{[uF]} [\textsubscript{YP} 
 I think that-\textsc{pl} / that-\textsc{sg} they tomorrow go.\textsc{pl} \\
 \glt `I think that they will go tomorrow.' 	
 \z						
-
-\textit{Prima facie} evidence for upward probing can also be found in the complementizer domain, this time in various languages of Africa. The best-described case comes from Lubukusu, a Bantu language spoken in western Kenya \citep{Diercks:2010,Diercks:2013,Wasike:2007}; as shown in (\ref{BasicLubukusuExample}) the class 2 agreement \textit{ba-} on the complementizer \textit{-li} is triggered by the class 2 matrix subject, and not by any other potential agreement trigger in the embedded clause.\footnote{Every Lubukusu noun phrase in this paper is glossed for its noun class, for which we follow the Bantuist tradition of labeling by number, where odd numbers are singulars (e.g. 1) and the immediately ascendant even number is that noun class’ plural form (e.g. 2 is the plural of 1).  S or O following a verbal noun class agreement indicates ‘subject’ or ‘object’ verbal agreement.  Person features are represented by the person together with the number, for example 1sg, 2pl. Additional notable glosses include FUT ‘future,’ PST ‘past,’ PRS ‘present,’ AP ‘applicative,’ FV ‘final vowel,’ PASS ‘passive,’ CAUS ‘causative,’ COMP ‘complementizer,’ SBJ ‘subjunctive.’  Tone marking is not provided for the Lubukusu examples.} 
+\noindent \textit{Prima facie} evidence for upward probing can also be found in the complementizer domain, this time in various languages of Africa. The best-described case comes from Lubukusu, a Bantu language spoken in western Kenya \citep{Diercks:2010,Diercks:2013,Wasike:2007}; as shown in (\ref{BasicLubukusuExample}) the class 2 agreement \textit{ba-} on the complementizer \textit{-li} is triggered by the class 2 matrix subject, and not by any other potential agreement trigger in the embedded clause.\footnote{
+	Every Lubukusu noun phrase in this paper is glossed for its noun class, for which we follow the Bantuist tradition of labeling by number, where odd numbers are singulars (e.g. 1) and the immediately ascendant even number is that noun class’ plural form (e.g. 2 is the plural of 1).  S or O following a verbal noun class agreement indicates ‘subject’ or ‘object’ verbal agreement.  Person features are represented by the person together with the number, for example 1sg, 2pl. Tone marking is not provided for the Lubukusu examples.}
 
 \ea \label{ProbingUpSchematic}
 Apparent Probing Up: [\textsubscript{XP} Goal\textsubscript{[iF]} [\textsubscript{YP} Probe\textsubscript{[uF]} ]]
@@ -68,15 +58,14 @@ Apparent Probing Up: [\textsubscript{XP} Goal\textsubscript{[iF]} [\textsubscrip
 	2-2-people 	2\textsc{sa}-said-\textsc{ap}-\textsc{fv}	1Alfred	2-that	1\textsc{sa}-\textsc{fut}-conquer-\textsc{fv} \\
 \glt `The people told Alfred that he will win.'	
 \z
-
-Despite the apparent `upward' agreement in (\ref{BasicLubukusuExample}), we argue that the data in (\ref{WestFlemFirstExample}) and (\ref{BasicLubukusuExample}) can both be accounted for by the widely accepted theory that unvalued features probe their c-command domains for a Goal by which to be valued (\citealt{Chomsky:2000} et seq.).  We claim that the Lubukusu φ-features on C have anaphoric properties (e.g. subject-orientation). We follow \citet{Rooryck:2011} in identifying anaphoric features as \textit{interpretable}, \textit{unvalued} features, which necessarily move to a position higher than their antecedent and undergo a standard Agree operation (as Rooryck \& Vanden Wyngaerd \citeyear{Rooryck:2011} propose is the derivation of self-reflexives). Therefore feature-valuation may either be non-anaphoric (where pure Agree results in downward-oriented syntactic agreement, \textit{contra} \citealt{Zeijlstra:2012}, \citealt{Wurmbrand:2011}, and \citealt{Bjorkman:toappearb}) or anaphoric (where an Agree relation 
+\noindent Despite the apparent `upward' agreement in (\ref{BasicLubukusuExample}), we argue that the data in (\ref{WestFlemFirstExample}) and (\ref{BasicLubukusuExample}) can both be accounted for by the widely accepted theory that unvalued features probe their c-command domains for a Goal by which to be valued (\citealt{Chomsky:2000a} et seq.).  We claim that the Lubukusu φ-features on C have anaphoric properties (e.g. subject-orientation). We follow \citet{Rooryck:2011} in identifying anaphoric features as \textit{interpretable}, \textit{unvalued} features, which necessarily move to a position higher than their antecedent and undergo a standard Agree operation (as Rooryck \& Vanden Wyngaerd \citeyear{Rooryck:2011} propose is the derivation of self-reflexives). Therefore feature-valuation may either be non-anaphoric (where pure Agree results in downward-oriented syntactic agreement, \textit{contra} \citealt{Zeijlstra:2012}, \citealt{Wurmbrand:2011}, and \citealt{Bjorkman:toappearb}) or anaphoric (where an Agree relation 
 is preceded by a movement operation). Therefore while only one feature-valuation operation is a primitive of the grammar (Agree), there are multiple derivative patterns: non-anaphoric agreement where the Goal is structurally lower than the Probe (`pure' Agree) and anaphoric agreement where the Goal may appear to be structurally higher than the Probe due to (covert) movement of the Probe (Internal Merge + Agree). 
 
 Sections \ref{GermanicCA}-\ref{AnalysisSection} deal with the empirical grounds for the discussion above, and the core proposal set forward in this paper. Section \ref{ExplainPAPA} addresses why unvalued yet interpretable features should undergo internal merge by linking this movement to the Phase Reference model of \citet{Hinzen:2012} (and related work). Section \ref{CA in Kipsigis} discusses CA-data from another language spoken in Kenya\textemdash Kipsigis\textemdash that provides additional evidence for our analysis. Section \ref{sectioncarstens} compares our approach to Carstens' (\citeyear{Carstens:2016}) analysis of Lubukusu CA.
 
 \section{Germanic CA: Agree probing down} \label{GermanicCA}
 
-Various Dutch and German dialects display CA in which a declarative-embedding complementizer carries inflectional morphology that agrees with the φ-features of the embedded subject. The West-Flemish examples illustrate that the complementizer \textit{da} `that' displays overt plural agreement morphology (\textit{–n}) when there is a plural embedded subject, shown in (\ref{WestFlemishPluralAgr}) (with no overt agreement otherwise). 
+Various Dutch and German dialects display CA in which a declarative-embedding complementizer carries inflectional morphology that agrees with the φ-features of the embedded subject. The West-Flemish examples illustrate that the complementizer \textit{da} `that' displays overt plural agreement morphology (-\textit{n}) when there is a plural embedded subject, shown in (\ref{WestFlemishPluralAgr}) (with no overt agreement otherwise). 
 
 \ea \label{InitialWestFlemishExample}
 \langinfo{West Flemish}{}{\citealt{Haegeman:2012}}\\
@@ -95,8 +84,7 @@ I think that-\textsc{sg} / *that-\textsc{pl} {that man} Marie know-\textsc{sg} \
 \end{xlist}
 
 \z
-
-Tegelen Dutch complementizers show a slightly different pattern, displaying overt inflection (\textit{-s}) with second person singular subjects (\textit{doow} `you' in (\ref{TegelenDutchBasic})) and a bare form otherwise.\footnote{We only describe the basic properties of CA in West Germanic here. We refer the reader to the extensive literature on CA in Germanic for a more in depth description of this phenomenon (see \citealt{vanKoppen:2017} and references cited there).}
+\noindent Tegelen Dutch complementizers show a slightly different pattern, displaying overt inflection (\textit{-s}) with second person singular subjects (\textit{doow} `you' in (\ref{TegelenDutchBasic})) and a bare form otherwise.\footnote{We only describe the basic properties of CA in West Germanic here. We refer the reader to the extensive literature on CA in Germanic for a more in depth description of this phenomenon (see \citealt{vanKoppen:2017} and references cited there).}
 
 \ea \label{TegelenDutch} \label{TegelenDutchBasic}
 \langinfo{Tegelen Dutch}{}{\citealt{Haegeman:2012}} \\
@@ -111,8 +99,7 @@ I think that / *that-2\textsc{sg} you.\textsc{pl} Marie meet-\textsc{pl} \\
 \glt `I think that you will meet Marie.'	 
 \end{xlist}
 \z
-
-The analysis of Germanic CA that we advocate here is the same as that proposed by \citet{Carstens:2003}, \citet{vanKoppen:2005}, and \citet{Haegeman:2012}. Following this literature, we assume that C° in dialects with CA has a set of uninterpretable φ-features, which probe C°’s c-command domain for a set of matching interpretable φ-features. The first potential Goal it encounters is the embedded subject, which values the φ-features on C° that are then spelled out as CA. This derivation represented in (\ref{BasicGermanicCATree}):
+\noindent The analysis of Germanic CA that we advocate here is the same as that proposed by \citet{Carstens:2003}, \citet{vanKoppen:2005}, and \citet{Haegeman:2012}. Following this literature, we assume that C° in dialects with CA has a set of uninterpretable φ-features, which probe C°’s c-command domain for a set of matching interpretable φ-features. The first potential Goal it encounters is the embedded subject, which values the φ-features on C° that are then spelled out as CA. This derivation represented in (\ref{BasicGermanicCATree}):
 
 \ea \label{BasicGermanicCATree}
 \begin{forest}
@@ -133,8 +120,7 @@ The analysis of Germanic CA that we advocate here is the same as that proposed b
 \draw[->] (T) to[out=south, in=south west] (BaseSubj);
 \end{forest}
 \z
-
-We will briefly consider two different alternative analyses of the Germanic CA pattern, demonstrating that a downward-probing Agree analysis is the most probable (though we mainly point the reader to the relevant literature for discussion).\footnote{Another possible approach is that Germanic CA is non-syntactic, occurring at PF as a morphological process (cf. e.g. \citealt{Ackema:2004}, \citealt{Fuss:2008}). We refer the reader to \citealt{vanKoppen:2005} and \citealt{Haegeman:2012} for counter-arguments.} One alternative has been to argue that the φ-features on C° and T° have the same origin (the `shared-source' analysis).\footnote{See also \citealt{Haegeman:2012} for an extensive discussion of these proposals.} One implementation of this idea is for the φ-features that arise on C° to have originated in T° (an approach amenable to a Spec,Head agreement analysis: cf. \citealt{denBesten:1983,denBesten:1989,Zwart:1993,Zwart:1997,Hoekstra:1989,Watanabe:2000}, among others). On this approach the φ-features of T° are valued by the subject in Spec,TP, after which T° (or the φ-feature set of T°) raises to C° and are realized as CA. A second implementation of the `shared source' analysis adopts a Feature Inheritance approach, which also leads to a configuration in which the subject c-commands the φ-features of Cº. More specifically, Chomsky (2008 et. seq.) argues that the φ-features on C° cannot remain on Cº (because it is a phase head) and therefore have to be passed on to a non-phase head, Tº in this instance (see also \citealt{Richards:2007a}). CA can then be taken as an additional morphological reflex of agreement between T° and the subject, spelled out on Cº at the base position of those φ-features. 
+\noindent We will briefly consider two different alternative analyses of the Germanic CA pattern, demonstrating that a downward-probing Agree analysis is the most probable (though we mainly point the reader to the relevant literature for discussion).\footnote{Another possible approach is that Germanic CA is non-syntactic, occurring at PF as a morphological process (cf. e.g. \citealt{Ackema:2004}, \citealt{Fuss:2008}). We refer the reader to \citet{vanKoppen:2005} and \citet{Haegeman:2012} for counter-arguments.} One alternative has been to argue that the φ-features on C° and T° have the same origin (the `shared-source' analysis).\footnote{See also \citet{Haegeman:2012} for an extensive discussion of these proposals.} One implementation of this idea is for the φ-features that arise on C° to have originated in T° (an approach amenable to a Spec,Head agreement analysis: cf. \citealt{denBesten:1983,denBesten:1989,Zwart:1993,Zwart:1997,Hoekstra:1989,Watanabe:2000}, among others). On this approach the φ-features of T° are valued by the subject in Spec,TP, after which T° (or the φ-feature set of T°) raises to C° and are realized as CA. A second implementation of the `shared source' analysis adopts a Feature Inheritance approach, which also leads to a configuration in which the subject c-commands the φ-features of Cº. More specifically, Chomsky (2008 et seq.) argues that the φ-features on C° cannot remain on Cº (because it is a phase head) and therefore have to be passed on to a non-phase head, Tº in this instance (see also \citealt{Richards:2007a}). CA can then be taken as an additional morphological reflex of agreement between T° and the subject, spelled out on Cº at the base position of those φ-features. 
 
 \citet{Haegeman:2012} argue extensively against the `shared source' approach, showing that a key prediction is not upheld\textemdash that the φ-feature set on Tº be identical or a subset of the feature set on the Cº phase head.\footnote{This is not a claim that the morphological forms must be identical, only that (after morphological analysis) the φ-feature distinctions shown on Tº should demonstrably be the same ones shown on Cº.}  Haegeman \& Van Koppen point out two key empirical problems for this hypothesis: CA with coordinated subjects in Tegelen Dutch and CA with external possessors in West Flemish, both of which result in Cº and Tº having distinct sets of φ-features. For the sake of space, we consider only the first here. A basic example of CA in Tegelen Dutch is provided in (\ref{TegelenDutchConjoinedSubj}):
 
@@ -145,8 +131,7 @@ I think that-2\textsc{sg} you.\textsc{sg} Marie meet-2\textsc{sg} \\
 \glt `I think that you will meet Marie.'		
 
 \z
-
-In an example with a conjoined subject like (\ref{TegelenDutchConjoinedSubjNoResolved}), the verb (i.e. Tº) agrees with the plural-feature of the entire coordinated subject \textit{doow en ich} `you and I,' but CA is solely with the person and number features (2nd singular) of the first conjunct in this coordinated subject.
+\noindent In an example with a conjoined subject like (\ref{TegelenDutchConjoinedSubjNoResolved}), the verb (i.e. Tº) agrees with the plural-feature of the entire coordinated subject \textit{doow en ich} `you and I,' but CA is solely with the person and number features (2nd singular) of the first conjunct in this coordinated subject.
 
 \ea \label{TegelenDutchConjoinedSubjNoResolved}
 \langinfo{Tegelen Dutch}{}{\citealt{Haegeman:2012}} \\
@@ -218,7 +203,7 @@ First, example (\ref{BukusuCAMorphCaus}) gives a morphological causative constru
 \ea \label{BukusuCAMorphCaus}
 %\langinfo{LANGUAGE}{}{} \\
 \gll N-a-suubi-sya \circled{Alfredi} n-di/\circled{*a-li} ba-keni khe-be-ech-a. \\
-1\textsc{sg}.\textsc{sa}-\textsc{pst}-believe-\textsc{caus} 1Alfred 1sg-that/*1-that 2-guests \textsc{prog}-2\textsc{sa}-come-\textsc{fv} \\
+1\textsc{sg}.\textsc{sa}-\textsc{pst}-believe-\textsc{caus} 1Alfred 1\textsc{sg}-that/*1-that 2-guests \textsc{prog}-2\textsc{sa}-come-\textsc{fv} \\
 \glt `I made Alfred believe that the guests are coming.'
 \z
 
@@ -231,8 +216,7 @@ First, example (\ref{BukusuCAMorphCaus}) gives a morphological causative constru
 \glt `You told Nelson that the guests left.'
 
 \z
-
-As can be seen in (\ref{MorphCause=Obj}) and (\ref{IndirectObject=Obj}) below (equivalents of (\ref{BukusuCAMorphCaus}) and (\ref{BukusuCADitransitive}) respectively), both the causee and the indirect object can be object-marked on the verb; object marking in Lubukusu is restricted to structural arguments of the verb \citep{Diercks:2011,SikukuEt:2017}.\footnote{Non-accusative objects like locative phrases may be marked on the verb, but are marked with a post-verbal locative clitic, as demonstrated by \citet{Diercks:2010,Diercks:2011} and \citet{SikukuEt:2017} (`accusative' here is used as an expository mechanism, as DPs are not case-marked in Lubukusu, like in other Bantu languages, and the status of case-marking in general is a larger issue: \citealt{Harford:1985,Halpert:2012,Diercks:2012,vanderwal:2015}). And as \citet{Diercks:2011} shows, even for locatives in Lubukusu it is only possible to mark them on the verb when they are selected by the verb, locative-marking is unavailable for adjunct locative phrases.}  This is reason enough to believe them to be DP objects of the verb and therefore potential interveners in any Agree relationship between the complementizer and the superordinate subject.\footnote{Example (\ref{MorphCause=Obj}) is translated as verum focus because doubling an object marker with an overt object is only possible in Lubukusu in a set of pragmatic contexts akin to those that elicit verum focus in English.}
+\noindent As can be seen in (\ref{MorphCause=Obj}) and (\ref{IndirectObject=Obj}) below (equivalents of (\ref{BukusuCAMorphCaus}) and (\ref{BukusuCADitransitive}) respectively), both the causee and the indirect object can be object-marked on the verb; object marking in Lubukusu is restricted to structural arguments of the verb \citep{Diercks:2011,SikukuEt:2017}.\footnote{Non-accusative objects like locative phrases may be marked on the verb, but are marked with a post-verbal locative clitic, as demonstrated by \citet{Diercks:2010,Diercks:2011} and \citet{SikukuEt:2017} (`accusative' here is used as an expository mechanism, as DPs are not case-marked in Lubukusu, like in other Bantu languages, and the status of case-marking in general is a larger issue: \citealt{Harford:1985,Halpert:2012,Diercks:2012,vanderwal:2015}). And as \citet{Diercks:2011} shows, even for locatives in Lubukusu it is only possible to mark them on the verb when they are selected by the verb, locative-marking is unavailable for adjunct locative phrases.}  This is reason enough to believe them to be DP objects of the verb and therefore potential interveners in any Agree relationship between the complementizer and the superordinate subject.\footnote{Example (\ref{MorphCause=Obj}) is translated as verum focus because doubling an object marker with an overt object is only possible in Lubukusu in a set of pragmatic contexts akin to those that elicit verum focus in English.}
 
 \newpage 
 
@@ -249,13 +233,12 @@ As can be seen in (\ref{MorphCause=Obj}) and (\ref{IndirectObject=Obj}) below (e
 2\textsc{sg}.\textsc{sa}-\textsc{pst}-1\textsc{om}-say-\textsc{ap}-\textsc{fv} {2\textsc{sg}-that/*1-that} 2-guests 2\textsc{sa}-\textsc{pst}-leave-\textsc{fv} \\
 \glt `You told him that the guests left.'
 \z
-
-Following \citet{Diercks:2013}, our conclusion is that the Lubukusu CA construction cannot be explained under an account of uφ on Cº probing upwards, given the lack of intervention effects with intervening DPs. Coupled with the evidence from Germanic CA, this leads us to conclude that downward probing is a central component of the syntax, whereas upward probing is not necessarily so.  
+\noindent Following \citet{Diercks:2013}, our conclusion is that the Lubukusu CA construction cannot be explained under an account of uφ on Cº probing upwards, given the lack of intervention effects with intervening DPs. Coupled with the evidence from Germanic CA, this leads us to conclude that downward probing is a central component of the syntax, whereas upward probing is not necessarily so.  
 
 %\subsection{Lubukusu CA is Anaphoric}
 \citet{Diercks:2013} proposes that agreement on the complementizer is triggered locally in the embedded CP by a null subject-oriented anaphor, so the agreement is in fact only triggered indirectly by the matrix subject. As a result of the subject-oriented properties of the null anaphor, CA in Lubukusu is determined by the features of the matrix subject. Abstracting away from the details for the moment, Diercks claims that the strict subject orientation of Lubukusu CA is enforced by LF clitic-movement of the null anaphor to T° (following Safir’s \citeyear{Safir:2004} analysis of long-distance subject-oriented anaphors). 
 
-Support for the proposal that Lubukusu CA is anaphoric in nature comes from predictable sources, mainly, that the locality constraints for anaphoric relations are known to be distinct from those for morphosyntactic agreement (formalized by Chomsky’s \citeyear{Chomsky:2001a} Agree). First, CA is clause-bounded, only agreeing with the most local super-ordinate subject (cf. Chomsky’s \citeyear{Chomsky:1973} Tensed Sentence Condition). In (\ref{BukusuCAClosestClause}) the lower complementizer only agrees with the intermediate class 2 subject and not with the class 1 matrix subject.
+Support for the proposal that Lubukusu CA is anaphoric in nature comes from predictable sources, mainly, that the locality constraints for anaphoric relations are known to be distinct from those for morphosyntactic agreement (formalized by Chomsky’s \citeyear{Chomsky:2001} Agree). First, CA is clause-bounded, only agreeing with the most local super-ordinate subject (cf. Chomsky’s \citeyear{Chomsky:1973} Tensed Sentence Condition). In (\ref{BukusuCAClosestClause}) the lower complementizer only agrees with the intermediate class 2 subject and not with the class 1 matrix subject.
 
 \ea \label{BukusuCAClosestClause}
 \gll \circled{Alfredi} ka-a-lom-a a-li ba-ba-andu ba-mwekesia ba-li/\circled{*a-li} o-mu-keni k-ol-a. \\
@@ -263,7 +246,7 @@ Support for the proposal that Lubukusu CA is anaphoric in nature comes from pred
 \glt `Alfred said people revealed that the guest arrived.'
 \z
 
-In addition, Lubukusu CA has a strict subject orientation\textemdash indirect objects and causes don’t trigger agreement, agentive by-phrases in passives do not either, nor do other plausible agreement triggers like source-adjuncts in perception predicates (e.g. \textit{hear from X}). We refer the reader to \citet{Diercks:2010,Diercks:2013} for additional empirical argumentation for an anaphoric analysis of Lubukusu CA.
+\noindent In addition, Lubukusu CA has a strict subject orientation\textemdash indirect objects and causes do not trigger agreement, agentive by-phrases in passives do not either, nor do other plausible agreement triggers like source-adjuncts in perception predicates (e.g. \textit{hear from X}). We refer the reader to \citet{Diercks:2010,Diercks:2013} for additional empirical argumentation for an anaphoric analysis of Lubukusu CA.
 
 The proposal to be set forward here maintains the core generalizations and analysis from \citet{Diercks:2013}, namely, that Lubukusu CA is at its heart an anaphoric relation.\footnote{See section 4.3 below for an alternative analysis from \citet{Carstens:2016}.} The contributions that we will make here are 1) to utilize the Lubukusu CA facts as evidence for a generalizable theory of anaphoric relations, and 2) to follow recent work like \citet{Hicks:2009}, \citet{Reuland:2005,Reuland:2011}, and \citet{Rooryck:2011} (among others) to derive anaphoric relations from more basic elements of the grammar. And, to bring this back even further to the broadest purposes of this paper, these conclusions present crucial evidence on the question of the directionality of probing of Agree. 
 
@@ -312,7 +295,7 @@ We follow \citet{Hicks:2009}, \citet{Reuland:2011}, and \citet{Rooryck:2011} (he
 
 \z
 
-
+\noindent
 Under this view, Agree is hypothesized to exclusively search in the probe's c-command domain. Anaphors are analyzed as consisting of a set of unvalued φ-features that are valued (via Agree) by moving the reflexive over its antecedent. Subsequent subject and verb movement then obscure this reflexive movement (in R\&VW’s account). In order to be able to distinguish this agreement from other φ-feature valuation (which is presumably deleted or not interpreted at LF), they claim that the φ-features on reflexive pronouns are interpretable, unvalued features. A major prediction of R\&VW’s approach (and others like theirs) is that self-anaphora are at their heart an instance of feature valuation in the syntax.\footnote{This is opposed to an approach like that of \citet{Reinhart:1993b}, where self-reflexives are the product of constraints on licensing reflexivity of predicates (i.e. multiple arguments of a predicate being saturated by the same semantic variable).}  If this is the case, there ought to be feature valuation operations that show the properties of anaphora while having little to do with reflexivity of predicates. The claim that we advance in the remainder of this paper is that Lubukusu CA exemplifies precisely this prediction: an instance of a feature bundle with the same values as anaphoric features\textemdash interpretable and unvalued\textemdash that shows the same syntactic behavior, despite not being an instance of predicate reflexivity.
 
 \subsubsection{Step 2: The interpretative effects of CA in Lubukusu vs. CA in Germanic}
@@ -332,7 +315,7 @@ Under this view, Agree is hypothesized to exclusively search in the probe's c-co
 \end{xlist}
 
 \z
-
+\noindent
 Here we observe a noticeable contrast between CA in Germanic and Lubukusu/Bantu; whereas the agreeing complementizer appears to have an interpretive effect in Lubukusu, Germanic CA does not have any semantic contribution (see \citealt{vanKoppen:2005,vanKoppen:2017}). Based on these patterns, we hypothesize that the φ-features on Cº in Lubukusu have an effect on semantic interpretation, and are therefore interpretable, unvalued features. The φ-features on Cº in Germanic do not have an interpretation and are hence uninterpretable, unvalued features. This key contrast is noted in (\ref{unintint}):\footnote{On the distinction between (un)interpretable and (un)valued features, also see  \citet{Pesetsky:2007}).}
 
 \ea \label{unintint}
@@ -375,7 +358,7 @@ Cº is merged with unvalued, interpretable φ-features. At present, we will simp
 \end{forest}
 \z
 
-\noindent Here we have assumed for expository purposes that the Forceº head itself has raised to the edge of \textit{v}P, though it is not critical that it do so; it may well be that only the anaphoric φ-features themselves move in a form of feature-splitting merge \citep{Obata:2011}. This approach may well be preferable given that this movement doesn't obey expected constraints on head-movement. An alternative is to claim that the φ-features percolate to the maximal category of CP, and the entire CP raises to the edge of \textit{v}P: \citet{LetsholoSafir:2017} propose just this to account for Ikalanga complementizer agreement patterns, and \citet{Moulton:2015} suggests that all CPs may do so to resolve type-theoretic semantic concerns (and in the process explaining a variety of puzzles about similarities and differences between CP and DP verbal complements). At present we simply focus on the φ-features themselves and leave these details for future work: what is critical for us is that unvalued, interpretable φ-features raise to the edge of \textit{v}P. Whether they do so alone (feature-splitting Merge), pied-pipe the Forceº head, or pied-pipe the entire CP, the core claims of our account here will still hold.\footnote{A reviewer questions whether there is independent evidence that adjuncts can serve as probes: we refer the reader to \citet{CarstensDiercks:2013a} for discussion of a Lubukusu pattern where the manner wh-word \textit{how} probes and agrees with the subject of the clause, not dissimilar to the analysis proposed here.} 
+\noindent Here we have assumed for expository purposes that the Forceº head itself has raised to the edge of \textit{v}P, though it is not critical that it do so; it may well be that only the anaphoric φ-features themselves move in a form of feature-splitting merge \citep{Obata:2011}. This approach may well be preferable given that this movement doesn't obey expected constraints on head-movement. An alternative is to claim that the φ-features percolate to the maximal category of CP, and the entire CP raises to the edge of \textit{v}P: \citet{LetsholoSafir:2017} propose just this to account for Ikalanga complementizer agreement patterns, and \citet{Moulton:2015} suggests that all CPs may do so to resolve type-theoretic semantic concerns (and in the process explaining a variety of puzzles about similarities and differences between CP and DP verbal complements). At present we simply focus on the φ-features themselves and leave these details for future work: what is critical for us is that unvalued, interpretable φ-features raise to the edge of \textit{v}P. Whether they do so alone (feature-splitting Merge), pied-pipe the Forceº head, or pied-pipe the entire CP, the core claims of our account here will still hold.\footnote{A reviewer questions whether there is independent evidence that adjuncts can serve as probes: we refer the reader to \citet{CarstensDiercks:2013} for discussion of a Lubukusu pattern where the manner wh-word \textit{how} probes and agrees with the subject of the clause, not dissimilar to the analysis proposed here.} 
 
 We therefore claim that CA in Lubukusu is derived by the very same mechanism that we find for CA in Germanic: downward-probing Agree. The crucial difference between CA observed in these two languages is not the mechanism(s) employed, but rather, the moment of the valuation of these φ-features:
 
@@ -409,12 +392,7 @@ The idea that reflexives covertly raise to a position local to their antecedents
 R\&VW propose that complex reflexives adjoin to \textit{v}P, but they leave open the question of what motivates movement of self-reflexives to the edge of \textit{v}P: 
 
 \begin{quote}
-
-
-
 It is not clear to us at this point what drives the movement of self-reflexives to the edge of \textit{v}P. It might be that this movement is driven by the need for valuation of unvalued features. \citet{Boskovic:2007} suggests something along these lines, in that he argues that the uninterpretable features present on a constituent X may trigger the movement of X. Alternatively, there is another feature of self-reflexives that requires satisfaction and that triggers their movement. (R\&VW: 106, fn. 14).
-
-
 
 \end{quote}
 
@@ -426,7 +404,7 @@ The PAPA (\ref{PAPA}) proposes that interpretable, unvalued features move to the
 
 \subsubsection{Phases as a unit of semantic significance}
 
-\citet{Hinzen:2006, Hinzen:2012} and \citet{HinzenSheehan:2013} challenge the notion that the semantic ontology and semantic principles are independent of syntax. This abandons the approach developed in a long history of Chomsky’s work that claims that language is simply a tool to express thought, but that language and thought are fundamentally distinct (e.g. \citealt{Chomsky:2000b}). Hinzen adopts a framework that is in fact closely linked with the syntactic architecture of the Minimalist Program \citep{Chomsky:2000, Chomsky:2001a, Chomsky:2008} that claims that the syntactic derivation proceeds by phase, and each phase must necessarily be legible at the C-I (Conceptual-Intentional) interface. However, Hinzen contests the traditional syntax-semantics disjunct and instead claims that grammar is in fact the principle factor that allows for organization of meaning in language. Therefore, ``rather than being `autonomous' and merely `interfacing' with the semantic component, … grammar is a way of carving up semantic spaces'' (\citealt[311]{Hinzen:2012}).  That is to say, grammar ``creates the semantic ontology of language,'' such that grammar in fact is meaningful, and meaningful contribution of grammar is reference (\citealt[311]{Hinzen:2012}). Specifically, the phase is the referential component of grammar, with different phases referring to different entities\textemdash DPs refer to individuals, \textit{v}Ps to events, and CPs to propositions/truth \citep{HinzenSheehan:2013, SheehanHinzen:2011}.  
+\citet{Hinzen:2006, Hinzen:2012} and \citet{HinzenSheehan:2013} challenge the notion that the semantic ontology and semantic principles are independent of syntax. This abandons the approach developed in a long history of Chomsky’s work that claims that language is simply a tool to express thought, but that language and thought are fundamentally distinct (e.g. \citealt{Chomsky:2000b}). Hinzen adopts a framework that is in fact closely linked with the syntactic architecture of the Minimalist Program (\citealt{Chomsky:2000a,Chomsky:2001,Chomsky:2008}) that claims that the syntactic derivation proceeds by phase, and each phase must necessarily be legible at the C-I (Conceptual-Intentional) interface. However, Hinzen contests the traditional syntax-semantics disjunct and instead claims that grammar is in fact the principle factor that allows for organization of meaning in language. Therefore, ``rather than being `autonomous' and merely `interfacing' with the semantic component, … grammar is a way of carving up semantic spaces'' (\citealt[311]{Hinzen:2012}).  That is to say, grammar ``creates the semantic ontology of language,'' such that grammar in fact is meaningful, and meaningful contribution of grammar is reference (\citealt[311]{Hinzen:2012}). Specifically, the phase is the referential component of grammar, with different phases referring to different entities\textemdash DPs refer to individuals, \textit{v}Ps to events, and CPs to propositions/truth \citep{HinzenSheehan:2013, SheehanHinzen:2011}.  
 A phase's semantic contribution is to take the conceptual/predicational content of the phase (e.g. the concept of \textsc{dog}, or \textsc{banana}) and to enable linguistic \textit{reference} to relevant entities. Phases themselves are composed of a phase interior and a phase edge, as shown in (\ref{PhaseSchematic}), a notion with which syntacticians are now long familiar (Chomsky 2001 and subsequent work).\footnote{The formulation in terms of edge/interior presented here is adopted from \citet{HinzenSheehan:2013}.} 
 
 \ea	 \label{PhaseSchematic}
@@ -441,11 +419,7 @@ A phase's semantic contribution is to take the conceptual/predicational content 
 
 \begin{quote}
 
-
-
 Lexemes by contrast [to animal calls] not only can be used referentially in the physical absence of their referent, but are also very incomplete in their meaning. The word ‘eagle’ by itself does not denote anything in particular: not this eagle or that, not all eagles or some, not a kind of bird as opposed to another, not the property of being an eagle, etc. — things that it can denote only once it appears in the right grammatical configurations. It is also used for purposes of reference and predication, in addition to being used as a directive for action, and it again requires a phrasal context, hence grammar, when it is so used. (\citealt{HinzenSheehan:2013}: 42-3). 
-
-
 
 \end{quote}
 
@@ -487,7 +461,6 @@ S\&H claim that these three sorts of DP reference are syntactically derived, tha
 ``Definite reference, in contrast, involves both the Dº position and the base predicate position, such as an instance of a definite determiner in Dº and the noun occurring in Nº. In this case, both the phase interior and phase edge determine reference” (S\&H p.421). 
 
 
-
 \end{quote}
 
 Proper names, in contrast, consist of movement from Nº to Dº with Nº substituting for Dº, such that 
@@ -495,12 +468,9 @@ Proper names, in contrast, consist of movement from Nº to Dº with Nº substitu
 \begin{quote}
 
 
-
 ``reference is unmediated by descriptive content and only the phase edge determines reference,resulting in the rigid referential properties of proper names (S\&H p.421)." \footnote{The proposal of movement of proper names to D is adopted directly from \citet{Longobardi:1994,Longobardi:2005}.}  
 
 ``Broadly speaking, then, the three referential possibilities nicely correlate with the three logically possible ways in which the phase edge and interior can contribute to the determination of reference: only the phase interior mediates reference, or both the interior and edge do, or only the edge is involved'' (421).
-
-
 
 \end{quote}
 
@@ -524,8 +494,6 @@ There are two relevant conclusions for our purposes here\textemdash the first is
 \begin{quote}
 
  ... reference in human language is an `edge phenomenon': it depends on the extent to which a phase edge is involved in the determination of reference. The more edge-heavy the phase becomes (through Determiner or Complementizer phasal heads, or movement of phase internal material into these positions), the more referential the phase becomes, giving rise to object reference and fact reference in nominals and clauses, respectively. (Sheehan \& Hinzen 2011: 451)
-
-
 
 \end{quote}
 
@@ -742,7 +710,7 @@ In recent work, \citet{Carstens:2016} has argued against Diercks’ (\citeyear{D
 \end{enumerate}
 \z
 
-The ex situ valuation is similar to R\&VW’s proposal that we utilize here, and is a version of Bošković’s (\citeyear{Boskovic:2007b,Boskovic:2011}) proposal where unvalued features of a moving item drive its movement. The \textit{in situ} valuation, on the other hand, shares much conceptually with Bobaljik and Wurmbrand’s (\citeyear{BobaljikWurmbrand:2005}) notion of feature valuation within agreement domains.  Carstens uses this notion of delayed valuation of features to explain a range of feature-valuation operations.  
+The ex situ valuation is similar to R\&VW’s proposal that we utilize here, and is a version of Bošković’s \citep{Boskovic:2007b, Boskovic:2011} proposal where unvalued features of a moving item drive its movement. The \textit{in situ} valuation, on the other hand, shares much conceptually with Bobaljik and Wurmbrand’s (\citeyear{BobaljikWurmbrand:2005}) notion of feature valuation within agreement domains.  Carstens uses this notion of delayed valuation of features to explain a range of feature-valuation operations.  
 
 With respect to Lubukusu CA, this is a similar sort of proposal to the one that we advocate here. The difference boils down to whether this Lubukusu CA is viewed as anaphoric, and as such bears distinct qualities from non-anaphoric feature valuation, or whether Lubukusu CA is instead indicative of the general properties of non-anaphoric feature valuation. \citet{Carstens:2016} connects the Lubukusu CA facts with a broad variety of other feature-valuation facts like Case-valuation, concluding (like we do here) that there is simply one feature valuation operation, namely, Agree.  In order to explain the upward-orientation of Agree, however, she adopts a view similar to \citet{Bejar:2009}, that a failure of downward probing triggers an upward-oriented valuation operation, which may include either movement or valuation by a higher element within the same phase. Our analysis, on the other hand, proposes a particular kind of behavior of unvalued, interpretable feature sets that is connected to anaphoric phenomena; interpretable, unvalued features will move to a phase edge and probe from that position. Essentially, while both Carstens’ proposal and the one advanced here maintain that only a single feature-valuation mechanism is necessary in the syntax, Carstens liberalizes the Agree operation more generally, whereas we link the movement and valuation to a distinct, derivative kind of feature valuation\textemdash anaphoric feature valuation\textemdash which is a composite of two (already-available) syntactic operations.
 
@@ -755,7 +723,7 @@ What evidence could distinguish these proposals? One relevant area is the availa
 \glt `I want Barack Obama to succeed.'
 \z
 
-If we are to adopt a relatively uncontroversial assumption that the embedded subject raises to an object-licensing position in the main clause (perhaps AgrO below \textit{v}P), the account we propose here explains the non-intervention of the raised object in the CA relation naturally because the unvalued, interpretable features of the complementizer adjoin to \textit{v}P. However, this example is problematic for Carstens as on her account upward probing is only the result of the failure of downward probing. Presumably, however, if the lower clause is permeable for raising of the object, it should not be a phase and hence should also be permeable for probing by the complementizer head. Carstens claims that objects in RtO constructions like those in (\ref{RtOwithCA}) (i.e. those that raise across an agreeing complementizer) are A’-moved into the matrix clause (following Bruening's \citeyear{Bruening:2001d} analysis of raising to object), and that the lower clause is indeed a phase in these instances. We assume, in contrast, that such elements are in fact A-moved, which is supported by the fact that such objects can participate in standard object marking constructions (assumed to be an A-relation, as only arguments can be object marked; \citealt{Diercks:2011,SikukuEt:2017}). The example in (\ref{OMedRtOObject}) shows that an RtO object can be object marked, and (\ref{RtO,OM-doubling}) shows that a DP object in an RtO construction may be (clitic-)doubled by an OM.%\footnote{Note again here, as in the previous examples in the paper, that co-occurrence of an OM with an in situ object is only possible in specific pragmatic contexts, which \citet{SikukuEt:2017} analyze as verum (focus).} 
+If we are to adopt a relatively uncontroversial assumption that the embedded subject raises to an object-licensing position in the main clause (perhaps AgrO below \textit{v}P), the account we propose here explains the non-intervention of the raised object in the CA relation naturally because the unvalued, interpretable features of the complementizer adjoin to \textit{v}P. However, this example is problematic for Carstens as on her account upward probing is only the result of the failure of downward probing. Presumably, however, if the lower clause is permeable for raising of the object, it should not be a phase and hence should also be permeable for probing by the complementizer head. Carstens claims that objects in RtO constructions like those in (\ref{RtOwithCA}) (i.e. those that raise across an agreeing complementizer) are A’-moved into the matrix clause (following Bruening's \citeyear{Bruening:2001} analysis of raising to object), and that the lower clause is indeed a phase in these instances. We assume, in contrast, that such elements are in fact A-moved, which is supported by the fact that such objects can participate in standard object marking constructions (assumed to be an A-relation, as only arguments can be object marked; \citealt{Diercks:2011,SikukuEt:2017}). The example in (\ref{OMedRtOObject}) shows that an RtO object can be object marked, and (\ref{RtO,OM-doubling}) shows that a DP object in an RtO construction may be (clitic-)doubled by an OM.%\footnote{Note again here, as in the previous examples in the paper, that co-occurrence of an OM with an in situ object is only possible in specific pragmatic contexts, which \citet{SikukuEt:2017} analyze as verum (focus).} 
 
 \ea
 \langinfo{Lubukusu}{}{Justine Sikuku, pc} \\
@@ -800,29 +768,38 @@ With respect to the discussion of the directionality of Agree, we conclude that 
 
 \section*{Abbreviations}
 
-\begin{tabular}{ll}
-\textsc{ap} & applicative \\ 
-\textsc{ca} & complementizer agreement \\ 
-\textsc{caus} & causative \\ 
-\textsc{comp} & complementizer \\
-\textsc{fv} & final vowel \\ 
-\textsc{fca} & first conjunct agreement \\
-\textsc{fut} & future \\
-\textsc{obj} & object \\
-\textsc{om} & object marker \\ 
-PAPA & Principle for the Anaphoric Properties of Agreement \\
-\textsc{pl} & plural \\
-\textsc{prf} & perfective \\ 
-\textsc{prs} & present \\ 
-\textsc{pst} & past \\ 
-\textsc{sa} & subject agreement \\ 
-\textsc{sg} & singular \\
-\textsc{ta} & tense agreement \\
-\end{tabular}
+\begin{multicols}{2}
+	\begin{tabbing}
+		\textsc{fs/fv}\hspace{5mm} \= Principle for the Anaphoric Properties of Agreement\kill
+\textsc{ap} \> applicative \\ 
+\textsc{ca} \> complementizer agreement \\ 
+\textsc{caus} \> causative \\ 
+\textsc{comp} \> complementizer \\
+\textsc{fv} \> final vowel \\ 
+\textsc{fca} \> first conjunct agreement \\
+\textsc{fut} \> future \\
+\textsc{obj} \> object \\
+\textsc{om} \> object marker \\
+PAPA \> Principle for the Anaphoric Properties of Agreement \\
+\textsc{pass} \> passive \\
+\textsc{pl} \> plural \\
+\textsc{prf} \> perfective \\ 
+\textsc{prs} \> present \\ 
+\textsc{pst} \> past \\ 
+\textsc{sa} \> subject agreement \\ 
+\textsc{sbj} \> subjunctive \\
+\textsc{sg} \> singular \\
+\textsc{ta} \> tense agreement \\
+\end{tabbing}
+\end{multicols}
 
 \section*{Acknowledgements}
 The authors would like to express their gratitude to audiences at WCCFL 30 at UC-Santa Cruz and at the The Minimalist Program: Quo Vadis? – Newborn, Reborn, or Stillborn? Workshop in Potsdam for their helpful feedback. In particular, our thanks to Jeff Lidz, Johan Rooryck, Ken Safir, and Susi Wurmbrand for their comments, and our thanks to Michael Clausen and Meredith Landman at Pomona College for serving as sounding boards at various times. Our discussions with Vicki Carstens and her work on this issue have been particularly challenging and helpful as we have developed this paper. We also thank a total six anonymous reviewers over the years, who posed significant and stimulating challenges to initial versions of this work that have quite significantly raised the quality of the resulting paper. Support from this project has come from Pomona College, from a NSF Collaborative Research Grant (Structure and Tone in Luyia: BCS-1355749) and from the NWO-grant (the universality of linguistic variation: 276-89-002). The authors blame each other for any remaining errors or inconsistencies.
 
-\printbibliography[heading=subbibliography,notkeyword=this]
+
+
+{\sloppy
+	\printbibliography[heading=subbibliography,notkeyword=this]
+}
 
 \end{document}
