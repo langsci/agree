@@ -1,0 +1,1344 @@
+\documentclass[output=paper
+,modfonts
+,nonflat]{langsci/langscibook} 
+\bibliography{localbibliography} 
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex} 
+
+\title{Concord and labeling}
+\author{%
+	Vicki Carstens\affiliation{Southern Illinois University}
+}
+% \chapterDOI{} %will be filled in at production
+
+% \epigram{}
+
+\abstract{In DPs of some languages, possessors and external arguments of nouns that have them surface in low positions introduced by `of'. In others, this is impossible or highly restricted. I argue that nP-internal possessors/EAs give rise to the [XP, YP] configuration that thwarts the labeling algorithm of \citet{Chomsky2013, Chomsky2015}, forcing them to raise to Spec of an agreeing head such as D. But shared features of gender-number/noun class concord on `of' can label nP with possessor or EA in situ. In addition to explaining contrasting word orders this analysis provides novel evidence that concord is a syntactic phenomenon: it feeds labeling, and bleeds possessor/EA-raising in DP.}
+
+\begin{document}
+	\maketitle
+\section{Introduction} \label{sec:1}
+\subsection{The labeling issue} \label{sec:1.1}
+\citet{Chomsky2013, Chomsky2015} proposes that categories are labeled not by projection but by an algorithm applying at the phase level. The algorithm takes as label for a category the features of its head, but cannot determine the head in an [XP, YP] configuration. If, however, Agree has applied between XP and Y, the features that they share serve as label. 
+
+The principal case that Chomsky considers in this connection is a clause with an external argument (EA). Merge of EA to its \textit{v}P-internal base position creates the problematical [XP, YP] configuration (see (\ref{ex:1a})). Raising of EA rectifies this because EA’s low copy is invisible to the algorithm, so \textit{v}P can be labeled by its head, \textit{v} (see (\ref{ex:1b})). Finally, the Agree relation (T, EA) makes it possible for EA to surface in TP, which is labeled by the features that T and EA share (see (\ref{ex:1c} and \ref{ex:d})). Phi-features and agreement thus play a pivotal role in labeling, under Chomsky's proposals. 
+
+\begin{exe} 
+\ex \label{ex:1} \xlist
+	\ex \label{ex:1a} $\alpha$ cannot be labeled\newline
+	{\lbrack}$\alpha$ [\textsubscript{DP} the girl] [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]{\rbrack} 
+	\ex \label{ex:1b}after EA raising, $\alpha$ labeled vP based on its head v\newline
+	{\lbrack}\textsubscript{vP} {\textless}the girl{\textgreater} [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]{\rbrack} 
+	\ex \label{ex:1c} ...but first, Agree (T, SU)\newline
+	{\lbrack}T\textsubscript{u$\phi$} [\textsubscript{vP} [\textsubscript{DP} the girl\textsubscript{$\phi$}] [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]]{\rbrack} 
+	\ex \label{ex:d}shared prominent features label $\phi$P\newline
+	{\lbrack}\textsubscript{$\phi$P} [\textsubscript{DP} the girl]\textsuperscript{$\phi$} will\textsuperscript{$\phi$} [\textsubscript{vP} <the girl> \textit{v} [feed the dog]]{\rbrack}  
+\endxlist
+\end{exe}
+Assuming this analysis is correct, similar effects should be discernible in any syntactic domain where comparable configurations arise. An important domain to consider is the extended nominal projection in the sense of \citet{Grimshaw19912005}, henceforth DPs. Possessors and, for nouns that have them, EAs\footnote{On this issue see brief remarks and citations in section \ref{sec:1.4}} have been argued to merge as specifiers of \textit{n}, a nominal counterpart to \textit{v} within the DP (for possessors this projection is sometimes labeled PossP; for expository convenience I treat both cases alike): 
+
+\begin{exe}
+\ex \label{ex:2}\xlist
+	\ex {\lbrack}\textsubscript{$\alpha$} the enemy [\textsubscript{nP} \textit{n} [\textsubscript{NP} attack on the city]]{\rbrack}
+	\ex {\lbrack}\textsubscript{$\alpha$} Mary [\textsubscript{nP} \textit{n} [\textsubscript{NP} book]]{\rbrack}
+\endxlist
+\end{exe}
+But a special factor relevant to labeling inside DPs is that unlike \textit{v}/V\textit{, n}/N of languages with grammatical gender bears intrinsic phi-features. Given that these features may participate in agreement, it stands to reason that their presence might impact labeling possibilities.
+
+My paper claims that this is indeed the case. In particular, possessor and EA {\textquotedbl}subjects{\textquotedbl} introduced by an 'of'-like morpheme bearing gender concord are able to surface in low, \textit{n}P-internal positions within DPs (see the Chichewa (\ref{ex:3})). This pattern is very common across the 500+ languages of the Bantu family, where there is concord in noun class.\footnote{In glosses, numerals indicate noun classes unless followed by S or PL, in which case they indicate person features. S = singular, PL= plural, GEN=genitive, POSS = possessive, DEF = definite, FEM = feminine, MASC = masculine, SA = subject agreement, NOM= nominative, ACC = accusative, INSTR = instrumental, ABS = absolutive, ERG = ergative, DOM = differential object marking. Unless otherwise indicated, data in examples is drawn from my own research.}
+
+\protectedex{
+	\begin{exe}
+		\ex Chichewa \citep[372, 374]{Carstens1997} \label{ex:3}
+		\xlist
+		\ex \label{ex:3a}
+		\gll chi-tunzi     ch-abwino     ch-a   Lucy\\
+		7-picture   7-nice       7of     1Lucy\\
+		\glt `Lucy's nice picture' (Lucy = possessor, agent, or theme)	
+		\ex Structure of possessor or agent reading: \newline	
+		\gll \mbox{[\textsubscript{DP} chitunzi+\textit{n}+D … [\textsubscript{nP} ch-abwino [\textsubscript{nP} ch-a Lucy …<chitunzi+\textit{n}> … ]]]}\\
+			\mbox{\hspace{0.6cm}7picture		\hspace{1.9cm}7-nice		\hspace{1.3cm}7-of		1Lucy}\\ 
+		\endxlist
+\end{exe}}
+In contrast, genderless Turkish, Chamorro, Hungarian, Yupik, and Tsutujil wear the need for alternative labeling on their sleeves, as it were: a possessor or external argument must value agreement on a high functional category in DP and undergo raising to its Spec (see \citealt{Abney1987} among others).\footnote{In Turkish, \textit{\textbf{any}} argument must do this, suggesting that even themes are merged as specifiers rather than complements, giving rise to the [XP, YP] configuration. I will not pursue this here.} Compare (\ref{ex:3}) to (\ref{ex:4}), where (\ref{ex:4b}) is an approximate representation for Turkish:\footnote{(\ref{ex:4b}) is based on Abney's (1987) proposal that agreement with possessors is a feature of D, though a lower locus for this is possible; see section \ref{sec:4}. \citet{Bošković_Sener2014} argue that Turkish nominal expressions are NPs, not DPs, with possessors surfacing in NP-adjoined positions (they do not discuss possessor agreement). But significantly, left branch extraction from nominal expressions is not available, unlike in the prototypical NP-language, Serbo-Croatian (\citealt{Bošković2005}). A major source of evidence for their proposal is rather the ability of a genitive to bind something outside the DP. If DP is a suite of functional projections, one D- (or other functional) head bearing possessor agreement might be present, and a higher DP layer crucial to constraining binding possibilities might still be absent. Alternatively, Turkish possessors and the agreement might surface in a lower FP (see discussion of Hungarian in sections \ref{sec:2.2} and \ref{sec:4}). I leave this aside.}
+
+\protectedex{
+	\begin{exe}
+	\ex Turkish \label{ex:4}
+	\xlist
+		\ex 
+		\gll Ahmet ve   Ali-in     resm-i\\
+		Ahmet and  Ali-\textsc{gen}   picture-3\textsc{pl}\\
+		\glt `Ahmet and Ali's picture' 	
+		\ex \label{ex:4b} (adapting \citealt{Abney1987})\newline
+		[\textsubscript{DP} Ahmet ve Ali-in D\textsubscript{\sout{uPhi}} … [\textsubscript{nP} <Ahmet ve Ali> \textit{n} resm]] 
+		\endxlist
+	\end{exe}}
+Raising of the possessor DP and agreement with it in (\ref{ex:4}) mirror subject agreement and subject raising at the clausal level in permitting \textit{n}P to be labeled by its head \textit{n}, and shared prominent features to label the category of the possessor's landing site. 
+
+\subsection{Where is concord?} \label{sec:1.2}
+In addition to presenting a study of labeling inside DP, my paper contributes to an ongoing debate regarding the relationship between concord and canonical agreement processes and relatedly, the place of concord in the grammar. One analytical trend in generative syntax has been to approach concord as a subtype of agreement, derived through shared mechanisms (see \citealt{Baker2008}, \citealt{Carstens1991, Carstens2000, Carstens2011}, \citealt{Danon2011}, \citealt{Koopman2006}, \citealt{Toosarvandani_Van_Urk2014} among others). On the other hand, there have long been suggestions to the effect that concord and agreement may be the product of quite different processes or relations, perhaps taking place in distinct grammatical domains (\citealt{Baier2015}, \citealt{Chomsky2001} fn. \ref{fn:6}, \citealt{Chung2013}, \citealt{Norris2014}). And while mainstream Minimalism treats canonical agreement as syntactic, \citet{Bobaljik2008} argues that it belongs to the post-syntactic morphology, opening up the possibility that this is true of both relations. 
+
+Based on my proposal that gender concord labels \textit{n}P and bleeds the DP-internal counterparts to clause-level subject raising and subject agreement, I argue that both belong to the same domain of the grammar, which I take to be narrow syntax. Since number concord accompanies gender concord, I assume that the conclusion generalizes to it as well. 
+
+While my primary focus in this paper is gender concord, I will consider briefly whether Case concord plays the same role, pointing out what evidence is needed for future research to make a determination.
+
+\subsection{Exclusions and limitations} \label{sec:1.3}
+The internal workings of DP vary along many dimensions. This paper is narrowly focused and does not attempt a comprehensive treatment of DP syntax, even for languages with gender.
+
+I do not address systematic differences some languages exhibit between alienable and inalienable possession (see in particular \citealt{Den_Dikken2015}).     
+
+I ignore interesting evidence that an articulated DP includes both A' and A-landing sites (\citealt{Szabolcsi1983}, \citealt{Gavruseva2000}, \citealt{Alexiadou2001}, \citealt{Haegeman2004} among others).    
+
+Most importantly, I acknowledge that many languages do not neatly fit the dichotomous typological groupings that are my focus here. The close attention this paper gives to polar opposite types of morpho-syntactic patterns is not intended to deny or exclude the existence of different patterns of facts and alternative strategies for labeling [XP, YP] configurations within DP, but rather to lay out the issues and two contrasting ways that languages may address them. Section \ref{sec:6} will explore a small number of cases that diverge in certain ways from the two patterns, in the process identifying some contributing morpho-syntactic factors that may be useful in future research on the workings of DP-internal labeling. We will see that concord and a variety of possessor agreement may co-occur within the same DP when the possessor is bare, that is, neither the possessor nor a KP that contains it is inflected for concord. We will also see an additional option predicted by the system: raising of the possessum \textit{n}P or NP. In a language where the possessum has intrinsic gender features, this is both compatible with the concordial labeling strategy and a viable alternative to it. Future research may uncover other strategies.    
+
+\subsection{Theoretical assumptions} \label{sec:1.4}
+This study is carried out within the Minimalist framework of \citet{Chomsky2000, Chomsky2001} and adopts the labeling algorithm proposed in \citet{Chomsky2013, Chomsky2015}. 
+
+I assume that Bantu noun class consists of grammatical gender and number features (\citealt{Corbett1991}, \citealt{Carstens1991}). Odd numbered classes are typically singulars of a given gender, and even ones are usually plurals. That many Bantu nouns have semantically arbitrary gender assignments can be captured in a lexicalist model by analyzing gender as a listed property of nominal roots (-\textit{doo} - 'bucket' is class 9/10; -\textit{kapu} - 'basket' is class 7/8). A popular alternative in Distributed Morphology (DM) views gender a little differently -- as added to categorially neutral roots by varying flavors of the categorizer ns which select them (see \citealt{Acquaviva2009}, \citealt{Ferrari2005}, \citealt{Kramer2015}, \citealt{Kihm2005}, \citealt{Lecarme2002}) In \citet{Acquaviva2009} and \citet{Kramer2015}, licensing conditions ensure that roots which surface only as nouns of gender $\alpha$ must combine with \textit{n} of flavor $\alpha$.  
+Though the choice between approaches is not crucial to this paper's proposals, for simplicity's sake my representations include the labels N and NP. I will assume that \textit{n} and N always share intrinsic gender features as a consequence of N-to-\textit{n} raising and incorporation. \citet{Chomsky2015} proposes that affixation of v to a root renders v invisible, giving its phasal properties to its host. My approach to labeling within DP seems translatable under similar assumptions about affixation of \textit{n} (with some technical adjustments), but I leave that to future work. 
+
+I assume that concord reduces to the Agree relation (\citealt{Baker2008}, \citealt{Carstens2000}, \citealt{Danon2011}, \citealt{Koopman2006}, \citealt{Toosarvandani_Van_Urk2014} among others). Following \citet{Carstens2010, Carstens2011}, there are principled reasons why gender concord iterates. A noun's intrinsic grammatical gender is a valued but uninterpretable formal feature,\footnote{See \citet{Kramer2015} for arguments that some grammatical gender is interpretable. Semantic features clearly determine the mappings of some groups of nouns to genders, as do phonological properties of borrowings, in Bantu, such as Swahili \textit{kitabu/vitabu} - 'book/s'; \textit{msikiti/misikiti} - 'mosque/s'; other gender assignments are arbitrary. I assume that regardless of the mapping factor responsible in a given case, grammatical gender enters the syntax a valued uF on nouns.} permitting its bearer to meet the Activity Condition of \citet{Chomsky2001} whether or not it also bears unvalued Case (see \citealt{Pesetsky_Torrego2007} on the independence of [+/-valued] and [+/-interpretable]). Agree does not determine the value of \textit{n}/N’s intrinsic gender like it does a DP's uCase, and for this reason there are no {\textquotedbl}deactivation{\textquotedbl} effects: a single nominal expression can value concord on many bearers\footnote{\label{fn:6}This accounts also for the availability of multiple agreement with a single DP when that agreement includes gender, as is true of past participle agreement in Romance and subject agreement in Bantu and Semitic (where N-to-D adjunction makes gender accessible to all clause-level probes; see \citealt{Carstens2011} and note 13).} (see \citealt{Nevins2005} on the causal relation between valuation and deactivation effects, though in contrast with Nevins, I accord Activity a role in Agree). Section \ref{sec:3.2} fleshes out the mechanics of concord more fully.
+
+Turning to the structure of DP, I adopt (\ref{ex:5}) as the common architecture (using traditional, pre-labeling theoretic category labels for convenience). There are functional projections (FP) in the middle field of a DP, including at least Num(ber)P (\citealt{Carstens1991}, \citealt{Ritter1991, Ritter1992}) and probably other FPs whose precise identities will not be important here. There may be different projections, PossP vs. \textit{n}P, associated with the thematic roles and merge locations of possessors and agents, but this will not be crucial.
+
+\begin{figure}[!h]
+\begin{exe}
+	\exbox{ \label{ex:5}
+		\begin{forest} for tree={fit=rectangle}
+		[DP
+		[F]	
+		[(FP)
+		[F]
+		[NumP
+		[Num]
+		[(FP)
+		[F]
+		[\textit{n}P(/PossP)
+		[DP/KP\\ \textit{possesor/agent}]
+		[\textit{n'}
+		[\textit{n}]
+		[NP\\ \textit{head noun}\\\textit{(possessum or argument-taking}\\ \textit{nominal})]
+		] ] ] ] ] ]		
+		\end{forest}}
+\end{exe}
+\end{figure}
+\newpage \noindent Researchers into argument structure in nominals have argued that event/process nominals include verbal and aspectual projections (see \citealt{Hazout1995}, \citealt{Borer1993} among others), and that most or all nominals lack true EAs (\citealt{Alexiadou2001}, and \citealt{Picallo1991} among others). But \citet{Lopez2018} shows that Spanish process nominals that don’t entail a change of state have EAs (see (\ref{ex:6})).
+
+\protectedex{
+	\begin{exe}
+		\ex \label{ex:6}
+		\xlist
+		\ex \citep [86]{Lopez2018}\newline
+		\gll El         ataque        del     perro  a      Juan fue sorprendente.\\
+		the.\textsc{masc}   attack(\textsc{masc}) of.the dog     \textsc{dom}    {}      was surprising\\
+		\glt `The dog's attack on Juan was surprising.' 	
+		\ex \citep[91]{Lopez2018}\newline
+		\gll El         miedo       de Juan a     las          arañas\\
+		the.\textsc{masc}   fear(\textsc{masc})  of Juan  \textsc{dom}   the.\textsc{fem-pl}   spiders\\
+		\glt `Juan's fear of spiders' 
+		\endxlist
+\end{exe}}
+I assume that the labeling-related phenomena associated with possessors are shared by DP-internal EAs, for those nominals whose properties of argument structure and Case allow them. 
+
+Other assumptions will be introduced and discussed as they become relevant.
+
+\subsection{Structure of the paper} \label{sec:1.5}
+Section \ref{sec:2} proposes that the presence or absence of grammatical gender has correlates in terms of where possessors and EAs of n may surface. Section \ref{sec:3} presents my proposal that shared features of concord can label \textit{n}P with a possessor or EA in situ. Section \ref{sec:4} looks at DP-internal possessor raising and agreement, arguing that it is a means of addressing the impossibility of labeling [XP, YP] configurations within \textit{n}P in languages where there is no gender concord to supply a label. Section \ref{sec:5} explores the question of {\textquotedbl}freezing{\textquotedbl} effects (\citealt{Rizzi2006}, \citealt{Rizzi_Shlonsky2007}), showing that bearers of concord may move, but do not value phi-agreement. Second \ref{sec:6} explores some further issues that arise in Maasai, Hausa, and Hebrew in relation to labeling and concord. Section \ref{sec:7} takes a brief look at Case concord, and section \ref{sec:8} concludes.
+
+\section{A typological divide in genitive constructions} \label{sec:2}
+\subsection{Concord and low possessors} \label{sec:2.1}
+The foundation of my argument is a set of contrasts distinguishing two opposing patterns of DP-internal morpho-syntax. 
+
+At one end of the spectrum are the Bantu languages. As noted in section \ref{sec:1}, lexical possessors surface to the right of adjectives in Bantu, and hence by assumption are low in the structure. They are introduced by the so-called associative \textit{–a} morpheme, which agrees in noun class with the possessed noun (see the Chichewa (\ref{ex:7a}) and its representation in (\ref{ex:7b})) on these points. Concord and its controller are underlined; the possessor phrase is boldfaced). Pronominal possessors also bear noun class concord, but surface higher, to the left of APs (see (\ref{ex:7c}) and (\ref{ex:7d})). Lexical possessors are barred from this higher position, as (\ref{ex:7e}) demonstrates. \citet{Carstens1991, Carstens1997} situates the genitive pronouns in Spec of the mid-level functional category NumP (as shown in (\ref{ex:7f})).
+
+\begin{exe}
+		\ex  Chichewa \citep[372, 374]{Carstens1997} \label{ex:7}
+		\xlist
+		\ex \label{ex:7a}
+		\gll \underline{chi}\underline{-tunzi}     ch-abwino     \textbf{\underline{ch}-a}   \textbf{Lucy}\\
+		7-picture   7-nice         7-of   1Lucy\\
+		\glt `Lucy's nice picture'  (Lucy = possessor, agent, or theme) 	
+		\ex \label{ex:7b}
+		\gll \mbox{[\textsubscript{DP} N+\textit{n}+Num+D[\textsubscript{NumP} <Num> [\textsubscript{nP} AP [\textsubscript{nP} cha Lucy <N+\textit{n}> ...]]]]}\\
+		\mbox{\hspace{6.7cm}7-of Lucy}\\ 
+		\ex \label{ex:7c}{}
+		\gll \underline{chi}\underline{-tunzi}      \underline{ch}\textbf{-anga}     ch-abwino\\
+		7-picture   7-my         7-nice\\
+		\glt `my nice picture'
+		\ex \label{ex:7d}
+		\gll  *\underline{chi}\underline{-tunzi}    ch-abwino     \textbf{\underline{ch}-anga}\\
+		7-picture   7-nice      7-my\\
+		\ex \label{ex:7e}
+		\gll  *\underline{chi}\underline{-tunzi}    \textbf{\underline{ch}-a} Lucy     ch-abwino\\
+		7-picture   7-nice      7-my\\
+		\ex \label{ex:7f}
+		\gll \scalebox{0.9}{[\textsubscript{DP} N+n+Num+D [\textsubscript{NumP} changa <Num> [\textsubscript{nP} AP [\textsubscript{nP}  <changa> <N+\textit{n}>...]]]]}\\
+		\mbox{\hspace{3.5cm}7-my}  \\
+		\endxlist
+\end{exe}
+This pattern of genitive constructions is pervasive in the 500+ Bantu languages. Examples in (\ref{ex:8}) and (\ref{ex:9}) illustrate its presence in Swahili and Kilega. (\ref{ex:10}) and (\ref{ex:11}) provide representative examples from Zulu and Shona, showing concord on ‘of’ and Shona NSO word order.
+
+\protectedex{
+\begin{exe}
+		\ex Swahili \citep[100]{Carstens1991} \label{ex:8}
+		\xlist
+		\ex 
+		\gll \underline{gari}     ji-pya     l\textbf{-a}     \textbf{Hasan}\\
+		5car   5-new     5-of    1Hasan\\
+		\glt `Hasan's new car'  	
+		\ex 
+		\gll \underline{gari}     \textbf{l{}-ake}    ji-pya\\
+		5car  5-3Sposs  5-new\\
+		\glt `his/her new car'
+		\ex
+		\gll  *\underline{gari}  \textbf{la}     \textbf{Hasan}      ji-pya\\
+		5car 5-of   1Hasan   5-new\\
+		\ex
+		\gll  ?\underline{gari}   ji-pya   \textbf{l{}-ake}\\
+		5car   5-new   5-3\textsc{s}poss\\
+		\endxlist
+\end{exe}}
+\begin{exe}
+	\ex Kilega \citep{Kinyalolo1991} \& pc \label{ex:9}
+	\xlist
+	\ex 
+	\gll \underline{bishúmbí}   bi-sóga        \textbf{\underline{bi}-á}   \textbf{Mulonda} \\
+	8chairs       8-beautiful     8of    1Mulonda\\
+	\glt `Mulonda’s beautiful chairs'  	
+	\ex 
+	\gll \underline{luzi}               lu-nene   \textbf{\underline{lu}-á}    \textbf{Sanganyí}\\
+	11basket   11-big    11of      1Sanganyí\\
+	\glt `Sanganyí’s big basket'
+	\endxlist
+\end{exe}
+\begin{exe}
+	\ex Zulu \label{ex:10}
+	\xlist
+	\ex 
+	\gll \underline{abantwana} \textbf{\underline{ba}{}-ka}   \textbf{Thandi} \\
+	2children     2of        1Thandi\\
+	\glt `Thandi’s children'  	
+	\ex 
+	\gll \underline{ihashi}   \textbf{\underline{li}{}-ka}  \textbf{Jane}\\
+	3horse 3of     1Jane\\
+	\glt `Jane’s horse'
+	\endxlist
+\end{exe}
+\begin{exe}
+	\ex Shona \label{ex:11}
+	\xlist
+	\ex 
+	\gll \underline{zvipunu}   zvi-kuru \textbf{\underline{zv}{}-a}     \textbf{Tendai} \\
+	8spoons   8big       8-of    1Tendai\\
+	\glt `Tendai’s large spoons'  	
+	\ex 
+	\gll \underline{nyaya}   \textbf{\underline{y}{}-a}     \textbf{Tendai}   ye-udiki             wake\\
+	9story   9-of    1Tendai   9.of-11childhoood     11s\textsc{poss}\\
+	\glt `Tendai's story about his childhood'
+	\endxlist
+\end{exe}
+Looking outside of Bantu, a similar pattern of possessives is present in the Chaddic language Hausa, which has masculine and feminine genders.\footnote{The \textit{na} and \textit{ta} genitive morphemes for masculine and feminine respectively often undergo reduction and contraction (as described in \citealt{Tuller1986}), surfacing as the suffixed forms \textit{-n} and \textit{-r}. I assume with \citet{Tuller1986} that the syntax associated with the suffixes is essentially the same as for their independent counterparts. Aspects of DP-internal order in Hausa is suggestive of NP-raising (see (i) from \citealt[30]{Tuller1986}). Discussion of this and of similar fronting in Maasai and Semitic languages appears in section \ref{sec:6}.
+\begin{exe}
+	\ex 
+	\xlist
+	\ex 
+	\gll buhun haatsi na Ali\\
+	sack     millet  of\\
+	\glt `Ali's sack of millet'  	
+	\ex {\lbrack}sack (of) millet{\rbrack} of Ali <sack of millet>
+	
+	\endxlist
+\end{exe}}
+
+\begin{exe}
+	\ex \label{ex:12} \citep[301]{Newman2000}
+	\xlist
+	\ex 
+	\gll \underline{riga}   bak’a   \textbf{\underline{t}a}       \textbf{Lawan} \\
+	gown   black   of.fem    Lawan\\
+	\glt `Lawan’s black gown'  	
+	\ex 
+	\gll \underline{litafi}     guda \textbf{\underline{n}a}       \textbf{Lawan}\\
+	book one  of.masc  Lawan\\
+	\glt `one book of Lawan's'
+	\endxlist
+\end{exe}
+I will refer to languages with the low possessor and concordial 'of' profile as Type 1 languages. Their characteristics are summarized in Table \ref{tab:1}.\footnote{See \citealt{Giusti2008} for observations along similar lines about languages with concord in gender and number.} 
+\begin{table}
+	\caption{}
+	\label{tab:1}
+	\begin{tabularx}{\textwidth}{lX}
+		\lsptoprule
+		Canonical Type 1 languages: & Grammatical gender/noun class\\ \\
+		\textit{i.e. Bantu} & Possessors and EAs may remain low, introduced by ‘of’\\
+		& Head noun (the possessum) controls concord on ‘of’\\
+		\lspbottomrule
+	\end{tabularx}
+\end{table}  \noindent
+Additional languages in which the possessor bears concord with the possessum, hence potentially Type 1 languages, include Hindi-Urdu \citep{Bogel_Butt2013}, Albanian \citep{Spencer2007}, and some Afro-Asiatic languages including central Cushitic languages \citep{Hetzron1995} and Old and Middle Egyptian \citep{Haspelmath2015}. I exclude them from discussion here for lack of sufficient information about the syntax of their DPs, though the concord facts are promising.
+
+\subsection{Possessor agreement languages} \label{sec:2.2}
+Languages such as Turkish and Yu'pik instantiate the other end of the spectrum. They lack grammatical gender (and have no concord in number either). Since \citet{Abney1987}, it has been widely considered that their DP-internal morpho-syntax resembles that of clauses in familiar SVO languages: possessors and agents surface in high, typically prenominal positions and control agreement in person and number. Examples (\ref{ex:13a}) and (\ref{ex:14}) are reproduced from \citet{Abney1987}, who cites \citet{Underhill1976} for (\ref{ex:13a}) (see also \citealt{Gavruseva2000} and \citealt{Haegeman2004} for discussion). This agreement is henceforth referred to as \textit{possessor agreement,} though the thematic role of its controller varies along the same lines as that of clausal subject agreement. 
+
+\begin{exe}
+	\ex Turkish \label{ex:13}
+	\xlist
+	\ex \label{ex:13a}
+	\gll \underline{Ahmet} \underline{ve} \underline{Ali-in}     resm-\underline{i}  \\
+	Ahmet and Ali-\textsc{gen}   picture-3\textsc{pl}\\
+	\glt `Ahmet and Ali's picture'  	
+	\ex (Kornfilt, personal communication) \newline
+	\gll \underline{ben-im}   yeni  resm-\underline{im}\\
+	I-\textsc{gen}  new   picture-1s\\
+	\glt `my new picture'
+	\endxlist
+\end{exe}
+
+\begin{exe}
+	\ex Yupik \label{ex:14}
+	\gll \underline{angute-t}		kuiga-\underline{t}\\
+	man-\textsc{pl}    river-\textsc{pl}\\
+	\glt `the men's river'  	
+\end{exe}
+\citet{Abney1987} proposes that possessor agreement is a feature of D, analogous to clausal subject agreement in Infl. Recognition of additional functional structure in nominals opens up other options including the possibility of variation in this regard. Following \citet{Chung1982}, Chamorro has possessor agreement that is the counterpart to subject-verb agreement, and NSO order corresponding to VSO. The agent argument raises to a mid-level functional projection within DP, followed by N-raising across it to D ((\ref{ex:15a}) from \citealt[127]{Chung1982}).
+
+\begin{exe}
+	\ex Chamorro \label{ex:15}
+	\xlist
+	\ex \label{ex:15a}
+	\gll i-bisitana       \underline{si Francisco}   as Teresa \\
+	the-\textsc{visit.agr3s}     \textsc{unm}            of\\
+	\glt `Francisco's visit to Teresa'  	
+	\ex \mbox{{\lbrack}\textsubscript{DP} N+\textit{n}+D [\textsubscript{FP} si Francisco  <F\textsubscript{\sout{u}}\textsubscript{\sout{$\phi$}}> [\textsubscript{nP}...<N+\textit{n}>...]]{\rbrack}}
+	\endxlist
+\end{exe}
+Hungarian is also widely described as having possessor agreement (see \citealt{Szabolcsi1983, Szabolcsi1994}; (\ref{ex:16b}) and (\ref{ex:16c}) from \citealt[139]{Den_Dikken1999}). Since the possessor in these examples surfaces to the right of an article, I assume that it occupies a position in the DPs middle field as shown in (\ref{ex:16d}). (\ref{ex:16e}) shows that an argument introduced by 'of' can have only a theme reading in Hungarian (this judgment from Eva Dekany and Huba Bartos, personal communication), unlike in Bantu; thus raising of a possessor or agent argument is obligatory.\footnote{\citet{Den_Dikken2015} argues that Hungarian possessor inflection is not actually agreement but a clitic (see also \citealt{Den_Dikken1999}, \citealt{Bartos1999}, \citealt{Kiss2002} on the crucial facts). Section \ref{sec:4} provides brief discussion.} 
+
+\begin{exe}
+	\ex Hungarian \citep[90]{Szabolcsi1983} \label{ex:16}
+	\xlist
+		\ex \label{ex:16a}\textit{agreement with pronominal possessor} \newline
+	\gll az   \underline{én-ø} vendég-e-\underline{m}\\
+	the I-\textsc{nom} guest-\textsc{poss}{}-1s\\
+	\glt `my guest'  	
+		\ex \label{ex:16b}\textit{agreement with pronominal possessor} \newline
+	\gll az   \underline{\H{o}(k)}  kalap-ja-i-\underline{k}\\
+	the they hat-\textsc{poss}{}-\textsc{pl}{}-\textsc{3pl}\\
+	\glt `their hats'
+		\ex \label{ex:16c}\textit{lexical possessor; no agreement}\newline
+	\gll  a   \underline{n\H{o}k}       kalap-já-/\underline{*juk}\\
+	the   women hat-\textsc{poss}{}-*\textsc{3pl}\\
+	\glt `the women's hat' 
+		\ex \label{ex:16d}
+	\gll \mbox{{\lbrack}\textsubscript{DP} az [\textsubscript{FP} én    F\textsubscript{u}\textsubscript{$\phi$} [\textsubscript{nP} <az> \textit{n} vendég-e-m ]]{\rbrack}}\\
+	\hspace{0.6cm}the      \hspace{-5.4cm}I-\textsc{gen}                     \hspace{-2.7cm}guest-\textsc{poss}-1s\\
+		\ex \label{ex:16e}\textit{no agent/possessor reading for 'of' DP} \newline
+	\gll (a) kep       Mari-rol\\
+(the) picture Mary-of\\
+	\glt `the picture of Mary'\\ {*}`the picture of Mary's'
+	\endxlist
+\end{exe}
+Tzutujil too shows possessor agreement, as Abney notes, and has no grammatical gender. \citet[286]{Dayley1985} provides the following example.\footnote{Possessors (and clausal subjects) in Tzutujil appear to occupy right-hand Specs, presenting questions in relation to antisymmetry theory \citep{Kayne1994} that lie outside this paper’s scope.} 
+
+\begin{exe}
+	\ex 
+	\gll Xinwijl [jun rwach [rxajab' [rk'aajool [nb'eesino. ]]{\rbrack}\\
+	3s\textsc{abs}-1s\textsc{erg}-found     \hspace{0.1cm}a     its-strap    \hspace{0.1cm}his-shoe      \hspace{0.1cm}his-son    \hspace{0.1cm}my-neighbor\\
+	\glt `I found a strap of my neighbor's son's shoe.'  	
+\end{exe}
+The word order and agreement facts suggest that these are all languages in which possessors cannot appear nP-internally and must raise (see the Turkish structure (\ref{ex:4b}), repeated below). 
+
+\begin{exe}
+	\exr{ex:4b}
+	{\lbrack}\textsubscript{DP} Ahmet ve Ali-in D\textsubscript{uPhi} … [\textsubscript{nP} <Ahmet ve Ali>  \textit{n} resm ]{\rbrack}
+\end{exe}
+I will refer to languages with this profile as Type 2 languages. Their characteristics are summarized in \tabref{tab:2}.
+\begin{table}
+	\caption{}
+	\label{tab:2}
+	\begin{tabularx}{\textwidth}{lX}
+		\lsptoprule
+		Canonical Type 2 languages: &  No grammatical gender\\ \\
+		\textit{i.e. Turkish}  & Concord is absent\\
+		& Highest argument raises out of nP to Spec of a functional category\\
+		& Highest argument controls \textit{possessor agreement} (PossAgr)\\
+		\lspbottomrule
+	\end{tabularx}
+\end{table} \newpage \noindent
+\subsection{Interim summary} \label{sec:2.3}
+
+I have introduced two opposing patterns of genitive constructions. On the one hand, Type 1 languages have grammatical gender and possessors are introduced by ‘of’-like morphemes bearing concord with the head noun. On the other hand, Type 2 languages lack gender and hence gender concord, and their possessors surface high, controlling possessor agreement. 
+
+I flesh out below the syntax I assume for a possessive construction in a Bantu language in pre-labeling-theoretic terms, i.e. with traditional category labels.
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{}
+			\textit{Bantu: Poss stays low }\\
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[DP 
+				[D	
+				[n
+				[N\\ \textit{\textbf{gari}}\\5car]
+				[n] ]
+				[D] ]
+				[FPs
+				[F]
+				[\textit{n}P
+				[AP[\textit{\textbf{jipya}}\\5new, roof] ]
+				[\textit{n}P
+				[KP[\textit{\textbf{la Hasan}}\\5of 1Hasan, roof] ]
+				[\textit{n'}
+				[<\textit{n}>]
+				[NP[<\textit{N}>, roof] ]
+				] ] ] ] ] 	
+				\node at (7,0){(=8a)};	
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage \noindent As proposed in \citet{Abney1987}, possessors appear higher in DP of Type 2 languages. They raise out of nP to Spec of a functional category as shown for Turkish in (\ref{ex:19}) where, following Abney, I represent the landing site for Turkish possessors as Spec, DP.          
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:19}
+			\textit{Turkish: Poss raises high}\\
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[DP1
+				[DP2 [ben-im\\I-gen, roof] ]	
+				[D'
+				[D]
+				[FPs
+				[F]
+				[\textit{n}P
+				[AP[yeni\\new, roof] ]
+				[\textit{n}P
+				[<DP2>[ben\\I, roof] ]
+				[\textit{n'}
+				[\textit{n}]
+				[NP[N\\rem-\textit{\textbf{im}}\\picture-1Sagr, roof] ]
+				] ] ] ] ] ] 	
+				\node at (7,0){(=13b)};	
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage \noindent In section \ref{sec:3.3} I will suggest that Romance languages may be covert Type 1 languages, yielding the groupings in (\ref{ex:20}), where speculative members are parenthesized.
+
+\begin{exe}
+	\ex \label{ex:20}
+	\begin{multicols}{2} \raggedcolumns
+\oneline{\textbf{Type 1}}  \\
+Bantu languages  \\
+Hausa  \\
+(Romance languages)  \\
+(Hindi/Urdu)  \\
+(Old and Middle Egyptian)   
+\columnbreak \\
+\oneline{\textbf{Type 2} (see \citealt{Abney1987}on this pattern) }   \\
+Turkish\\
+Yu'pik\\
+Chamorro\\
+Hungarian
+\end{multicols}
+\end{exe}
+
+\section{Concord and labeling} \label{sec:3}
+\subsection{Overview} \label{sec:3.1}
+The theoretical question that arises in relation to these patterns is whether a principled reason can be found for the clustered properties of agreement and possessor location within DP that distinguish the two groups. I propose that the core, underlying factor involved is the presence or absence of grammatical gender - a parametric choice with syntactic implications. In particular, the presence of gender in a language makes possible gender concord, which in turn permits concordial licensing of low possessors. In the absence of gender concord on possessors, we find the alternative strategy of possessor-raising to a category whose head bears possessor agreement (other strategies of course exist, on which see section \ref{sec:6} for a small sample). 
+
+Let us suppose, following \citet{Chomsky2013, Chomsky2015} that labels are assigned by an algorithm applying at the completion of a phase. Where there is a unique head, the algorithm takes its features as the label (see (\ref{ex:21})). It is accordingly straightforward to label the constituents in (\ref{ex:22}).
+
+\begin{exe}
+\ex\label{ex:21} in [\textsubscript{$\alpha$} H XP], $\alpha$ is labeled with the features of its unique head: [\textsubscript{HP} H XP] 
+\end{exe}
+\begin{exe}
+	\ex\label{ex:22} \oneline{{\lbrack}\textsubscript{$\alpha$} buy [\textsubscript{$\beta$} a [\textsubscript{$\gamma$} \textit{n} book]]]      \textit{is labeled} {\lbrack}\textsubscript{VP} buy [\textsubscript{DP} a [\textsubscript{nP} \textit{n} book]]{\rbrack}}
+\end{exe}
+But recall from section \ref{sec:1.1} that when a configuration [XP, YP] is encountered, labeling is thwarted by ambiguity over the identity of the head. The labeling hypothesis predicts that one of two things must then happen for labeling to become possible: (i) XP or YP must raise,\footnote{\citet{Chomsky2015} suggests that raising Y’s complement may also allow labeling to proceed. I defer discussion until turning to Maasai NPs in section \ref{sec:6.2}.}  or (ii) features that XP and YP share must be available to function as the label (See  (\ref{ex:23}), based on \citealt[44]{Chomsky2013}).
+
+\begin{exe}
+	\ex \label{ex:23}
+	\xlist
+	\ex impossible labeling configuration\\
+	{\lbrack}\textsubscript{$\alpha$} XP YP] 
+	\ex XP raises. ${\alpha}$ can be labeled YP  \textit{or}\\
+	{\lbrack}\textsubscript{YP} <XP> YP] 
+	\ex XP and YP may be labeled by shared prominent features\\
+	{\lbrack}\textsubscript{$\phi$} XP\textsuperscript{$\phi$} YP\textsuperscript{$\phi$}] 
+	\endxlist
+\end{exe}
+(\ref{ex:1}) (repeated below) illustrates how the labeling hypothesis predicts EA raising, and how agreement makes it possible for EA to surface in Spec of (the category otherwise known as) TP.
+
+\begin{exe}
+\exr{ex:1}
+\xlist
+	\ex $\alpha$ cannot be labeled\newline
+	{\lbrack}$\alpha$ [\textsubscript{DP} the girl] [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]{\rbrack} 
+	\ex after EA raising, $\alpha$ labeled vP based on its head v\newline
+	{\lbrack}\textsubscript{vP} {\textless}the girl{\textgreater} [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]{\rbrack} 
+	\ex ...but first, Agree (T, SU)\newline
+	{\lbrack}T\textsubscript{u$\phi$} [\textsubscript{vP} [\textsubscript{DP} the girl\textsubscript{$\phi$}] [\textsubscript{vP} \textit{v} [\textsubscript{VP} feed [\textsubscript{DP} the dog]]]]{\rbrack} 
+		\ex shared prominent features label $\phi$P\newline
+	{\lbrack}\textsubscript{$\phi$P} [\textsubscript{DP} the girl]\textsuperscript{$\phi$} will\textsuperscript{$\phi$} [\textsubscript{vP} <the girl> \textit{v} [feed the dog]]{\rbrack}  
+\endxlist
+\end{exe}
+The [XP, YP] configuration arises when possessors and EAs of nouns are merged, but there is a significant difference: unlike \textit{v, n} has a phi-feature that it can share. 
+
+It is safe to assume that \textit{n} has the intrinsic gender feature of the associated head noun, whether because \textit{n} is the gender feature's source (\citealt{Kramer2015}, \citealt{Kihm2005}, \citealt{Lecarme2002}) or by inheritance upon head-movement and morphological merger of N to \textit{n}.\footnote{As noted in section \ref{sec:1.4} I abstract away from the possibility that roots are acategorial and from related proposals in \citet{Chomsky2015}.} Overt gender/noun class morphology on 'of' in Bantu and other Type 1 languages shows clearly that arguments within the extended nominal projections in these languages obtain the concordial gender feature (see (\ref{ex:7})-(\ref{ex:12})). Leaving the mechanics of concord for section \ref{sec:3.2}, I illustrate its effects for a Chichewa possessor schematically in (\ref{ex:24a})-(\ref{ex:24d}). Concord shares the features of \textit{n} with the KP headed by associative \textit{–a} - ‘of’ as shown in (\ref{ex:24c}). When the labeling algorithm applies, shared their features are taken as the label. The same for the Hausa masculine feature of \textit{gidaa} – 'house' in (\ref{ex:25}) (Chichewa N-raising and Hausa NP-raising derive surface word orders; on the latter see note 7). 
+
+\begin{exe} \settowidth\jamwidth{\textit{in situ} poss acquires noun class concord}
+	\ex \label{ex:24}
+	\xlist
+	\ex Chichewa\label{ex:24a} \newline
+	\gll \underline{chi-tunzi}    \textbf{\underline{ch}-a}  \textbf{Lucy} \\
+	7-picture    7-of     1Lucy\\
+	\glt `Lucy’s picture'  	
+	\ex\label{ex:24b} \mbox{\textit{pre-concord}:   [\textsubscript{$\alpha$} [of Lucy] [\textit{n}\textsubscript{7} [ picture\textsubscript{7}]]]}\\ \jambox{labelling impossible} 
+	\ex\label{ex:24c} \mbox{\textit{post-concord}:   [\textsubscript{$\alpha$} [\textsubscript{agr7} of Lucy] [\textit{n}\textsubscript{7} [picture\textsubscript{7}]]]}\\ \jambox{\textit{in situ} poss acquires noun class concord \newline (realized on 'of')}
+	\ex\label{ex:24d} \mbox{\textit{post-labelling:} [\textsubscript{C7P} [\textsubscript{agr7} of Lucy] [\textit{n}\textsubscript{7} [picture\textsubscript{7}]]]}\\ \jambox{shared features label $\alpha$ C7P}
+	\endxlist
+\end{exe}
+\begin{exe} 
+	\ex \label{ex:25}
+	\xlist
+	\ex 
+	\gll \underline{gidaa}    \textbf{\underline{na}}  \textbf{Aisha} \\
+	house(masc)   of.masc   Aisha(fem)\\
+	\glt `Aisha's house'  	
+	\ex \textit{pre-concord}:   {\lbrack}[of Aisha] \textit{n}\textsubscript{masc} [house\textsubscript{masc}]{\rbrack}
+	\ex \textit{post-concord}:   {\lbrack}[\textsubscript{agr.masc} of Aisha] \textit{n}\textsubscript{masc} [house\textsubscript{masc}]{\rbrack}
+	\ex \textit{post-labelling:} {\lbrack}\textsubscript{MascP} [\textsubscript{agr.masc} of Aisha] \textit{n}\textsubscript{masc} [house\textsubscript{masc}]{\rbrack}
+	\endxlist
+\end{exe}
+The proposals for gender and labeling are summarized in (\ref{ex:26}) and (\ref{ex:27}). Positive answers to the two linked parametric choices in (\ref{ex:26}) result in the possibility of labeling by concord in (\ref{ex:27}). 
+
+\begin{exe}
+\ex \label{ex:26} \underline{Gender parameters}:
+\xlist
+\ex Does language L have grammatical gender? if yes, then:                   
+\ex Does L share the gender feature of the possessum with the possessed, by concord?
+\endxlist
+\end{exe}
+\begin{exe}
+\ex \label{ex:27}
+\textbf{Labelling by concord}: In the configuration [XP, YP] where X or Y has intrinsic gender, concordial gender features shared between XP and YP may serve as label.
+\end{exe}
+
+\subsection{Mechanics of concord and concordial labeling} \label{sec:3.2}
+As noted in section \ref{sec:1.4}, I assume that concord is a subcase of feature valuation via the Agree relation of \citealt{Chomsky2000, Chomsky2001}. Recall my proposal that the grammatical gender of nouns is a formal, uninterpretable feature, satisfying Chomsky's Activity Condition. Unlike a DP's uCase, nominal gender never deactivates because Agree does not determine its value (\citealt{Carstens2010, Carstens2011}, adapting \citealt{Nevins2005}' view of deactivation). For this reason, concord is iterable. 
+
+Following \citet{Hiraiwa2001}, there are no intervention effects for many-to-one probe-goal relations like (\ref{ex:28a}) and (\ref{ex:28b}) ( = a partial derivation for (\ref{ex:3a}), which I reproduce in (\ref{ex:28}c)).\footnote{This account assumes that only intrinsic phi-features may value unvalued phi-features. In contrast, \citet{Danon2011} assumes (simplifying slightly) that once valued, uPhi on a probe P may value that of a higher probe P+1; hence clause-level agreement on a head like T may include gender features because D bears gender concord. But \citet{Carstens2011} observes that with few cross-linguistic exceptions, heads sensitive to person do not agree in gender unless N and D amalgamate morphologically, as in Bantu and Semitic languages. \citet{Carstens2011} takes this to indicate that there is no Agree-with-agreement. D’s [person] intervenes between T and \textit{n}/N, blocking access by clause-level heads to the lower [gender] unless there is N-to-D raising. Romance participles can agree in because they are systematically insensitive to person and therefore Agree (Prti\textsubscript{uPhi}, \textit{n}) may reach across it. See \citealt{Carstens_Diercks2013} and \citealt{Wasike2007} for other evidence from Lubukusu.} 
+
+\begin{figure}
+\begin{exe}
+	\ex \label{ex:28}
+	\xlist
+	\begin{multicols}{2}\raggedcolumns
+		\ex \label{ex:28a}
+		\begin{forest} for tree={align=center}
+			[$\delta$ 
+			[AP \textsubscript{\ul{}uPhi}]	
+			[$\beta$
+			[KP \textsubscript{\ul{}uPhi}]
+			[\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
+			] ]  	
+			\node at (2,0){$\rightarrow$};	
+		\end{forest}
+		\columnbreak
+		\ex \label{ex:28b}
+		\begin{forest} for tree={align=center}
+			[$\delta$
+			[AP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]	
+			[$\beta$
+			[KP \textsubscript{\underline{$\alpha$} \sout{uPhi}}]
+			[\textit{n}P [\textit{n}+N{\lbrack}$\alpha$ gender{\rbrack}, roof] ]
+			] ]
+	\end{forest}\end{multicols}\endxlist
+	\xlist 
+	\exi{c.} 
+	\gll chi-tunzi    ch-abwino   ch-a Lucy\\
+	7-picture   7-nice           7-of 1Lucy\\
+	\glt `Lucy's nice picture' 
+	\endxlist
+\end{exe} \vspace{-0.9cm}
+\end{figure}
+%%labeling + referencing 28c not possible
+\noindent Following \citet{Bejar_Rezac2009}, \citet{Carstens2016}, \citet{Toosarvandani_Van_Urk2014}, uPhi valuation by something c-commnding a probe is possible where downward Agree fails. This accounts for the inclusion of number features in concord on K, though Num is merged higher than \textit{n}P.
+
+I illustrate step-by-step below how gender concord works to yield labeling in \textit{n}P, beginning in (\ref{ex:29a}) at a point where the possessum noun and \textit{n} are present but their projections unlabeled. In (\ref{ex:29b}), the possessor is merged, creating a new node $\gamma$ (I pre-label the associative \textit{–a} and its possessor complement as K(P) and DP respectively, for expository convenience). Concord provides KP with Class 7 features matching those of \textit{n}P, as shown in (\ref{ex:29}c). These features suffice to label $\gamma$;  the remaining nodes are labeled by their unambiguous heads (see (\ref{ex:29}d); successful labeling is indicated by the notation X $\rightarrow$ Y).
+
+\begin{figure}
+\begin{exe}
+	\ex \label{ex:29}
+	\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+	\xlist
+	\begin{multicols}{2}\raggedcolumns
+		\ex \label{ex:29a}
+		\begin{forest} for tree={align=center}
+			[$\beta$ 
+			[\textsubscript{\textit{n}7}]	
+			[$\alpha$
+			[\textit{chitunzi}\\7picture]
+			[, nice empty nodes]
+			] ] 	
+		\end{forest}\vfill\null\columnbreak
+		\ex \label{ex:29b}
+		\begin{forest} for tree={align=center}
+			[$\gamma$ 
+			[KP \textsubscript{\ul{}u$\phi$}
+			[K \textsubscript{\ul{}u$\phi$}	\\ -\textit{a}\\of]
+			[...DP\\ \textit{Lucy}\\1Lucy] ]
+			[$\beta$
+			[\textsubscript{\textit{n}7}]
+			[$\alpha$
+			[\textit{chitunzi}\\7picture]
+			[,nice empty nodes]
+			] ] ] 
+		\end{forest}
+	\end{multicols}
+	\endxlist
+	\xlista\setcounter{xnumiii}{2}
+	\begin{multicols}{2}\raggedcolumns                
+		\ex 
+		\begin{forest} for tree={align=center}
+			[...$\gamma$ 
+			[KP \textsubscript{\underline{7}\sout{u$\phi$}}
+			[K \textsubscript{\underline{7}\sout{u$\phi$}}\\ \textit{\underline{ch}a}\\7of]
+			[...DP\\ \textit{Lucy}\\1Lucy] ]
+			[$\beta$
+			[\textsubscript{\textit{n}7}]
+			[$\alpha$
+			[\textit{chitunzi}\\7picture]
+			[, nice empty nodes]
+			] ] ]  		
+		\end{forest}
+		\ex 
+		\begin{forest} for tree={align=center}
+			[$\gamma$ 
+			[KP \textsubscript{\underline{7}\sout{u$\phi$}}
+			[K \textsubscript{\underline{7}\sout{u$\phi$}}\\ \textit{\underline{ch}a}\\7of]
+			[...DP\\ \textit{Lucy}\\1Lucy] ]
+			[$\beta$
+			[\textsubscript{\textit{n}7}]
+			[$\alpha$
+			[\textit{chitunzi}\\7picture]
+			[, nice empty nodes]
+			] ] ] 
+			\node at (2.7,0){$\rightarrow$ $\phi$P (Cl7P)};
+			\node at (2.3,-1.2){$\rightarrow$ nP\textsubscript{7}};
+			\node at (2.4,-2.3){$\rightarrow$ NP\textsubscript{7}}; 		
+		\end{forest}
+	\end{multicols}
+	\endxlist
+\end{exe}
+\end{figure}
+%%29c,d also problems with labeling
+\noindent An important agreement-theoretic question arises in connection with concord on \textit{–a}: why does it not agree with its complement, the class 1 DP \textit{Lucy}? Can this be reconciled with an analysis of concord as syntactic agreement?
+
+\citet{Toosarvandani_Van_Urk2014} consider the same question with respect to concord on the ezafe morpheme in Zazake. They propose that this state of affairs indicates that the complement to the concord-bearer is actually a null PP whose head induces phasal spell-out, making the DP within it inaccessible for agreement with K. For \citet{Toosarvandani_Van_Urk2014} following \citet{Rezac2008}, this is the syntax associated with oblique Case. \footnote{The status of Case is controversial in Bantu (see \citealt{Diercks2012}). I propose that its utility in providing a unified account of the agreement in Bantu and Zazake is a bit of evidence that at least some Cases are present, though perhaps only “special” ones (lexical and inherent) as opposed to the structural Cases which Diercks presents evidence against. See \citet{Carstens_Mletshe2015} for some proposed Xhosa Cases associated with post-verbal focus, and with arguments of experiencer verbs.}
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ 
+				\begin{forest} for tree={fit=band}
+					[KP
+					[K\\uPhi\ul{}, name=K]	
+					[PP
+					[P]
+					[DP, draw, name=DP]
+			        ] ]			  
+			       	\draw[-] (DP) --++(0em,-4.7ex)--++ (-5.3em,0pt) node[pos=0.5, fill=white]{\Large$X$} --++(0em,6.5ex)--++ (K);
+			       	\node at (0.1,-3.5){\textit{Agree impossible}};
+			\end{forest} }
+	\end{exe}
+\end{figure}
+\newpage\noindent uPhi of K become part of the label KP. Recall that uPhi valuation by something merged higher in the tree is possible when downward Agree fails (\citealt{Bejar_Rezac2009}, \citealt{Carstens2016},  \citealt{Toosarvandani_Van_Urk2014}). This enables KP to obtain concordial features from the possessum and Num, and permit labeling of $\gamma$ (this concord is borne by the head K).
+
+Summing up, the [XP, YP] configuration arises within any DP containing a possessor or external argument, and this configuration has been argued in \citet{Chomsky2013, Chomsky2015} to impede labeling. I have argued that gender features can label, where XP is functional category that inflects for concord and Y has intrinsic nominal gender. 
+
+Labeling by concord meshes with and accounts for the syntax of possession in languages of the Bantu family, and in the Chaddic language Hausa. We will see in section \ref{sec:6} that NP-raising is an additional way of addressing labeling issues, for languages with gender. 
+
+\subsection{Romance as covert Type 1?} \label{sec:3.3}
+
+I end this discussion of Type 1 languages by pointing out the resemblance that Romance languages bear to members of this group. Romance languages have both grammatical gender and concord inside DPs (see (\ref{ex:31a})). Nouns surface in the middle field, and as in Bantu, lexical possessors and EAs typically surface low, introduced by ‘of’. I illustrate with Spanish in (\ref{ex:31b}):
+
+\begin{exe}
+	\ex Spanish \label{ex:31}
+	\xlist
+	\ex \label{ex:31a}
+	\gll la           persona       mas   blanc-a      del mundo \\
+	the.fem.s   person.fem.s   most white-fem     of.the.masc world.masc\\
+	\glt `the world's whitest person'  	
+	\ex \label{ex:31b}
+	\gll el       coche       negr-o      de Castro \\
+	the.masc car(masc)  black-masc  of Castro\\
+	\glt \mbox{`Castro's black car' [www.diariovasco.com/misterio-coche-negro-castro]}
+	\endxlist
+\end{exe}
+Spanish \textit{de} does not inflect for gender, nor do its counterparts in other Romance languages. Still, the morpho-syntactic facts are striking in their conformity to the canonical Type 1 pattern in all other ways. I therefore suggest that \textit{de} and its cognates bear concordial gender features but are idiosyncratically non-inflecting on the surface. For functional heads lacking intrinsic phi-features and local to those of the head noun, there is no obstacle to the acquisition of concordial features. The syntactic parallels are easily explained if they have such features but do not spell them out (though see section \ref{sec:6.4} on a potential alternative).       
+
+\section{Possessor agreement} \label{sec:4}
+Absent grammatical gender/noun class and hence gender concord in \textit{n}P, possessors and EAs of nouns are in essentially the same boat as \textit{v}P-internal subjects. Merge of these arguments gives rise to an illicit [\textsubscript{${\alpha}$} XP, YP] configuration:
+
+\begin{exe}
+\ex *{\lbrack}\textsubscript{$\alpha$} [\textsubscript{XP} possessor] [\textsubscript{YP} \textit{n} [possessed]]{\rbrack}
+\end{exe}
+What we find in Type 2 languages is a strategy for surmounting this via possessor raising. We’ve seen that the Turkish possessor surfaces high, to the left of adjectives in a position that \citet{Abney1987} analyzed as Spec, DP (see (\ref{ex:19}), repeated below).
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exr{ex:19}{ \label{}
+			\textit{Turkish: Poss raises high}\\
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[DP1
+				[DP2 [ben-im\\I-gen, roof] ]	
+				[D'
+				[D]
+				[FPs
+				[F]
+				[\textit{n}P
+				[AP[yeni\\new, roof] ]
+				[\textit{n}P
+				[<DP2>[ben\\I, roof] ]
+				[\textit{n'}
+				[\textit{n}]
+				[NP[N\\rem-\textit{\textbf{im}}\\picture-1Sagr, roof] ]
+				] ] ] ] ] ] 	
+				\node at (7,0){(=13b)};	
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage \noindent
+The pattern of facts seems to perfectly mirror the syntax of subject raising to Spec, TP at the clausal level. Raising of the possessor facilitates successful labeling of \textit{n}P, and shared agreement features label the category in which the possessor surfaces. The derivation is shown in (\ref{ex:33}).\footnote{For convenience I label the node above an AP as \textit{n}P in (\ref{ex:33d}) and elsewhere, ignoring the question of how adjuncts like the APs interact with the labeling algorithm. See \citet{Oseki2014} for an analysis under which adjuncts either spell out immediately or are labeled through (abstract) feature-sharing.}
+
+\begin{exe} \settowidth\jamwidth{(affix-hopping puts \sout{u$\phi$} of D on N)}
+	\ex Turkish \label{ex:33}
+	\xlist
+	\ex 
+	\gll\underline{ben}\underline{-im}   \textbf{yeni}  resm-\underline{im} \\
+	I-\textsc{gen}  new   picture-1\textsc{s}\\
+	\glt `my new picture'  	
+	\ex {\lbrack}\textsubscript{$\beta$} ben \textit{n} [\textsubscript{$\alpha$} resm]{\rbrack}\\
+	\hspace{0.5cm}my	\hspace{0.8cm}picture
+	\ex D is merged and probes the possessor\\
+	{\lbrack}\textsubscript{$\delta$} D\textsubscript{u}\textsubscript{$\phi$} [\textsubscript{$\gamma$} F [\textsubscript{$\beta$} yeni [\textsubscript{${\beta}$} ben \textit{n} [\textsubscript{$\alpha$} resm]]]]{\rbrack}\\
+	\hspace{2.3cm}new  \hspace{.4cm}my \hspace{.8cm}picture\\
+	\ex\label{ex:33d} (affix-hopping puts \sout{u$\phi$} of D on N)\\
+	\mbox{[\textsubscript{DP} ben-im D\textsubscript{\sout{u$\phi$}} [\textsubscript{FP} F [\textsubscript{nP} yeni [\textsubscript{nP} <ben> \textit{n} resm-im]]]]}\\ 
+	\hspace{.59cm}I-\textsc{gen} \hspace{2.38cm}new  \hspace{1.95cm}picture-1\textsc{s}\\
+	\endxlist
+\end{exe}
+As already noted, the precise landing site for a raised possessor might be lower, or might vary across languages. In Hungarian the evidence suggests that it occupies Spec of a mid-level functional category in DP ((\ref{ex:16}) is repeated below as (\ref{ex:34})). 
+
+\begin{exe}
+	\ex Hungarian \citep[90]{Szabolcsi1983} \label{ex:34}
+	\xlist
+	\ex\label{ex:34a} \textit{agreement with pronominal possessor} \newline
+	\gll az   \underline{én-ø} vendég-e-\underline{m}\\
+	the I-\textsc{nom} guest-\textsc{poss}{}-1s\\
+	\glt `my guest'  	
+	\ex \textit{agreement with pronominal possessor} \newline
+	\gll az   \underline{\H{o}(k)}  kalap-ja-i-\underline{k}\\
+	the they hat-\textsc{poss}{}-\textsc{pl}{}-\textsc{3pl}\\
+	\glt `their hats'
+	\ex \textit{lexical possessor; no agreement}\newline
+	\gll  a   \underline{n\H{o}k}       kalap-já-/\underline{*juk}\\
+	the   women hat-\textsc{poss}{}-*\textsc{3pl}\\
+	\glt `the women's hat' 
+	\ex \label{ex:34d}
+	\gll \mbox{{\lbrack}\textsubscript{DP} az [\textsubscript{FP} én    F\textsubscript{u}\textsubscript{$\phi$} [\textsubscript{nP} <az> \textit{n} vendég-e-m ]]]{\rbrack}}\\
+	\hspace{0.6cm}the      \hspace{-5.4cm}I-\textsc{gen}                     \hspace{-2.7cm}guest-\textsc{poss}-1s\\
+	\ex \textit{no agent/possessor reading for 'of' DP} \newline
+	\gll (a) kep       Mari-rol\\
+	(the) picture Mary-of\\
+	\glt `the picture of Mary'\\ {*}`the picture of Mary's'
+	\endxlist
+\end{exe}
+As mentioned in note 9, \citet{Den_Dikken2015} proposes that Hungarian possessor inflection is not actually agreement but a clitic (see also \citealt{Den_Dikken1999}, \citealt{Bartos1999}, \citealt{Kiss2002} on the crucial facts). In alienable possession constructions like (\ref{ex:34a}), this clitic consists of morphology for first (or second) person. While the lexical possessor in (\ref{ex:34d}) is incompatible with 3PL inflection, see Den Dikken for arguments that the \textit{ja} morpheme in such cases is essentially an object clitic to which the person-case constraint applies, ruling out its occurrence in first and second person. 
+
+Whether Hungarian possessive constructions involve agreement or cliticization, the phenomena pattern with those of possessor agreement languages like Turkish in that no overt “subject” argument occupies Spec, \textit{n}P. The principal difference arises in FP, depending on whether the lexical possessor adjoins to it or raises via internal Merge, and accordingly how labeling proceeds at this point. See \citet{Preminger2015} for a phi-probing approach to clitic doubling, and \citet{Oseki2014} for a proposal that some adjuncts enter into Feature-Sharing relations and trigger labeling, while others must be immediately spelled out. I leave it to future research on Hungarian to confirm whether the lexical possessor doubles a raised clitic or values agreement, and hence what mechanics is appropriate.
+
+\section{Genitive pronouns, absence of freezing effects, and a typological gap} \label{sec:5}
+
+\subsection{Pronouns bearing concord aren't frozen}\label{sec:5.1}
+The proposals presented in sections \ref{sec:3} and \ref{sec:4} are not intended to make a biconditional claim about word order. We have already seen word order evidence that the noun raises across the possessor in Chamorro, and I have indicated that an NP-fronting option will be explored in section \ref{sec:6} for certain languages which otherwise have the characteristics I’ve associated with nP-labeling by concord. 
+
+In addition, the raised position of genitive pronouns argues that possessors bearing concord are mobile, and not {\textquotedbl}frozen in place;” that is, labeling of \textit{n}P by feature-sharing between the genitive pronoun and \textit{n} does not preclude the pronoun’s movement (see examples from (\ref{ex:7}) reproduced in (\ref{ex:35}), and for influential ideas on freezing see \citealt{Rizzi2006}, \citealt{Rizzi_Shlonsky2007}). I assume that no phase boundary is crossed by raising of the pronoun, and therefore there is no “delabeling”, that is, the label for \textit{n}P based on shared features of (KP, \textit{n}) is unaffected \citep[11]{Chomsky2015}.
+
+\begin{exe}
+	\ex  Chichewa \label{ex:35}
+	\xlist
+	\ex
+	\gll \underline{chi}\underline{-tunzi}     ch-abwino     \textbf{\underline{ch}-a}   \textbf{Lucy}\\
+	7-picture   7-nice         7-of   1Lucy\\
+	\glt `Lucy's nice picture'  (Lucy = possessor, agent, or theme) 	
+	\ex 
+	\gll \underline{chi}\underline{-tunzi}      \underline{ch}\textbf{-anga}     ch-abwino\\
+	7-picture   7-my         7-nice\\
+	\glt `my nice picture'
+	\ex
+	\gll  *\underline{chi}\underline{-tunzi}    ch-abwino     \textbf{\underline{ch}-anga}\\
+	7-picture   7-nice      7-my\\
+	\ex
+	\gll  *\underline{chi}\underline{-tunzi}    \textbf{\underline{ch}-a} Lucy     ch-abwino\\
+	7-picture   7-nice      7-my\\
+	\endxlist
+\end{exe}
+Regarding the nature of this movement and it potential landing sites, it is relevant to note that while genitive pronouns in some of the relevant languages might turn out to be clitics, this is clearly not true of them all. A Chichewa or Swahili genitive pronoun can stand alone ((\ref{ex:36}) from \citealt[295]{Carstens1997}).
+
+\begin{exe}
+\ex \label{ex:36}
+\gll Ndi-ma-konda  ch-anga [e]\\
+1ssa-asp-like     7-my\\
+\glt *`I like my' (e.g. picture)
+\end{exe}
+We must therefore recognize that genitive pronouns can raise as XPs and consider what features are involved in labeling where they surface. 
+
+\subsection{A typological gap} \label{sec:5.2}
+\citet{Giusti2008} proposes that genitive pronouns which raise out of \textit{n}P value silent possessor agreement in person features in their landing site projection (see also \citealt{Sichel2002}). I hesitate to adopt this reasonable-seeming view because an apparent typological gap argues that it may not be correct. In none of the languages surveyed for this study does a concord-bearing DP control possessor agreement.\footnote{Section \ref{sec:6} explores the syntax of bi-directionally agreeing possessive morphemes in Maasai, showing that they are fully consistent with the generalization established here.} The constructed examples in (\ref{ex:37}) illustrate the missing pattern. Raised genitive pronouns in Romance languages typically inflect for number(+gender), but are not agreed with. In Bantu languages, genitive pronouns inflect for concord with the head noun and raise to the left of adjectives as we have seen, but never control a phi-agreement relation. 
+
+\begin{exe} \settowidth\jamwidth{(pseudo-Chichewa)}
+\ex\label{ex:37} \xlist
+\ex *\textbf{my}-\textit{Masc.PL} \textit{sons}-\textbf{1S} \jambox{(pseudo-Romance)}
+\ex 
+\gll *chitunzi-ni   ch-anga  \\ 
+7picture-1S 7agr-my\\ \jambox{(pseudo-Chichewa)}
+\glt `my picture'
+\endxlist
+\end{exe}
+In contrast, both Bantu and Romance language families exhibit robust subject-verb agreement which I take to be the clause-level counterpart to possessor agreement. The absence of possessor agreement therefore cannot be attributed to an incompatibility with the general directionality of Agree in these languages. 
+
+The strongest statement of this pattern of facts is the general ban in (\ref{ex:38}): 
+
+\begin{exe}
+\ex\label{ex:38} Agreement-Mixing Constraint: an expression bearing concord cannot value possessor   agreement.
+\end{exe}
+Recall the proposal that 'of' selects a null phasal PP, inducing the overt DP that is the apparent complement to ‘of’ to spell out. Since genitive pronouns show concord with the head noun, let’s assume they have a complex structure that includes this phase-head (see (\ref{ex:39a}) and (\ref{ex:39b})).\footnote{\citet{Spencer2007} also proposes that Bantu genitive pronouns incorporate the concord-bearing \textit{a-}.} It follows that they won't be accessible to value possessor agreement. 
+
+\begin{exe}
+\ex\label{ex:39} \xlist
+\ex\label{ex:39a}
+\gll \underline{chi}\underline{-tunzi}     \underline{ch}\textbf{-}anga   ch-abwino\\
+7-picture   7-my       7-nice\\
+\glt `my nice picture'
+\ex\label{ex:39b}
+	\begin{forest} for tree={align=center}, for tree={fit=band}
+		[FP
+		[F\textsubscript{uPhi}, name=K]	
+		[\textit{n}P
+		[KP\textsubscript{\sout{\underline{C7}uPhi}}
+		[K\textsubscript{\sout{\underline{C7}uPhi}}\\ \textit{ch}-a]
+		[PP 
+		[P]
+		[DP\textsubscript{1S}\\-anga\\my, name=DP]
+		] ]
+		[\textit{n'}
+		[n]	
+		[NP [picha\\7-picture, roof] ]
+		] ] ]
+		\draw[-] (DP) --++(0em,-8ex)--++ (-10em,0pt) node[pos=0.5, fill=white]{\Large$X$} --++(0em,30.5ex)--++ (K);
+		\node at (6.2,-6.5){\textit{\textbf{Agree}} (F, DP) \textit{\textbf{fails because DP}}};
+		\node at (6.2,-7){\textit{\textbf{has spelled out}}};
+		\draw (1.2,-4.4) rectangle (2.3,-5.5);
+\end{forest}
+\endxlist
+\end{exe}
+The original motivation for the null phasal PP hypothesis was that K itself cannot agree with the DP that it introduces. The inability of the same DP to value possessor agreement on a different head provides further evidence of its inaccessibility. 
+
+\subsection{Labelling by number concord where pronouns surface} \label{sec:5.3}
+I conclude that the category where a raised genitive pronoun surfaces is not labeled by shared phi-features in the sense of possessor agreement. This leaves us with a puzzle: when the pronoun raises, what features can label the [XP, YP] configuration this gives rise to ($\beta$ in (\ref{ex:40}))? 
+
+\begin{figure}[!h]
+\begin{exe}
+	\exbox{ \label{ex:40}
+		\begin{forest} for tree={align=center}, for tree={fit=band}
+			[$\beta$
+			[KP\textsubscript{\underline{C7}\sout{uPhi}}
+			[K\textsubscript{\underline{C7}\sout{uPhi}}\\ \textit{ch}-a]
+			[PP 
+			[P]
+			[DP, draw] ] ]
+			[$\alpha$ 
+			[F]	
+			[\textit{n}P [<KP> ... , roof] ]
+			] ] 
+	\end{forest}}
+\end{exe}
+\end{figure}
+\noindent Recall that Number heads a projection in the DP’s middle field, and genitive pronouns are hypothesized to surface in their Specs in Bantu (see (\ref{ex:7f}), repeated below).
+
+\begin{exe}
+\exr{ex:7f}
+	\gll \scalebox{0.9}{[\textsubscript{DP} N+n+Num+D [\textsubscript{NumP} changa <Num> [\textsubscript{nP} AP [\textsubscript{nP}  <changa> <N+\textit{n}>...]]]]}\\
+	\mbox{\hspace{3.5cm}7-my}  \\
+\end{exe}
+Genitive pronouns in Bantu inflect for noun class, which (as previously noted) is composed of gender+number features. Assuming that F in (\ref{ex:40}) is the head Num(ber), number features shared via concord will label $\beta$ as $\phi$P (see (\ref{ex:41})):
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:41}
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[$\beta$
+				[KP\textsubscript{\underline{C7}\sout{uPhi}}
+				[K\textsubscript{\underline{C7}\sout{uPhi}}\\ \textit{ch}-a]
+				[PP 
+				[P]
+				[DP, draw] ] ]
+				[$\alpha$ 
+				[Num \textsubscript{\textsc{sing}}]	
+				[\textit{n}P [<KP> ... , roof] ]
+				] ] 
+				\node at (3,0.1) {$\rightarrow$ $\phi$P}; 
+				\node at (4,-1.1) {$\rightarrow$ NumP}; 
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage\noindent In Romance languages as well, number inflection on genitive pronouns is common: \textit{mi libro/mis libros} – ‘my book/s’ (Spanish), so the analysis likely extends to them.
+
+It’s important to make clear the distinction drawn here between possessor agreement in $\beta$ of (\ref{ex:41}), which is predicted to fail, and on the other hand concord in number, which I propose can succeed in labeling $\beta$. Possessor agreement must fail because the phase-head P in (\ref{ex:40})/(\ref{ex:41}) transfers the possessor, rendering it inaccessible. The possessor therefore cannot value uPhi on a functional head such as Num. But unvalued uPhi of K in (\ref{ex:41}), lacking a source of valuation in K’s c-command domain, becomes part of the label of KP, and take its values from \textit{n}/N and Num. The result is successful noun class “concord” on K/KP, including number features. Since the head of $\beta$ is Num, there are shared features to label $\beta$.  
+
+\subsection{Interim conclusions: pronouns versus lexical possessors} \label{sec:5.4}
+I have argued that possessors and EAs in Type 1 languages are not required to move for labeling of \textit{n}P, given that they share phi-features with \textit{n}P in the form of concord on KP. And assuming that they transfer before the K head that introduces them merges they cannot value its features, or the features of possessor agreement on a higher head. The result is a tendency for lexical arguments that bear concord to surface low, through a conspiracy of factors. But pronouns inflected for concord undergo raising without valuing phi-agreement. This lends support for the idea that labeling does not necessarily lead to freezing of the syntactic objects that contribute a label in the form of shared features \citep{Chomsky2015}. 
+
+I have also argued that the landing site of pronouns is NumP, labeled by concordial number features. It remains to consider why pronouns must raise, while lexical arguments cannot. 
+
+It is well-established that many languages require object pronouns to undergo object shift out of VP; see \citet{Diesing1992, Diesing1997}, \citet{Diesing_Jelinek1995}, \citet{Roberts_Shlonsky1996}, \citet{Cardinaletti_Starke1999}, \citet{Holmberg1999} on pronoun raising in a variety of languages.  \citet{Diesing_Jelinek1995} tie this to the unambiguous definiteness of pronouns. They present data from a range of languages including English demonstrating that even if full DP objects optionally shift, object pronouns must do so obligatorily (see (\ref{ex:42})). 
+
+\begin{exe}
+\ex\label{ex:42} \xlist
+\ex Bert looked \textbf{the reference} up.
+\ex Bert looked up \textbf{the reference}.
+\ex Bert looked \textbf{it} up.
+\ex *Bert looked up \textbf{it}.
+\endxlist
+\end{exe}
+\begin{exe} 
+\ex Pronouns must vacate VP (\citealt{Diesing1992, Diesing1997}; \citealt{Diesing_Jelinek1995})
+\end{exe}
+Genitive pronoun raising is thus a subcase of a broad phenomenon. I suggest that like VP, \textit{n}P is not a licit domain for (most) pronouns to surface in. But lexical genitives, under no comparable pressure to raise, remain in the Merge positions where labeling by concord is successful. 
+
+\section{Complex cases} \label{sec:6}
+\subsection{Introduction} \label{sec:6.1}
+
+This section briefly considers a few complex cases from Maasai, Hausa, and Hebrew. My purpose is to provide a sketch of how certain less transparent syntax and agreement phenomena in DP can be understood through the lense of labeling issues. As noted in the introduction, a labeling algorithm is a general property of the Examining additional patterns is an important test of the validity of the hypothesis.
+
+We will see in this section that concord and agreement with possessors may co-occur when a possessor is bare. This leaves its features accessible, and possessor agreement proceeds without violating the Agreement Mixing Constraint. We will also see instances of possessum-raising in languages with grammatical gender; I hypothesize that agreement with a [+gender] possessum can label its landing site much as possessor agreement does.
+
+\subsection{Maasai} \label{sec:6.2}
+\subsubsection{The facts and Brinson's 2014 analysis} \label{sec:6.2.1}
+Maasai shows bidirectional agreement in possessive constructions: a possessive agreement morpheme (henceforth PAM) agrees in gender with the possessum, but in number with the possessor (see \citealt{Storto2003}, \citealt{Brinson2014} for details). Thus PAM is feminine singular in examples (\ref{ex:44a}) and (\ref{ex:44b}) though the possessum in (\ref{ex:44b}) is feminine plural, because PAM matches only the gender of the possessum, and takes its number from the (masculine) singular possessor. In both (\ref{ex:44c}) and (\ref{ex:44d}) PAM  is masculine, matching the gender of the possessum 'dog', but it is plural in (\ref{ex:44d}), where the possessor 'friends' is plural ((\ref{ex:44}) from \citealt{Brinson2014}; glosses adapted).
+
+\begin{exe}
+	\ex  Maasai\label{ex:44}
+	\xlist
+	\ex \label{ex:44a}
+	\gll embenejio   ɛ         altʃani\\
+	leaf.\textsc{f.sg}      \textsc{pam.f.sg}  tree.\textsc{m.sg}\\
+	\glt `the leaf of the tree'  	
+	\ex \label{ex:44b}
+	\gll imbenek     ɛ         altʃani\\
+	leaf.\textsc{f.pl}      \textsc{pam.f.sg}  tree.\textsc{m.sg}\\
+	\glt `the leaves of the tree'
+	\ex \label{ex:44c}
+	\gll  oldia     lɛ           ɔltʃere\\
+	dog.\textsc{m.sg}  \textsc{pam.m.sg}    friend.\textsc{m.sg}\\
+	\glt `the dog of the friend'
+	\ex \label{ex:44d}
+	\gll  oldia    lɔɔ         ɔltʃarweti\\
+	dog.\textsc{m.sg}  \textsc{pam.m.pl}    friend.\textsc{m.pl}\\
+	\glt `the dog of the friends'
+	\endxlist
+\end{exe}
+Several questions arise, among them: Does PAM agree with a possessor that it selects, unlike ‘of’ –type morphemes in Type 1 languages? If so, why does it take its gender feature from the possessum, and number from the possessor? How do these phenomena mesh with the labeling-theoretic approach I have introduced? 
+
+\citet{Brinson2014} provides an elegant account of these facts. She argues that Maasai PAM is merged as the functional head Poss, taking the possessum NP as its complement (I use Brinson's category labels). PAM has uNum, uGen features which probe upon Merge, finding only the intrinsic gender feature of the possessum to agree with. Given the architecture of DPs, the number feature of the possessum has not yet entered the derivation (see (\ref{ex:45b}) for the first derivational step of (\ref{ex:45a})).
+
+\begin{exe}
+	\ex  \xlist
+	\ex \label{ex:45a}
+	\gll imbenek     ɛ         altʃani\\
+	leaf.\textsc{f.pl}      \textsc{pam.f.sg}  tree.\textsc{m.sg}\\
+	\glt `the tree's leaves'  
+	\ex \label{ex:45b}
+\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+	},
+}
+\begin{forest} for tree={fit=band}
+	[PossP
+	[Poss\textsubscript{\ul{}uNum, \sout{\underline{F u}Gen}}, name=Poss]	
+	[NP
+	[imbene-\\leaf.\textsc{f}, name=NP]
+	[, nice empty nodes]
+	] ] 
+	\draw[-] (NP) --++(0em,-6ex)--++ (-7em,0pt) --++(0em,14.5ex)--++ (Poss);
+	\node at (-0.5,-4.2){\textit{\textbf{Agree $\#$1}}};
+\end{forest}
+\endxlist
+\end{exe}
+The possessor DP is merged next. At this point, Brinson argues that PAM's uNum can receive {\textquotedbl}delayed valuation{\textquotedbl} \citep{Carstens2016}, that is, valuation deferred until an expression with appropriate features is merged higher in the same phase (see also \citealt{Bejar_Rezac2009}).
+
+\begin{figure}[!h]
+\begin{exe}
+\exbox{
+	\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+		},
+	}
+	\begin{forest} for tree={fit=band}
+		[PossP
+		[DP
+		[altʃani\\tree.\textsc{m.sg}, name=DP]
+		[, nice empty nodes] ]
+		[Poss'
+		[Poss \textsubscript{\underline{S u}\sout{Num}, \underline{F \sout{u}}\sout{Gen}}, name=Poss]
+		[NP
+		[-mbene-\\leaf.\textsc{f}]
+		[, nice empty nodes]
+		] ] ]
+		\draw[-] (Poss) --++(0em,-7.5ex)--++ (-7.4em,0pt) --++(0em,0.3ex)--++ (DP);
+		\node at (-1.3,-4){\textit{\textbf{Agree $\#$2}}};
+	\end{forest}}
+\end{exe}
+\end{figure}
+\newpage\noindent 
+In Brinson's account, by the time the number head associated with the possessed noun is merged, the features of PAM have already been valued (see (\ref{ex:47})).
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:47}
+			\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+				},
+			}
+				\begin{forest} for tree={align=center}, for tree={fit=band}
+				[NumP
+				[Num [Pl]]
+				[PossP
+				[DP
+				[altʃani\\tree.\textsc{m.sg}]
+				[, nice empty nodes] ]
+				[Poss'
+				[Poss \textsubscript{\underline{S u}\sout{Num}, \underline{F \sout{u}}\sout{Gen}}]
+				[NP
+				[imbene-\\leaf.\textsc{f}]
+				[, nice empty nodes]
+				] ] ] ]
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\noindent Surface order results from raising Poss to Num to D, and the possessum to Spec, DP (see (\ref{ex:48})).\footnote{Brinson does not specify how the plural morphology attaches to the (raised) possessed noun. Given that Poss + Num adjoin to D in her account, I assume number inflection on the noun is agreement with Num.} 
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:48}
+			\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+				},
+			}
+			\begin{forest} 
+				[DP1
+				[NP
+				[i-mbene-k\\leaf.\textsc{f}.\textsc{pl}]
+				[, nice empty nodes] ]
+				[D'
+				[D [ɛ, name=D] ]
+				[NumP
+				[Num [PL, name=Num] ]
+				[PossP
+				[DP2
+				[\hspace{0.8cm}altʃani\\\hspace{1.2cm}tree.\textsc{m.sg}]
+				[, nice empty nodes] ]
+				[Poss'
+				[Poss \textsubscript{\underline{S u}\sout{Num}, \underline{F \sout{u}}\sout{Gen}}, name=Poss]
+				[NP
+				[<imbene->\\leaf.\textsc{f}]
+				[, nice empty nodes]
+				] ] ] ] ] ]
+				\draw[->] (Poss) --++(0em,-8ex)--++ (-9.24em,0pt) --++(0em,12.9ex)--++ (Num);
+				\node at (1.4,-7.7){\textit{raising Poss-to-Num-to-D}};
+		   		\draw[->] (Num) --++(0em,-4ex)--++ (-2.6em,0pt) --++(0em,8.7ex)--++ (D);
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage\noindent
+\subsection{Maasai vs. canonical Type 1} \label{sec:6.3}
+Brinson's analysis nicely accounts for the pattern of concord in Maasai possessive constructions. The linker-type element PAM is not analogous to Bantu 'of', in Brinson's analysis; though both have uPhi features, PAM does not select the possessor or a projection dominating the possessor. Thus unlike in Bantu, the possessor DP is bare, and its features are therefore syntactically accessible. Its iNum feature is a closer source of valuation for the uNum of Poss than is iNum of the overall DP, merged higher.\footnote{When Maasai adjectives modifying the possessum inflect for number, it is the number of the possessum head noun and not that of the possessor. Brinson locates them within the NP projection because they immediately follow the possessum, preceding PAM and the possessor. This pattern seems to support the hypothesis that adjuncts merge late (\citealt{Lebeaux1988}, \citealt{Chomsky1993}): by the time an AP is added to the raised constituent in Spec, DP, it is closer to the number feature of the possessum than it is to the possessor.} \textsuperscript{}  
+
+A question arises as to how exactly labeling works in Maasai possessive constructions. The movement and agreement processes yield some ambiguity.
+
+For the constituent $\alpha$ in (\ref{ex:49}) created by merge of the possessum and the head that Brinson identifies as Poss (= \textit{n} of previous sections), a label can readily be taken from the unambiguous head.  
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:49}
+			\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+				},
+			}
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[$\alpha$
+				[Poss]
+				[NP
+				[-mbene-\\leaf.\textsc{f}]
+				[, nice empty nodes] ] ]
+				\node at (2,0.1) {$\rightarrow$ PossP}; 
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\noindent Ultimately though, much of the lower part of the tree winds up empty. The possessum raises to Spec, DP and Poss itself raises to Num and thence to D, as was shown in (\ref{ex:48}). These movements and the nodes whose labels remain to be determined are shown in (\ref{ex:50}).
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:50}
+			\forestset{nice empty nodes/.style={for tree={calign=fixed edge angles}, delay={where content={}{shape=coordinate, for current and siblings={anchor=north}}{}}
+				},
+			}
+			\begin{forest}
+				[$\varepsilon$
+				[NP
+				[i-mbene-k\\leaf.\textsc{f}.\textsc{pl}]
+				[, nice empty nodes] ]
+				[$\gamma$
+				[D [ɛ, name=D]]
+				[$\delta$
+				[<Num> [PL, name=Num] ]
+				[$\beta$
+				[DP2
+				[\hspace{0.8cm}altʃani\\\hspace{1.2cm}tree.\textsc{m.sg}]
+				[, nice empty nodes] ]
+				[Poss'
+				[Poss \textsubscript{\underline{S u}\sout{Num}, \underline{F \sout{u}}\sout{Gen}}, name=Poss]
+				[NP
+				[<imbene->\\leaf.\textsc{f}]
+				[, nice empty nodes]
+				] ] ] ] ] ]
+				\draw[->] (Poss) --++(0em,-8ex)--++ (-9.25em,0pt) --++(0em,12.9ex)--++ (Num);
+				\node at (1.4,-7.7){\textit{raising Poss-to-Num-to-D}};
+				\draw[->] (Num) --++(0em,-4ex)--++ (-3.2em,0pt) --++(0em,8.9ex)--++ (D);
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\noindent I propose that $\beta$ is labeled by the shared number features of agreement between DP2 and Poss, and that though Poss moves out, de-labelling does not result. This is expected if no phase boundary is crossed: following \citet[11]{Chomsky2015}, there is phasal memory of successful labeling.\footnote{I leave it to future research to identify any phase-heads within DP.}  The nodes $\delta$ and $\gamma$ are labeled NumP and DP respectively because they have unambiguous heads. 
+
+As for $\varepsilon$, it is labeled by the shared gender feature of the possessum and D (inherited fro the adjoined Poss head). What forces the raising of the possessum is not clear, but assuming with \citealt{Chomsky2015} that Merge is free, nothing precludes it, and labeling in the possessum’s landing site is freely available since it has the sharable phi-feature of grammatical gender. 
+
+\subsection{Hausa predicate fronting in DP} \label{sec:6.4}
+We saw in (\ref{ex:12}) (repeated below) that Hausa possessors are introduced by a morpheme showing concord with the head noun, as in Bantu. 
+
+\begin{exe}
+	\exr{ex:12} \citep[301]{Newman2000}
+	\xlist
+	\ex 
+	\gll \underline{riga}   bak’a   \textbf{\underline{t}a}       \textbf{Lawan} \\
+	gown   black   of.fem    Lawan\\
+	\glt `Lawan’s black gown'  	
+	\ex 
+	\gll \underline{litafi}     guda \textbf{\underline{n}a}       \textbf{Lawan}\\
+	book one  of.masc  Lawan\\
+	\glt `one book of Lawan's'
+	\endxlist
+\end{exe}
+But additional facts suggest that the possessum raises across the possessor, as in Maasai.  Consider (\ref{ex:51}) (= (i) of note 7) in which a noun and its complement both precede the possessor, and the possible representation in (\ref{ex:51b}). 
+
+\begin{exe}
+	\ex \label{ex:51}
+	\xlist
+	\ex \label{ex:51a}
+	\gll buhun haatsi na Ali\\
+	sack     millet  of\\
+	\glt `Ali's sack of millet'  	
+	\ex {\lbrack}sack (of) millet{\rbrack} of Ali <sack of millet> \label{ex:51b}
+	
+	\endxlist
+\end{exe}
+The examples in (\ref{ex:52}) support a possessum raising analysis. They show that [adjective-noun-possessor] order is an alternative to the [N-adjective-possessor] order in (\ref{ex:12}); this is in fact the neutral order for the speakers I consulted. Like (\ref{ex:51a}), it indicates that there is not just a noun but a larger, phrasal constituent preceding the possessor, though some elements of NP may be “stranded” to the possessor’s right, as is \textit{guda uku} – ‘three’ in (\ref{ex:52c}) (so are PPs, not exemplified here). The contrast between examples (\ref{ex:52d}) and (\ref{ex:52e}) shows that definiteness is expressed in a nasal nominal suffix.\footnote{There is homophony of adjectival concord, definiteness markers, and genitive markers, but only the latter can be replaced by a free-standing genitive marker. Note also that plurals are masculine, hence the shift between (\ref{ex:52b}) and (\ref{ex:52c}). Lastly, note that some varieties of Hausa are losing or have lost grammatical gender. Perhaps a remnant constituent including number but excluding an evacuated possessor is able to raise and label DP. I leave this to future research.}
+\begin{exe}
+	\ex \label{ex:52}
+	\xlist
+	\ex \label{ex:52a}
+	\gll sabo-n        gida-n           Aisha\\
+	new-\textsc{masc}  house-\textsc{masc.gen}\\
+	\glt `Aisha's new house'  	
+	\ex \label{ex:52b}
+	\gll sabuwa-r     mota-r       Ali\\
+	new-\textsc{fem}     car-\textsc{fem.gen}\\
+	\glt `Ali's new car'
+	\ex \label{ex:52c}
+	\gll sabobi-ŋ     mototʃi-ŋ       Aisha   guda     uku\\
+	new-\textsc{masc}  car-\textsc{masc.gen}    {}        count     three\\
+	\glt `Aisha's three new cars'  	
+	\ex \label{ex:52d}
+	\gll karami-ŋ   fari-ŋ       gida\\
+	small-\textsc{masc}  white-\textsc{masc}   house\\
+	\glt `a small white house'	
+	\ex \label{ex:52e}
+	\gll karami-ŋ     fari-ŋ         gida-n\\
+	small-\textsc{masc}     white-\textsc{masc}  house-\textsc{def}\\
+	\glt `the small white house'	
+	\endxlist
+\end{exe}
+I assume that the possessum raises to Spec, DP in Hausa, as shown in (\ref{ex:53}).\footnote{In the interests of simplicity, I illustrate NP-raising. What raises might instead be a mid-sized projection of nP (since it includes APs), stranding the possessor KP. I leave this aside.} If gender features are (abstractly) shared between D and the possessum, they can label DP. 
+
+\begin{figure}[!h]
+	\begin{exe}
+		\exbox{ \label{ex:53}
+			\begin{forest} for tree={align=center}, for tree={fit=band}
+				[DP
+				[NP\textsubscript{\textsc{fem}}
+				[AP..\\sabuwa-r\\new-\textsc{fem} ]
+				[N\\mota-r\\car] ]
+				[D'
+				[D \textsubscript{\underline{F}\sout{uPhi}}]
+				[nP
+				[KP [<r> Ali, roof] ]
+				[n'
+				[n]
+				[<NP>]
+				] ] ] ]
+				\node at (2,0.1) {=(52b)}; 
+		\end{forest}}
+	\end{exe}
+\end{figure}
+\newpage\noindent As in Maasai, it’s not clear if some factor forces this raising but nothing in theory precludes it, and the phi-features of the possessum are available to value agreement, make it licit.
+
+\subsection{Labeling without concord on ‘of’ where N is [+gender]} \label{sec:6.5}
+As we have seen, the ability of the possessum’s gender feature to value uPhi on a functional category makes it in principle possible for a raised possessum to label the category of its landing site. In addition, raising of the possessum can in principle facilitate labeling of \textit{n}P, should that fail to happen via concord on the possessor. \citet[44]{Chomsky2013} suggests that raising the complement to \textit{v}/V makes possible labeling of vP by \textit{v}, since [DP1 V+v…<DP2>] does not constitute an [XP, YP] configuration, for purposes of the algorithm. In the parallel circumstance of possessum-fronting out of \textit{n}P, \textit{n}P should be able to be labeled by \textit{n}:
+
+\begin{exe}
+	\ex 
+	\xlist
+	\begin{multicols}{2}\raggedcolumns
+		\ex
+		\begin{forest} for tree={align=center}, for tree={fit=band}
+			[$\beta$
+			[DP]	
+			[$\alpha$
+			[nP]
+			[NP]
+			] ]  	
+		\end{forest} \columnbreak 
+		\ex
+		\begin{forest} for tree={align=center}, for tree={fit=band}
+			[$\delta$
+			[F \textsubscript{u$\phi$}]	
+			[$\beta$
+			[DP]
+			[$\alpha$
+			[nP]
+			[NP\\{\lbrack}+gender{\rbrack}]
+			] ] ]  	
+		\end{forest} \columnbreak 
+		\ex \label{ex:54c}
+		\begin{forest} for tree={align=center}, for tree={fit=band}
+			[$\gamma$
+			[NP\\{\lbrack}+gender{\rbrack}]
+			[$\varepsilon$	
+			[F \textsubscript{u$\phi$}]	
+			[$\beta$
+			[DP]
+			[$\alpha$
+			[nP]
+			[<NP>]
+			] ] ] ]	
+			\node at (4,0.1) {$\rightarrow$ u$\phi$};
+			\node at (4,-1.1) {$\rightarrow$ FP};
+			\node at (4,-2.3) {$\rightarrow$ nP};
+			\node at (4,-3.6) {$\rightarrow$ nP};
+		\end{forest}
+		\end{multicols}
+	\endxlist
+\end{exe}
+Thus in addition to the option of raising a possessor (i.e. Turkish) and labeling by concord (i.e. Bantu and Hausa), there is in principle another way of achieving successful labeling in DP: a possessum bearing grammatical gender features can value agreement and raise out of \textit{n}P to Spec of the agreeing category.
+
+I proposed in section \ref{sec:3.3} that Romance ‘of’ inflects covertly, based in part on similarities between the DP-internal word order of Bantu and Romance languages. But the option of raising the possessum opens up another possibility. It has been argued for Romance languages that NP-raising places nouns in the DP’s middle field, based on aspects of modifier order (see \citealt{Laenzlinger2005} among others). If this is true, then labeling of \textit{n}P in Romance does not rely crucially on covert inflection of ‘of’. 
+
+The NP-raising analysis has also been pursued for Semitic languages. As in Romance, there is no overt concord on the possessor KP. ((\ref{ex:55}) \citealt[1470]{Shlonsky2004}).
+
+\begin{exe}
+\ex \label{ex:55}
+\gll ha-hafgaza          ʃel xel     ha-‘avir     ‘et     ha     kfar\\
+the-bombardment  of  the   air force   ACC   the   village\\
+\glt `the bombardment of the village by the airforce'
+\end{exe}
+All adjectives are post-nominal, and exhibit the mirror image of English modifier order ((\ref{ex:56}) from \citealt[1485]{Shlonsky2004}; glosses added).
+
+\protectedex{
+\begin{exe}
+\ex\label{ex:56} COLOR > NATIONALITY/ORIGIN	\hspace{0.2cm}NATIONALITY/ORIGIN > COLOR  
+\xlist 
+\begin{multicols}{2} \raggedcolumns
+\ex a brown Swiss cow 
+\ex *a Swiss brown cow 
+\columnbreak
+\ex *para  xuma   svecara
+\ex 
+\gll para svecarit  xuma\\
+cow  Swiss      brown\\
+\end{multicols}
+\endxlist
+\end{exe}}
+\citet{Shlonsky2004} proposes that phrasal movement with pied-piping inverts the order of constituents in Semitic DPs. There would seem to be no obstacle to labeling the result, since what raises will contain \textit{n}/N and have its gender feature. The left-behind category with possessor in situ will be labeled \textit{n}P, as shown in (\ref{ex:54c}).
+
+\subsection{Interim summary} \label{sec:6.6}
+This section provided a brief look at three cases that differ from the two polar opposite groupings presented in sections \ref{sec:2}-\ref{sec:4}. The goal has been to illustrate a few alternatives to the core labeling strategies that those sections introduce. 
+
+An exploration of Maasai showed that concord with the possessum and agreement with the possessor can coincide in a language. But crucially, the possessor is bare. The expression bearing concord is not the possessor itself, nor does it select the possessor or a projection that includes it.  
+
+The facts of Hausa and Hebrew argue that possessum-raising feeds successful labeling, much as EA- and possessor-raising does.
+
+\section{Case concord} \label{sec:7}
+Before concluding, it is worth considering the question of whether Case concord has the same consequences as gender concord with respect to labeling. The two types of morpho-syntactic feature-sharing have enough in common that it is reasonable to seek unitary treatment, a path pursued in \citealt{Norris2014}. 
+
+Norris analyzes nominal concord as “largely morphological and not indicative of a relationship between the element bearing features and some other element in its c-command domain” \citep[98]{Norris2014}. For Norris, concord results from a universal process of feature-spreading within a local domain. Whether or not a language exhibits concord is not determined until the morphological component \citep[132]{Norris2014}. Norris accordingly takes the strong position that there is no syntactic difference between a language with concord and one without. I have argued at length that this is not true of gender concord. But is Norris's hypothesis correct for Case concord? Or does Case concord interact with aspects of the syntax as I have argued to be true of gender (and to a lesser extent) number concord?
+
+I begin this brief exploration by following up on a test of his hypothesis that Norris himself suggests. Norris observes that under his proposal, assuming agreement and concord are distinct operations in different grammatical domains, there should be no prohibition on concord co-occurring with possessor agreement. He suggests that Case concord and possessor agreement combine in Finnish DPs. In (\ref{ex:57}), from \citet[163]{Norris2014}, inflection for innessive Case (\textsc{inne}) concord and for the features of the first person singular possessor co-occur (possessive morphology is precluded on an adjective, or anything other than the head noun).
+
+\begin{exe}
+\ex \label{ex:57}
+\gll Isso-ssa(*-ni)     talo-ssa-ni\\
+big-\textsc{inne}(*-1\textsc{sg}) house-\textsc{inne}{}-1\textsc{sg}\\
+\glt `in my big house'
+\end{exe}
+While there is nothing in principle within my account to prevent possessor agreement from occurring in a language with concord (witness Maasai), the phenomena are potentially of interest, given my claim that a possessor KP bearing gender concord cannot value possessor agreement. Following \citet{Toosarvandani_Van_Urk2014}, I attributed this to an oblique Case configuration. If some bearers of (oblique) Case concord can control possessor agreement, that will suggest a structural difference associated with the two concord varieties and/or a difference in their grammatical status. 
+
+In fact, though, while the Finnish possessum inflects for person and number of the possessor as shown in (\ref{ex:57}), possessum and possessor do not have a Case concord relationship. The possessed noun and its modifiers inflect for the Case associated with the syntactic position of the containing DP as the innessive inflection in (\ref{ex:57}) shows, but the possessor does not share this Case. Only lexical possessors show Case inflection. They are genitive (compare (\ref{ex:58a}) with (\ref{ex:58b}) and (\ref{ex:58c}) below), and unlike possessive pronouns they do not control possessor agreement (these examples from \citealt[582-583]{Toivonen2000}).\footnote{\citet{Toivonen2000} argues persuasively that the Finnish possessor inflection is a clitic pronoun rather than agreement (as in \citealt{Den_Dikken2015}'s analysis of Hungarian). This does not impact the (absence of) conclusions regarding Case concord, so I leave it aside. I leave open also the account of how labeling works in (\ref{ex:58b}) and (\ref{ex:58c}), apart from noting that genitive Case on the possessor is compatible with an approach under which the possessor has an abstract Agree relation with a functional category like D and raises to its Spec, as must be assumed for English Saxon genitives (i.e. \textit{John's book}).}    
+
+\begin{exe}
+	\ex \label{ex:58} \xlist
+	\ex \label{ex:58a}
+	\gll Pekka n\"{a}kee  hänen     yst\"{a}v\"{a}-ns\"{a}.\\
+	Pekka sees    his/her   friend-3P\textsc{oss}A\textsc{gr}\\
+	\glt `Pekka sees his/her friend.'
+	\ex \label{ex:58b}
+	\gll Pekka n\"{a}kee   Jukan        yst\"{a}v\"{a}n.\\
+	 Pekka sees       Jukka.\textsc{gen}   friend.\textsc{acc}\\
+	\glt `Pekka sees Jukka's friend.'
+	\ex \label{ex:58c}
+	\gll Pekka n\"{a}kee   pojan       yst\"{a}v\"{a}n.\\
+	Pekka sees     boy.\textsc{gen}     friend.\textsc{acc}\\
+	\glt `Pekka sees the boy's friend.'
+	\endxlist
+\end{exe}
+Norris notes that Skolt Saami may also have both Case concord and possessor agreement, but \citet{Miestamo2011} reports, {\textquotedbl}possession is double marked...possessive suffixes on the possessee and genitive case on the possessor, but they are not simultaneously present...head and dependent marking are in complementary distribution.{\textquotedbl} Thus in Skolt Saami as well as Finnish, there is possessor agreement and Case concord in the same language, but the controller of possessor agreement does not bear Case concord. It is genitive, and overt genitive marking cannot co-occur with possessor agreement. 
+
+Summing up, these facts do not support Norris’s claim that Case concord and possessor agreement mix freely. More importantly, for present purposes, they also do not tell us whether the labeling algorithm can in principle {\textquotedbl}read{\textquotedbl} Case concord as shared prominent features. What is needed is insight into the syntax of DPs in languages where possessors show Case concord with the head noun. Lardil as described in \citet{Richards2007} provides such examples as (\ref{ex:59}).
+
+\begin{exe}
+\ex \label{ex:59}
+\gll Ngada latha   karnjin-I       marun-ngan-ku   maarn-ku.\\
+I    spear  wallaby-\textsc{acc} boy-\textsc{gen-instr}    spear-\textsc{instr}\\
+\glt `I speared the wallaby with the boy's spear.'
+\end{exe}
+We need to know where in the structure a possessor like \textit{marun-ngan-ku} 'the boy-gen-instr' surfaces, since it is the possessor of the spear, but also has instrumental Case concord with \textit{maarn-ku} - 'spear'. If the two stand in the [XP, YP] relation and there is no evidence of phi-agreement, then it is plausible that Case concord labels (though alternative accounts may be possible, connected with genitive Case on 'boy'; see note 23).
+
+If Case concord (especially where it appears without accompanying number concord) can be shown to interact with agreement and labeling possibilities in the way that I have argued gender and number features do, it will open up interesting timing issues since, as often noted, a DP’s Case value dos not arrive until its source (such as v, T, or P) is merged. The findings potentially have implications regarding the module and mechanics of the Case concord relation.  
+
+\section{Conclusion} \label{sec:8}
+
+Phi-features play a pivotal role in Chomsky's 2013, 2015 labeling hypothesis, because when agreement establishes shared phi-features between two expressions and they appear in the [XP, YP] configuration, labeling can proceed. 
+
+Unlike \textit{v}/V and other clause-level projections, \textit{n}/N, D, and Num have intrinsic phi-features. This means that there are more phi-features available in nominal syntax than in clausal syntax: arguments introduce some, and the heads around them introduce others. I have argued that this impacts the labeling possibilities in interesting ways.
+
+My paper has considered aspects of the syntax of possessors and agents within DPs in a group of languages with gender-number concord and another group which lack it, and which exhibit possessor agreement. I have argued that grammatical gender bleeds possessor agreement and possessor raising. I have proposed that this is because gender concord provides labeling for \textit{n}Ps with in situ subjects, and concord on these arguments is not compatible with additional Agree relations. Possessor agreement labels higher projections in the DP domain, when (bare) possessors and EAs must raise.
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}
